@@ -1,7 +1,9 @@
 {
-  "ultima_actualizacion": "2026-06-13 20:22 UTC",
+  "ultima_actualizacion": "2026-06-13 20:45 UTC",
+  "partidos_totales": 0,
+  "partidos_terminados": 0,
   "fuentes": [
-    "football-data.org",
-    "api-football"
+    "worldcup26.ir",
+    "football-data.org"
   ]
 }

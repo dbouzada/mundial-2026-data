@@ -1,0 +1,36 @@
+name: Mundial 2026 — Data Pipeline
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests pandas
+
+      - name: Run ingestion script
+        env:
+          FD_API_KEY: ${{ secrets.FD_API_KEY }}
+          AF_API_KEY: ${{ secrets.AF_API_KEY }}
+        run: python ingestion/fetch_data.py
+
+      - name: Commit & push data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "🔄 Data update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

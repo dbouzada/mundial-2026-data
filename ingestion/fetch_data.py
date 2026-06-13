@@ -207,7 +207,7 @@ def fetch_xg_stats(matches_df: pd.DataFrame) -> pd.DataFrame:
     # Enriquecemos con xG por fixture (requiere llamada individual)
     # Para no agotar los 100 requests/día, solo lo hacemos para partidos recientes
     xg_rows = []
-    finished_ids = df[df["estado"] == "FT"]["fixture_id"].tolist()[:10]  # últimos 10
+    finished_ids = df[df.get("estado", pd.Series(dtype=str)) == "FT"]["fixture_id"].tolist()[:10] if "estado" in df.columns else []  # últimos 10
 
     for fid in finished_ids:
         stats = safe_get(

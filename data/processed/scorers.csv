@@ -1,12 +1,12 @@
-jugador,equipo,goles,asistencias,penales
-Folarin Balogun,United States,2,,
-Julián Quiñones,Mexico,1,,
-Raúl Jiménez,Mexico,1,,
-Ladislav Krejčí,Czechia,1,,
-In-beom Hwang,South Korea,1,1.0,
-Hyun-Gyu Oh,South Korea,1,,
-Jovo Lukić,Bosnia-Herzegovina,1,,
-Cyle Larin,Canada,1,,
-Mauricio,Paraguay,1,,
-Gio Reyna,United States,1,,
-Breel Embolo,Switzerland,1,,1.0
+jugador,jugador_id,equipo,goles,asistencias,penales
+Folarin Balogun,131040,United States,2,,
+Julián Quiñones,39237,Mexico,1,,
+Raúl Jiménez,3305,Mexico,1,,
+Ladislav Krejčí,1878,Czechia,1,,
+In-beom Hwang,170561,South Korea,1,1.0,
+Hyun-Gyu Oh,191295,South Korea,1,,
+Jovo Lukić,17767,Bosnia-Herzegovina,1,,
+Cyle Larin,15958,Canada,1,,
+Mauricio,119594,Paraguay,1,,
+Gio Reyna,136733,United States,1,,
+Breel Embolo,3483,Switzerland,1,,1.0

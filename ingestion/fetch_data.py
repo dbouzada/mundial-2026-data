@@ -23,7 +23,7 @@ PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 FD_API_KEY  = os.getenv("FD_API_KEY", "")
 FD_BASE     = "https://api.football-data.org/v4"
 FD_HEADERS  = {"X-Auth-Token": FD_API_KEY}
-WC26_BASE   = "https://worldcup26.ir/get"
+WC26_BASE   = "http://worldcup26.ir/get"
 WC_COMPETITION = "WC"
 
 
@@ -176,6 +176,9 @@ def calculate_team_kpis(games_df: pd.DataFrame) -> pd.DataFrame:
     """KPIs acumulados por equipo desde los partidos terminados."""
     print("⚙️  Calculando KPIs por equipo...")
 
+    if games_df.empty or "finished" not in games_df.columns:
+        print("  ⚠️  Sin datos de partidos todavía")
+        return pd.DataFrame()
     finished = games_df[games_df["finished"] == True].copy()
     if finished.empty:
         print("  ⚠️  Sin partidos terminados todavía")

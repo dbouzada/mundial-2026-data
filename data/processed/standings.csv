@@ -1,0 +1,49 @@
+grupo,posicion,equipo,equipo_id,pj,ganados,empatados,perdidos,gf,gc,dg,puntos
+Group A,1,Mexico,769,1,1,0,0,2,0,2,3
+Group A,2,South Korea,772,1,1,0,0,2,1,1,3
+Group A,3,Czechia,798,1,0,0,1,1,2,-1,0
+Group A,4,South Africa,774,1,0,0,1,0,2,-2,0
+Group B,1,Switzerland,788,1,1,0,0,1,0,1,3
+Group B,2,Bosnia-Herzegovina,1060,1,0,1,0,1,1,0,1
+Group B,2,Canada,828,1,0,1,0,1,1,0,1
+Group B,4,Qatar,8030,1,0,0,1,0,1,-1,0
+Group C,1,Brazil,764,0,0,0,0,0,0,0,0
+Group C,1,Haiti,836,0,0,0,0,0,0,0,0
+Group C,1,Morocco,815,0,0,0,0,0,0,0,0
+Group C,1,Scotland,8873,0,0,0,0,0,0,0,0
+Group D,1,United States,771,1,1,0,0,4,1,3,3
+Group D,2,Australia,779,0,0,0,0,0,0,0,0
+Group D,2,Turkey,803,0,0,0,0,0,0,0,0
+Group D,4,Paraguay,761,1,0,0,1,1,4,-3,0
+Group E,1,Curaçao,9460,0,0,0,0,0,0,0,0
+Group E,1,Germany,759,0,0,0,0,0,0,0,0
+Group E,1,Ecuador,791,0,0,0,0,0,0,0,0
+Group E,1,Ivory Coast,1935,0,0,0,0,0,0,0,0
+Group F,1,Japan,766,0,0,0,0,0,0,0,0
+Group F,1,Netherlands,8601,0,0,0,0,0,0,0,0
+Group F,1,Sweden,792,0,0,0,0,0,0,0,0
+Group F,1,Tunisia,802,0,0,0,0,0,0,0,0
+Group G,1,Egypt,825,0,0,0,0,0,0,0,0
+Group G,1,Belgium,805,0,0,0,0,0,0,0,0
+Group G,1,Iran,840,0,0,0,0,0,0,0,0
+Group G,1,New Zealand,783,0,0,0,0,0,0,0,0
+Group H,1,Cape Verde Islands,1930,0,0,0,0,0,0,0,0
+Group H,1,Saudi Arabia,801,0,0,0,0,0,0,0,0
+Group H,1,Spain,760,0,0,0,0,0,0,0,0
+Group H,1,Uruguay,758,0,0,0,0,0,0,0,0
+Group I,1,France,773,0,0,0,0,0,0,0,0
+Group I,1,Iraq,8062,0,0,0,0,0,0,0,0
+Group I,1,Norway,8872,0,0,0,0,0,0,0,0
+Group I,1,Senegal,804,0,0,0,0,0,0,0,0
+Group J,1,Algeria,778,0,0,0,0,0,0,0,0
+Group J,1,Argentina,762,0,0,0,0,0,0,0,0
+Group J,1,Jordan,8049,0,0,0,0,0,0,0,0
+Group J,1,Austria,816,0,0,0,0,0,0,0,0
+Group K,1,Congo DR,1934,0,0,0,0,0,0,0,0
+Group K,1,Colombia,818,0,0,0,0,0,0,0,0
+Group K,1,Portugal,765,0,0,0,0,0,0,0,0
+Group K,1,Uzbekistan,8070,0,0,0,0,0,0,0,0
+Group L,1,England,770,0,0,0,0,0,0,0,0
+Group L,1,Ghana,763,0,0,0,0,0,0,0,0
+Group L,1,Croatia,799,0,0,0,0,0,0,0,0
+Group L,1,Panama,1836,0,0,0,0,0,0,0,0

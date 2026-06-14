@@ -1,5 +1,5 @@
 {
-  "count": 17,
+  "count": 24,
   "filters": {
     "season": "2026",
     "limit": 50
@@ -49,6 +49,37 @@
       "goals": 2,
       "assists": null,
       "penalties": null
+    },
+    {
+      "player": {
+        "id": 171,
+        "name": "Kai Havertz",
+        "firstName": "Kai",
+        "lastName": "Havertz",
+        "dateOfBirth": "1999-06-11",
+        "nationality": "Germany",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 1,
+      "goals": 2,
+      "assists": null,
+      "penalties": 1
     },
     {
       "player": {
@@ -544,6 +575,192 @@
       "playedMatches": 1,
       "goals": 1,
       "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 101074,
+        "name": "Felix Kalu Nmecha",
+        "firstName": "Felix",
+        "lastName": "Nmecha",
+        "dateOfBirth": "2000-10-10",
+        "nationality": "Germany",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 166156,
+        "name": "Livano Comenencia",
+        "firstName": "Livano",
+        "lastName": "Comenencia",
+        "dateOfBirth": "2004-02-03",
+        "nationality": "Curaçao",
+        "section": "Defence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2025-11-05T09:45:41Z"
+      },
+      "team": {
+        "id": 9460,
+        "name": "Curaçao",
+        "shortName": "Curaçao",
+        "tla": "CUW",
+        "crest": "https://crests.football-data.org/curacao.svg",
+        "address": "null null null",
+        "website": null,
+        "founded": null,
+        "clubColors": null,
+        "venue": null,
+        "lastUpdated": "2026-05-19T17:48:28Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 75539,
+        "name": "Nico Schlotterbeck",
+        "firstName": "Nico",
+        "lastName": "Schlotterbeck",
+        "dateOfBirth": "1999-12-01",
+        "nationality": "Germany",
+        "section": "Defence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 144393,
+        "name": "Jamal Musiala",
+        "firstName": "Jamal",
+        "lastName": "Musiala",
+        "dateOfBirth": "2003-02-26",
+        "nationality": "Germany",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 184533,
+        "name": "Nathaniel Brown",
+        "firstName": "Nathaniel",
+        "lastName": "Brown",
+        "dateOfBirth": "2003-06-16",
+        "nationality": "Germany",
+        "section": "Defence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 6928,
+        "name": "Deniz Undav",
+        "firstName": "Deniz",
+        "lastName": "Undav",
+        "dateOfBirth": "1996-07-19",
+        "nationality": "Germany",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": 9,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": 2,
       "penalties": null
     }
   ]

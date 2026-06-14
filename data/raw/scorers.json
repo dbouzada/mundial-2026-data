@@ -1,5 +1,5 @@
 {
-  "count": 15,
+  "count": 17,
   "filters": {
     "season": "2026",
     "limit": 50
@@ -478,6 +478,68 @@
         "clubColors": "Navy Blue / White",
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:58Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 176991,
+        "name": "Nestor Irankunda",
+        "firstName": "Nestory",
+        "lastName": "Irankunda",
+        "dateOfBirth": "2006-02-09",
+        "nationality": "Australia",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-05-31T09:47:56Z"
+      },
+      "team": {
+        "id": 779,
+        "name": "Australia",
+        "shortName": "Australia",
+        "tla": "AUS",
+        "crest": "https://crests.football-data.org/779.svg",
+        "address": "Locked Bag A 4071 Sydney, NSW NSW 1235",
+        "website": "http://www.footballaustralia.com.au",
+        "founded": 1961,
+        "clubColors": "Gold / Green",
+        "venue": null,
+        "lastUpdated": "2021-05-22T11:30:43Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 4635,
+        "name": "Connor Metcalfe",
+        "firstName": "Connor",
+        "lastName": "Metcalfe",
+        "dateOfBirth": "1999-11-05",
+        "nationality": "Australia",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": 34,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 779,
+        "name": "Australia",
+        "shortName": "Australia",
+        "tla": "AUS",
+        "crest": "https://crests.football-data.org/779.svg",
+        "address": "Locked Bag A 4071 Sydney, NSW NSW 1235",
+        "website": "http://www.footballaustralia.com.au",
+        "founded": 1961,
+        "clubColors": "Gold / Green",
+        "venue": null,
+        "lastUpdated": "2021-05-22T11:30:43Z"
       },
       "playedMatches": 1,
       "goals": 1,

@@ -12,7 +12,7 @@ BASE_URL = "https://raw.githubusercontent.com/dbouzada/mundial-2026-data/main/da
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;1000&family=Inter:wght@300;400;500;600&display=swap');
 
 html, body, [class*="css"] {
     font-family: 'Inter', sans-serif;

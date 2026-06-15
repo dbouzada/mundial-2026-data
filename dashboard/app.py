@@ -596,12 +596,13 @@ if not finished.empty and not kpis.empty:
             cats = ["Puntos","GF","Prom GF×3","DG+"]
             fig_r = go.Figure()
             palette = ["#c8f24d","#4d9df2","#f2784d","#a855f7","#f59e0b"]
+            fills   = ["rgba(200,242,77,0.1)","rgba(77,157,242,0.1)","rgba(242,120,77,0.1)","rgba(168,85,247,0.1)","rgba(245,158,11,0.1)"]
             for i, (_, row) in enumerate(top5.iterrows()):
                 fig_r.add_trace(go.Scatterpolar(
                     r=[row["puntos"], row["gf"], row["promedio_gf"]*3, max(row["dg"],0)],
                     theta=cats, fill="toself", name=row["equipo"],
                     line=dict(color=palette[i], width=2),
-                    fillcolor=palette[i].replace("#","rgba(") + ",0.1)" if "#" in palette[i] else palette[i],
+                    fillcolor=fills[i],
                     opacity=0.8
                 ))
             fig_r.update_layout(

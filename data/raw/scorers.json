@@ -1,5 +1,5 @@
 {
-  "count": 28,
+  "count": 32,
   "filters": {
     "season": "2026",
     "limit": 50
@@ -881,6 +881,130 @@
         "clubColors": "Blue / White",
         "venue": null,
         "lastUpdated": "2026-06-01T09:40:05Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 133584,
+        "name": "Amad Diallo",
+        "firstName": "Amad",
+        "lastName": "Diallo",
+        "dateOfBirth": "2002-07-11",
+        "nationality": "Ivory Coast",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": 79,
+        "lastUpdated": "2026-06-01T11:16:32Z"
+      },
+      "team": {
+        "id": 1935,
+        "name": "Ivory Coast",
+        "shortName": "Ivory Coast",
+        "tla": "CIV",
+        "crest": "https://crests.football-data.org/787.svg",
+        "address": "Treichville Avenue, 1 / BP 1202 Abidjan 01",
+        "website": "http://www.fif-ci.com",
+        "founded": 1960,
+        "clubColors": "Orange / Green / White",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:46:40Z"
+      },
+      "playedMatches": 0,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 145613,
+        "name": "Yasin Ayari",
+        "firstName": "Yasin",
+        "lastName": "Ayari",
+        "dateOfBirth": "2003-10-06",
+        "nationality": "Sweden",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": 26,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 792,
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "tla": "SWE",
+        "crest": "https://crests.football-data.org/792.svg",
+        "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+        "website": "http://www.svenskfotboll.se",
+        "founded": 1904,
+        "clubColors": "Yellow / Blue",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:37Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 6486,
+        "name": "Alexander Isak",
+        "firstName": "Alexander",
+        "lastName": "Isak",
+        "dateOfBirth": "1999-09-21",
+        "nationality": "Sweden",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 792,
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "tla": "SWE",
+        "crest": "https://crests.football-data.org/792.svg",
+        "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+        "website": "http://www.svenskfotboll.se",
+        "founded": 1904,
+        "clubColors": "Yellow / Blue",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:37Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 144669,
+        "name": "Omar Rekik",
+        "firstName": "Omar",
+        "lastName": "Rekik",
+        "dateOfBirth": "2001-12-20",
+        "nationality": "Tunisia",
+        "section": "Defence",
+        "position": null,
+        "shirtNumber": 35,
+        "lastUpdated": "2024-04-03T09:50:17Z"
+      },
+      "team": {
+        "id": 802,
+        "name": "Tunisia",
+        "shortName": "Tunisia",
+        "tla": "TUN",
+        "crest": "https://crests.football-data.org/tunisia.svg",
+        "address": "Stade Annexe d'El Menzah Tunis 1003",
+        "website": "http://www.ftf.org.tn",
+        "founded": 1957,
+        "clubColors": "White / Red",
+        "venue": null,
+        "lastUpdated": "2022-04-02T10:41:55Z"
       },
       "playedMatches": 1,
       "goals": 1,

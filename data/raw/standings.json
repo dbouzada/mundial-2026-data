@@ -382,40 +382,40 @@
         {
           "position": 2,
           "team": {
-            "id": 791,
-            "name": "Ecuador",
-            "shortName": "Ecuador",
-            "tla": "ECU",
-            "crest": "https://crests.football-data.org/791.svg"
-          },
-          "playedGames": 0,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 2,
-          "team": {
             "id": 1935,
             "name": "Ivory Coast",
             "shortName": "Ivory Coast",
             "tla": "CIV",
             "crest": "https://crests.football-data.org/787.svg"
           },
-          "playedGames": 0,
+          "playedGames": 1,
+          "form": null,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": 791,
+            "name": "Ecuador",
+            "shortName": "Ecuador",
+            "tla": "ECU",
+            "crest": "https://crests.football-data.org/791.svg"
+          },
+          "playedGames": 1,
           "form": null,
           "won": 0,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "points": 0,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
+          "goalsAgainst": 1,
+          "goalDifference": -1
         },
         {
           "position": 4,
@@ -446,6 +446,25 @@
         {
           "position": 1,
           "team": {
+            "id": 792,
+            "name": "Sweden",
+            "shortName": "Sweden",
+            "tla": "SWE",
+            "crest": "https://crests.football-data.org/792.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 766,
             "name": "Japan",
             "shortName": "Japan",
@@ -463,7 +482,7 @@
           "goalDifference": 0
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 8601,
             "name": "Netherlands",
@@ -482,26 +501,7 @@
           "goalDifference": 0
         },
         {
-          "position": 3,
-          "team": {
-            "id": 792,
-            "name": "Sweden",
-            "shortName": "Sweden",
-            "tla": "SWE",
-            "crest": "https://crests.football-data.org/792.svg"
-          },
-          "playedGames": 0,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 802,
             "name": "Tunisia",
@@ -509,15 +509,15 @@
             "tla": "TUN",
             "crest": "https://crests.football-data.org/tunisia.svg"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "form": null,
           "won": 0,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "points": 0,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
+          "goalsAgainst": 1,
+          "goalDifference": -1
         }
       ]
     },

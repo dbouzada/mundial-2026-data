@@ -6,6 +6,55 @@ import requests
 from io import StringIO
 from datetime import datetime, timezone
 
+# ── BANDERAS Y HELPERS ────────────────────────────────────────────────────────
+FLAGS = {
+    'Argentina': '🇦🇷', 'Brazil': '🇧🇷', 'France': '🇫🇷', 'Germany': '🇩🇪',
+    'Spain': '🇪🇸', 'England': '🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Portugal': '🇵🇹', 'Netherlands': '🇳🇱',
+    'Belgium': '🇧🇪', 'Italy': '🇮🇹', 'Uruguay': '🇺🇾', 'Mexico': '🇲🇽',
+    'United States': '🇺🇸', 'Canada': '🇨🇦', 'Japan': '🇯🇵', 'South Korea': '🇰🇷',
+    'Australia': '🇦🇺', 'Morocco': '🇲🇦', 'Senegal': '🇸🇳', 'Ghana': '🇬🇭',
+    'Nigeria': '🇳🇬', 'Cameroon': '🇨🇲', 'Egypt': '🇪🇬', 'Tunisia': '🇹🇳',
+    'South Africa': '🇿🇦', 'Colombia': '🇨🇴', 'Chile': '🇨🇱', 'Ecuador': '🇪🇨',
+    'Peru': '🇵🇪', 'Venezuela': '🇻🇪', 'Paraguay': '🇵🇾', 'Bolivia': '🇧🇴',
+    'Switzerland': '🇨🇭', 'Croatia': '🇭🇷', 'Serbia': '🇷🇸', 'Denmark': '🇩🇰',
+    'Poland': '🇵🇱', 'Sweden': '🇸🇪', 'Austria': '🇦🇹', 'Czech Republic': '🇨🇿',
+    'Hungary': '🇭🇺', 'Scotland': '🏴󠁧󠁢󠁳󠁣󠁴󠁿', 'Wales': '🏴󠁧󠁢󠁷󠁬󠁳󠁿', 'Turkey': '🇹🇷',
+    'Ukraine': '🇺🇦', 'Slovakia': '🇸🇰', 'Slovenia': '🇸🇮', 'Albania': '🇦🇱',
+    'Romania': '🇷🇴', 'Greece': '🇬🇷', 'Saudi Arabia': '🇸🇦', 'Iran': '🇮🇷',
+    'Qatar': '🇶🇦', 'China': '🇨🇳', 'Indonesia': '🇮🇩', 'Thailand': '🇹🇭',
+    'India': '🇮🇳', 'New Zealand': '🇳🇿', 'Jamaica': '🇯🇲', 'Haiti': '🇭🇹',
+    'Honduras': '🇭🇳', 'Costa Rica': '🇨🇷', 'Panama': '🇵🇦', 'El Salvador': '🇸🇻',
+    'Guatemala': '🇬🇹', 'Trinidad and Tobago': '🇹🇹', 'Cuba': '🇨🇺',
+    'Bosnia and Herzegovina': '🇧🇦', 'Algeria': '🇩🇿', 'Ivory Coast': '🇨🇮',
+    'Czechia': '🇨🇿', 'DR Congo': '🇨🇩', 'Congo DR': '🇨🇩', 'Mali': '🇲🇱',
+    'Cape Verde': '🇨🇻', 'Cape Verde Islands': '🇨🇻', 'Tanzania': '🇹🇿',
+    'Mozambique': '🇲🇿', 'Zimbabwe': '🇿🇼', 'Uganda': '🇺🇬', 'Zambia': '🇿🇲',
+    'Kenya': '🇰🇪', 'Ethiopia': '🇪🇹', 'Angola': '🇦🇴', 'Libya': '🇱🇾',
+    'Benin': '🇧🇯', 'Burkina Faso': '🇧🇫', 'Guinea': '🇬🇳', 'Gabon': '🇬🇦',
+    'Iraq': '🇮🇶', 'Jordan': '🇯🇴', 'Oman': '🇴🇲', 'Bahrain': '🇧🇭',
+    'Kuwait': '🇰🇼', 'Lebanon': '🇱🇧', 'Syria': '🇸🇾', 'Palestine': '🇵🇸',
+    'Uzbekistan': '🇺🇿', 'Kazakhstan': '🇰🇿', 'Philippines': '🇵🇭',
+    'Vietnam': '🇻🇳', 'Myanmar': '🇲🇲', 'Malaysia': '🇲🇾', 'Singapore': '🇸🇬',
+    'Israel': '🇮🇱', 'Norway': '🇳🇴', 'Finland': '🇫🇮', 'Ireland': '🇮🇪',
+    'Iceland': '🇮🇸', 'Cyprus': '🇨🇾', 'Luxembourg': '🇱🇺', 'Malta': '🇲🇹',
+    'Montenegro': '🇲🇪', 'North Macedonia': '🇲🇰', 'Kosovo': '🇽🇰',
+    'Russia': '🇷🇺', 'Belarus': '🇧🇾', 'Georgia': '🇬🇪', 'Armenia': '🇦🇲',
+    'Azerbaijan': '🇦🇿',
+}
+
+def flag(team):
+    if not team or not isinstance(team, str): return ''
+    for key, emoji in FLAGS.items():
+        if key.lower() in team.lower() or team.lower() in key.lower():
+            return emoji
+    return '🏳️'
+
+def team_with_flag(team):
+    if not team or not isinstance(team, str): return team or ''
+    return f"{flag(team)} {team}"
+
+
+
 st.set_page_config(page_title="Mundial 2026 — Data Hub", page_icon="🏆", layout="wide")
 
 BASE_URL = "https://raw.githubusercontent.com/dbouzada/mundial-2026-data/main/data/processed"
@@ -92,7 +141,7 @@ else:
         with cols[i % 3]:
             st.markdown(f"""<div class='next-card'>
                 <div class='next-time'>{fecha_str} UTC · {grupo_txt}</div>
-                <div class='next-match'>{row['home']} vs {row['away']}</div>
+                <div class='next-match'>{flag(row['home'])} {row['home']} vs {flag(row['away'])} {row['away']}</div>
             </div>""", unsafe_allow_html=True)
 
 # ── RESULTADOS ────────────────────────────────────────────────────────────────
@@ -107,14 +156,14 @@ else:
         grupo_txt = f"Grupo {row['grupo']}" if pd.notna(row.get("grupo")) else str(row.get("etapa",""))
         fecha_str = row["fecha"].strftime("%d/%m") if pd.notna(row["fecha"]) else "—"
         return f"""<div class='resultado-card'>
-            <div style='flex:1;text-align:right;font-weight:600'>{row['home']}</div>
+            <div style='flex:1;text-align:right;font-weight:600'>{flag(row['home'])} {row['home']}</div>
             <div style='margin:0 16px;text-align:center'>
                 <span style='font-family:Space Grotesk;font-size:1.4rem;font-weight:700;color:#c8f24d'>
                     {int(row['goles_home']) if pd.notna(row['goles_home']) else '—'} — {int(row['goles_away']) if pd.notna(row['goles_away']) else '—'}
                 </span><br>
                 <span style='font-size:0.7rem;color:#666'>{fecha_str}</span>
             </div>
-            <div style='flex:1;font-weight:600'>{row['away']}</div>
+            <div style='flex:1;font-weight:600'>{flag(row['away'])} {row['away']}</div>
             <span class='grupo-badge'>{grupo_txt}</span>
         </div>"""
 
@@ -204,6 +253,15 @@ if not finished.empty:
 # ── TABLA DE POSICIONES ───────────────────────────────────────────────────────
 st.markdown("<div class='section-title'>📋 Tabla de posiciones</div>", unsafe_allow_html=True)
 
+# Función para colorear clasificados (top 2 por grupo)
+def get_row_colors(df_g):
+    colors = []
+    for i in range(len(df_g)):
+        if i == 0:   colors.append("#1a3a1a")   # 1ro — verde oscuro
+        elif i == 1: colors.append("#1a2e1a")   # 2do — verde más suave
+        else:        colors.append("#161616" if i%2==0 else "#1a1a1a")
+    return colors
+
 grupos_list = sorted(standings["grupo"].dropna().unique().tolist())
 n_cols = 4
 rows_grupos = [grupos_list[i:i+n_cols] for i in range(0, len(grupos_list), n_cols)]
@@ -220,7 +278,7 @@ for row_grupos in rows_grupos:
                     align=["center","left","center","center","center","center","center"], height=28),
                 cells=dict(values=[df_g["posicion"],df_g["equipo"],df_g["pj"],
                     df_g["ganados"],df_g["empatados"],df_g["perdidos"],df_g["puntos"]],
-                    fill_color=[["#161616" if i%2==0 else "#1a1a1a" for i in range(len(df_g))]],
+                    fill_color=[get_row_colors(df_g)],
                     font=dict(color="#f0f0f0",size=11),
                     align=["center","left","center","center","center","center","center"], height=26)
             )])
@@ -235,8 +293,10 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown("**Top goleadores**")
     top_n = st.slider("Top N", 5, len(scorers), min(10, len(scorers)), key="top_n")
-    df_top = scorers.sort_values("goles", ascending=False).head(top_n)
-    fig = px.bar(df_top, x="goles", y="jugador", orientation="h", color="goles",
+    df_top = scorers.sort_values("goles", ascending=False).head(top_n).copy()
+    medals = ["🥇","🥈","🥉"] + ["" for _ in range(len(df_top)-3)]
+    df_top["jugador_medal"] = [f"{medals[i]} {row}" for i, row in enumerate(df_top["jugador"])]
+    fig = px.bar(df_top, x="goles", y="jugador_medal", orientation="h", color="goles",
         color_continuous_scale=["#2a2a2a","#c8f24d"], text="goles",
         hover_data=["equipo","asistencias"], labels={"goles":"Goles","jugador":""})
     fig.update_traces(textposition="outside")
@@ -258,14 +318,16 @@ with col2:
         height=max(300, 10*42), margin=dict(t=20))
     st.plotly_chart(fig2, use_container_width=True)
 
-    st.markdown("**Goles vs Asistencias**")
-    fig3 = px.scatter(scorers[scorers["goles"] > 0], x="goles", y="asistencias",
-        text="jugador", color="equipo", size="goles",
-        labels={"goles":"Goles","asistencias":"Asistencias"},
-        color_discrete_sequence=px.colors.qualitative.Set2)
-    fig3.update_traces(textposition="top center", textfont_size=9)
-    fig3.update_layout(paper_bgcolor="#0e0e0e", plot_bgcolor="#0e0e0e", font_color="#f0f0f0",
-        showlegend=False, height=300, margin=dict(t=20))
+    st.markdown("**Participaciones en gol (goles + asistencias)**")
+    df_part = scorers.copy()
+    df_part["participaciones"] = df_part["goles"] + df_part["asistencias"]
+    df_part = df_part[df_part["participaciones"] > 0].sort_values("participaciones", ascending=False).head(10)
+    fig3 = go.Figure()
+    fig3.add_trace(go.Bar(name="Goles", x=df_part["jugador"], y=df_part["goles"], marker_color="#c8f24d"))
+    fig3.add_trace(go.Bar(name="Asistencias", x=df_part["jugador"], y=df_part["asistencias"], marker_color="#4d9df2"))
+    fig3.update_layout(barmode="stack", paper_bgcolor="#0e0e0e", plot_bgcolor="#0e0e0e",
+        font_color="#f0f0f0", legend=dict(bgcolor="#0e0e0e"), xaxis_tickangle=-35,
+        height=300, margin=dict(t=20))
     st.plotly_chart(fig3, use_container_width=True)
 
 # ── RENDIMIENTO EQUIPOS ───────────────────────────────────────────────────────
@@ -333,7 +395,7 @@ else:
         fecha_str = proximo["fecha"].strftime("%d/%m %H:%M UTC") if pd.notna(proximo["fecha"]) else "—"
         st.markdown(f"""<div class='next-card' style='border-color:#c8f24d33;margin-bottom:24px'>
             <div class='next-time'>⏳ Próximo partido — {fecha_str}</div>
-            <div class='next-match' style='font-size:1.2rem'>Argentina vs {proximo['away'] if proximo['home']=='Argentina' else proximo['home']}</div>
+            <div class='next-match' style='font-size:1.2rem'>🇦🇷 Argentina vs {flag(proximo["away"]) if proximo["home"]=="Argentina" else flag(proximo["home"])} {proximo["away"] if proximo["home"]=="Argentina" else proximo["home"]}</div>
         </div>""", unsafe_allow_html=True)
 
     if not arg.empty:

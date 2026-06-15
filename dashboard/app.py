@@ -362,7 +362,7 @@ if not finished.empty:
             fill="tozeroy", line=dict(color="#c8f24d", width=2.5),
             fillcolor="rgba(200,242,77,0.08)", name="Acumulado"))
         fig.add_trace(go.Bar(x=gd["fecha_str"], y=gd["total_goles"],
-            marker_color="#4d9df255", name="Por día", yaxis="y2"))
+            marker_color="rgba(77,157,242,0.33)", name="Por día", yaxis="y2"))
         fig.update_layout(paper_bgcolor="#0a0a0a", plot_bgcolor="#0a0a0a", font_color="#f0f0f0",
             legend=dict(bgcolor="#0a0a0a"), height=300, margin=dict(t=20,b=0),
             yaxis=dict(title="Acumulado", gridcolor="#1a1a1a"),
@@ -697,6 +697,6 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown("""<div style='border-top:1px solid #1a1a1a;padding:24px 0;text-align:center;color:#333;font-size:0.8rem'>
     Construido por <strong style='color:#555'>Diego Bouzada</strong> · 
     Python · GitHub Actions · football-data.org · 
-    <a href='https://github.com/dbouzada/mundial-2026-data' style='color:#c8f24d44;text-decoration:none'>GitHub ↗</a> · 
-    <a href='https://linkedin.com/in/bouzadadiego' style='color:#c8f24d44;text-decoration:none'>LinkedIn ↗</a>
+    <a href='https://github.com/dbouzada/mundial-2026-data' style='color:rgba(200,242,77,0.27);text-decoration:none'>GitHub ↗</a> · 
+    <a href='https://linkedin.com/in/bouzadadiego' style='color:rgba(200,242,77,0.27);text-decoration:none'>LinkedIn ↗</a>
 </div>""", unsafe_allow_html=True)

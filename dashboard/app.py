@@ -29,19 +29,17 @@ section[data-testid="stSidebar"] { display: none; }
     font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1;
-    background: linear-gradient(135deg, #ffffff 0%, #c8f24d 50%, #4d9df2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #c8f24d;
     margin: 0;
 }
 .hero-sub {
     font-size: 0.9rem;
-    color: #555570;
+    color: #888899;
     margin-top: 8px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-.update-tag { font-size: 0.7rem; color: #33334a; margin-top: 6px; }
+.update-tag { font-size: 0.7rem; color: #666677; margin-top: 6px; }
 
 .kpi-card {
     background: linear-gradient(145deg, #0d0d1a 0%, #111122 100%);
@@ -72,7 +70,7 @@ section[data-testid="stSidebar"] { display: none; }
 }
 .kpi-label {
     font-size: 0.68rem;
-    color: #44445a;
+    color: #666677;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin-top: 10px;
@@ -94,7 +92,7 @@ section[data-testid="stSidebar"] { display: none; }
     font-family: 'Space Grotesk', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
-    color: #44445a;
+    color: #666677;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     white-space: nowrap;
@@ -129,7 +127,7 @@ section[data-testid="stSidebar"] { display: none; }
     letter-spacing: -0.02em;
 }
 .match-team { font-weight: 500; font-size: 0.92rem; }
-.match-meta { font-size: 0.65rem; color: #33334a; margin-top: 4px; }
+.match-meta { font-size: 0.65rem; color: #666677; margin-top: 4px; }
 .match-badge {
     font-size: 0.6rem;
     font-weight: 600;
@@ -149,7 +147,7 @@ section[data-testid="stSidebar"] { display: none; }
     padding: 18px 20px;
     margin-bottom: 10px;
 }
-.next-card-time { font-size: 0.68rem; color: #4d9df2; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+.next-card-time { font-size: 0.68rem; color: #6db8f5; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
 .next-card-match { font-weight: 500; font-size: 0.95rem; color: #c8c8d8; }
 
 .standings-row {
@@ -308,7 +306,15 @@ col1, col2 = st.columns([4, 1])
 with col1:
     st.markdown("<p class='hero-title'>Mundial 2026</p>", unsafe_allow_html=True)
     st.markdown("<p class='hero-sub'>Data Hub · Analytics en tiempo real</p>", unsafe_allow_html=True)
-    st.markdown(f"<p class='update-tag'>Actualizado {meta.get('ultima_actualizacion','—')}</p>", unsafe_allow_html=True)
+    ultima_utc = meta.get('ultima_actualizacion', '')
+try:
+    from datetime import datetime, timedelta
+    dt_utc = datetime.strptime(ultima_utc, "%Y-%m-%d %H:%M UTC")
+    dt_arg = dt_utc - timedelta(hours=3)
+    ultima_arg = dt_arg.strftime("%d/%m/%Y %H:%M") + " ARG"
+except:
+    ultima_arg = ultima_utc
+st.markdown(f"<p class='update-tag'>Actualizado {ultima_arg}</p>", unsafe_allow_html=True)
 with col2:
     if not in_play.empty:
         st.markdown(f"""<div class='live-pill'>

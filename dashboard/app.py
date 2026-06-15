@@ -26,7 +26,7 @@ section[data-testid="stSidebar"] { display: none; }
 .hero-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 1000;
     letter-spacing: -0.03em;
     line-height: 1;
     color: #c8f24d;

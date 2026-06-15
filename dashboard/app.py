@@ -110,7 +110,7 @@ else:
             <div style='flex:1;text-align:right;font-weight:600'>{row['home']}</div>
             <div style='margin:0 16px;text-align:center'>
                 <span style='font-family:Space Grotesk;font-size:1.4rem;font-weight:700;color:#c8f24d'>
-                    {int(row['goles_home'])} — {int(row['goles_away'])}
+                    {int(row['goles_home']) if pd.notna(row['goles_home']) else '—'} — {int(row['goles_away']) if pd.notna(row['goles_away']) else '—'}
                 </span><br>
                 <span style='font-size:0.7rem;color:#666'>{fecha_str}</span>
             </div>

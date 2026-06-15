@@ -27,10 +27,10 @@ Group G,1,Egypt,825,0,0,0,0,0,0,0,0
 Group G,1,Belgium,805,0,0,0,0,0,0,0,0
 Group G,1,Iran,840,0,0,0,0,0,0,0,0
 Group G,1,New Zealand,783,0,0,0,0,0,0,0,0
-Group H,1,Cape Verde Islands,1930,0,0,0,0,0,0,0,0
-Group H,1,Saudi Arabia,801,0,0,0,0,0,0,0,0
-Group H,1,Spain,760,0,0,0,0,0,0,0,0
-Group H,1,Uruguay,758,0,0,0,0,0,0,0,0
+Group H,1,Cape Verde Islands,1930,1,0,1,0,0,0,0,1
+Group H,1,Spain,760,1,0,1,0,0,0,0,1
+Group H,3,Saudi Arabia,801,0,0,0,0,0,0,0,0
+Group H,3,Uruguay,758,0,0,0,0,0,0,0,0
 Group I,1,France,773,0,0,0,0,0,0,0,0
 Group I,1,Iraq,8062,0,0,0,0,0,0,0,0
 Group I,1,Norway,8872,0,0,0,0,0,0,0,0

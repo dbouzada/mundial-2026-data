@@ -1,6 +1,7 @@
 jugador,jugador_id,equipo,goles,asistencias,penales
 Folarin Balogun,131040,United States,2,,
 Kai Havertz,171,Germany,2,,1.0
+Yasin Ayari,145613,Sweden,2,,
 Julián Quiñones,39237,Mexico,1,,
 Raúl Jiménez,3305,Mexico,1,,
 Ladislav Krejčí,1878,Czechia,1,,
@@ -28,6 +29,7 @@ Keito Nakamura,48595,Japan,1,,
 Crysencio Summerville,102193,Netherlands,1,,
 Daichi Kamada,6716,Japan,1,,
 Amad Diallo,133584,Ivory Coast,1,,
-Yasin Ayari,145613,Sweden,1,,
-Alexander Isak,6486,Sweden,1,,
+Alexander Isak,6486,Sweden,1,2.0,
 Omar Rekik,144669,Tunisia,1,,
+Viktor Gyökeres,8279,Sweden,1,1.0,
+Mattias Svanberg,15354,Sweden,1,,

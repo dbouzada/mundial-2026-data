@@ -2,8 +2,13 @@ name: Mundial 2026 — Data Pipeline
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # cada 5 minutos
+    - cron: "0 * * * *"    # cada hora — GitHub respeta esto en free tier
+    - cron: "30 * * * *"   # y a la media hora — efectivamente cada 30 minutos
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "ingestion/**"     # también corre si actualizás el script
 
 jobs:
   fetch-and-commit:

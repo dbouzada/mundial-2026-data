@@ -529,25 +529,6 @@
         {
           "position": 1,
           "team": {
-            "id": 825,
-            "name": "Egypt",
-            "shortName": "Egypt",
-            "tla": "EGY",
-            "crest": "https://crests.football-data.org/825.svg"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 1,
-          "team": {
             "id": 805,
             "name": "Belgium",
             "shortName": "Belgium",
@@ -560,8 +541,27 @@
           "draw": 1,
           "lost": 0,
           "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 825,
+            "name": "Egypt",
+            "shortName": "Egypt",
+            "tla": "EGY",
+            "crest": "https://crests.football-data.org/825.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0
         },
         {
@@ -612,11 +612,11 @@
         {
           "position": 1,
           "team": {
-            "id": 1930,
-            "name": "Cape Verde Islands",
-            "shortName": "Cape Verde",
-            "tla": "CPV",
-            "crest": "https://crests.football-data.org/cape_verde.svg"
+            "id": 760,
+            "name": "Spain",
+            "shortName": "Spain",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/760.svg"
           },
           "playedGames": 1,
           "form": null,
@@ -629,13 +629,13 @@
           "goalDifference": 0
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
-            "id": 760,
-            "name": "Spain",
-            "shortName": "Spain",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/760.svg"
+            "id": 1930,
+            "name": "Cape Verde Islands",
+            "shortName": "Cape Verde",
+            "tla": "CPV",
+            "crest": "https://crests.football-data.org/cape_verde.svg"
           },
           "playedGames": 1,
           "form": null,

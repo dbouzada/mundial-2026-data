@@ -304,17 +304,17 @@ n_jugados   = meta.get("partidos_terminados", len(finished))
 # ── HERO ──────────────────────────────────────────────────────────────────────
 col1, col2 = st.columns([4, 1])
 with col1:
-    st.markdown("<p class='hero-title'>Mundial 2026</p>", unsafe_allow_html=True)
+    st.markdown("<div style='padding-top:1.5rem'></div><p class='hero-title'>Mundial 2026</p>", unsafe_allow_html=True)
     st.markdown("<p class='hero-sub'>Data Hub · Analytics en tiempo real</p>", unsafe_allow_html=True)
     ultima_utc = meta.get('ultima_actualizacion', '')
 try:
     from datetime import datetime, timedelta
     dt_utc = datetime.strptime(ultima_utc, "%Y-%m-%d %H:%M UTC")
     dt_arg = dt_utc - timedelta(hours=3)
-    ultima_arg = dt_arg.strftime("%d/%m/%Y %H:%M") + " ARG"
+    ultima_arg = dt_arg.strftime("%d/%m/%Y %H:%M") + " (Buenos Aires)"
 except:
     ultima_arg = ultima_utc
-st.markdown(f"<p class='update-tag'>Actualizado {ultima_arg}</p>", unsafe_allow_html=True)
+st.markdown(f"<p class='update-tag'>Actualizado: {ultima_arg}</p>", unsafe_allow_html=True)
 with col2:
     if not in_play.empty:
         st.markdown(f"""<div class='live-pill'>
@@ -433,7 +433,12 @@ else:
     proximos = upcoming.sort_values("fecha").head(6)
     cols = st.columns(3)
     for i, (_, row) in enumerate(proximos.iterrows()):
-        fecha_str = row["fecha"].strftime("%d %b · %H:%M UTC") if pd.notna(row["fecha"]) else "—"
+        if pd.notna(row["fecha"]):
+            from datetime import timedelta
+            fecha_arg = row["fecha"] - timedelta(hours=3)
+            fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
+        else:
+            fecha_str = "—"
         grupo_txt = clean_grupo(str(row.get("grupo",""))) if pd.notna(row.get("grupo")) else str(row.get("etapa",""))
         with cols[i % 3]:
             st.markdown(f"""<div class='next-card'>
@@ -774,7 +779,7 @@ if not finished.empty and not kpis.empty and kpis["gf"].sum()>0:
         kpis_gf = kpis[kpis["gf"]>0].copy()
         fig_tree = px.treemap(kpis_gf, path=["equipo"], values="gf",
             color="puntos",
-            color_continuous_scale=[[0,"#0d0d1a"],[0.4,"#1a2a4a"],[0.7,"#4d9df2"],[1,"#c8f24d"]],
+            color_continuous_scale=[[0,"#111828"],[0.3,"#1a3060"],[0.6,"#2a5a9a"],[0.8,"#4d9df2"],[1,"#8ab82e"]],  
             hover_data={"gf":True,"puntos":True}
         )
         fig_tree.update_traces(

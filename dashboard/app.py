@@ -9,10 +9,32 @@ from io import StringIO
 st.set_page_config(page_title="Mundial 2026 — Data Hub", page_icon="🏆", layout="wide")
 
 BASE_URL = "https://raw.githubusercontent.com/dbouzada/mundial-2026-data/main/data/processed"
+HORARIOS_ARG = {
+    'mexico vs south africa': '16:00', 'south korea vs czechia': '23:00',
+    'canada vs bosnia and herzegovina': '16:00', 'united states vs paraguay': '22:00',
+    'qatar vs switzerland': '16:00', 'brazil vs morocco': '19:00',
+    'haiti vs scotland': '22:00', 'australia vs turkey': '01:00',
+    'germany vs curacao': '12:00', 'netherlands vs japan': '15:00',
+    'ivory coast vs ecuador': '18:00', 'sweden vs tunisia': '21:00',
+    'spain vs cape verde islands': '11:00', 'belgium vs egypt': '14:00',
+    'saudi arabia vs uruguay': '17:00', 'iran vs new zealand': '20:00',
+    'france vs senegal': '14:00', 'iraq vs norway': '17:00',
+    'argentina vs algeria': '20:00', 'austria vs jordan': '23:00',
+    'portugal vs dr congo': '12:00', 'england vs croatia': '15:00',
+    'colombia vs venezuela': '18:00', 'serbia vs chile': '21:00',
+    'nigeria vs denmark': '11:00', 'ukraine vs ghana': '14:00',
+}
+
+def get_hora_arg(home, away):
+    key = f"{home.lower()} vs {away.lower()}"
+    key2 = f"{away.lower()} vs {home.lower()}"
+    return HORARIOS_ARG.get(key) or HORARIOS_ARG.get(key2)
+
+
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;1000&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 html, body, [class*="css"] {
     font-family: 'Inter', sans-serif;
@@ -26,7 +48,7 @@ section[data-testid="stSidebar"] { display: none; }
 .hero-title {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 3rem;
-    font-weight: 1000;
+    font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1;
     color: #c8f24d;
@@ -257,7 +279,7 @@ def clean_grupo(g):
     return g.replace('GROUP_', 'Grupo ')
 
 # ── CARGA ─────────────────────────────────────────────────────────────────────
-@st.cache_data(ttl=60)
+@st.cache_data(ttl=30)
 def load_data():
     def get_csv(f):
         r = requests.get(f"{BASE_URL}/{f}")
@@ -321,6 +343,13 @@ with col2:
             <div class='live-dot'></div>
             <span class='live-text'>En vivo</span>
         </div>""", unsafe_allow_html=True)
+
+# ── REFRESH ──────────────────────────────────────────────────────────────────
+col_r1, col_r2 = st.columns([5,1])
+with col_r2:
+    if st.button("↻ Actualizar", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
 
 # ── KPIs ──────────────────────────────────────────────────────────────────────
 st.markdown("<div class='section-divider'><div class='section-divider-line'></div><div class='section-divider-title'>Resumen del torneo</div><div class='section-divider-line' style='background:linear-gradient(90deg,transparent,#1e1e35)'></div></div>", unsafe_allow_html=True)
@@ -435,8 +464,13 @@ else:
     for i, (_, row) in enumerate(proximos.iterrows()):
         if pd.notna(row["fecha"]):
             from datetime import timedelta
-            fecha_arg = row["fecha"] - timedelta(hours=3)
-            fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
+            hora_utc = row["fecha"]
+            if hora_utc.hour == 0 and hora_utc.minute == 0:
+                hora_real = get_hora_arg(row["home"], row["away"])
+                fecha_str = f"{hora_utc.strftime(chr(37)+'d %b')} · {hora_real} ARG" if hora_real else hora_utc.strftime("%d %b") + " · Hora a confirmar"
+            else:
+                fecha_arg = hora_utc - timedelta(hours=3)
+                fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
         else:
             fecha_str = "—"
         grupo_txt = clean_grupo(str(row.get("grupo",""))) if pd.notna(row.get("grupo")) else str(row.get("etapa",""))

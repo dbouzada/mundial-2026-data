@@ -152,8 +152,8 @@ def render_resultado(row):
     ga = int(row['goles_away']) if pd.notna(row['goles_away']) else '—'
     grupo_txt = clean_grupo(str(row.get("grupo",""))) if pd.notna(row.get("grupo")) else str(row.get("etapa",""))
     fecha_str = row["fecha"].strftime("%d/%m") if pd.notna(row["fecha"]) else "—"
-    home_txt = f"{flag(row['home'])} {row['home']}" if flag(row['home']) else row['home']
-    away_txt = f"{flag(row['away'])} {row['away']}" if flag(row['away']) else row['away']
+    home_txt = row['home']
+    away_txt = row['away']
     return f"""<div class='resultado-card'>
         <div style='flex:1;text-align:right;font-weight:600'>{home_txt}</div>
         <div style='margin:0 16px;text-align:center'>
@@ -172,9 +172,9 @@ def show_resultado(row, container):
     fh = flag(row["home"]); fa = flag(row["away"])
     with container:
         c1, c2, c3, c4 = st.columns([3, 1.5, 3, 1.2])
-        with c1: st.markdown(f"<div style='text-align:right;font-weight:600;padding:8px 0'>{fh} {row['home']}</div>", unsafe_allow_html=True)
+        with c1: st.markdown(f"{fh} **{row['home']}")
         with c2: st.markdown(f"<div style='text-align:center;font-family:Space Grotesk;font-size:1.3rem;font-weight:700;color:#c8f24d;padding:4px 0'>{gh}—{ga}<br><span style='font-size:0.65rem;color:#666'>{fecha_str}</span></div>", unsafe_allow_html=True)
-        with c3: st.markdown(f"<div style='font-weight:600;padding:8px 0'>{fa} {row['away']}</div>", unsafe_allow_html=True)
+        with c3: st.markdown(f"{fa} **{row['away']}")
         with c4: st.markdown(f"<div style='padding:8px 0'><span style='background:#c8f24d;color:#000;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:4px'>{grupo_txt}</span></div>", unsafe_allow_html=True)
         st.divider()
 
@@ -258,23 +258,21 @@ if not finished.empty:
         st.plotly_chart(fig4, use_container_width=True)
 
     # Timeline
-    st.markdown("**Goles por partido (índice cronológico)**")
-    tl = finished.sort_values("fecha").copy().reset_index(drop=True)
-    tl["partido_idx"] = tl.index + 1
-    tl["partido_label"] = tl.apply(lambda r: f"{r['home']} vs {r['away']} ({r['fecha'].strftime('%d/%m')})", axis=1)
+    st.markdown("**Goles por partido**")
+    tl = finished[finished["total_goles"].notna()].sort_values("fecha").copy().reset_index(drop=True)
+    tl["goles_home"] = tl["goles_home"].fillna(0).astype(int)
+    tl["goles_away"] = tl["goles_away"].fillna(0).astype(int)
+    tl["total_goles"] = tl["total_goles"].fillna(0).astype(int)
+    tl["label"] = tl.apply(lambda r: f"{r['home']} {r['goles_home']}-{r['goles_away']} {r['away']}", axis=1)
     fig_tl = go.Figure()
-    fig_tl.add_trace(go.Bar(name="Local", x=tl["partido_idx"], y=tl["goles_home"],
-        marker_color="#c8f24d", hovertext=tl["partido_label"], hoverinfo="text+y"))
-    fig_tl.add_trace(go.Bar(name="Visitante", x=tl["partido_idx"], y=tl["goles_away"],
-        marker_color="#4d9df2", hovertext=tl["partido_label"], hoverinfo="text+y"))
-    fig_tl.add_trace(go.Scatter(name="Total", x=tl["partido_idx"], y=tl["total_goles"],
-        mode="lines+markers", line=dict(color="#f2784d", width=2, dash="dot"),
-        marker=dict(size=6), hovertext=tl["partido_label"], hoverinfo="text+y"))
+    fig_tl.add_trace(go.Bar(name="Local", x=tl["label"], y=tl["goles_home"],
+        marker_color="#c8f24d"))
+    fig_tl.add_trace(go.Bar(name="Visitante", x=tl["label"], y=tl["goles_away"],
+        marker_color="#4d9df2"))
     fig_tl.update_layout(
-        barmode="group", paper_bgcolor="#0e0e0e", plot_bgcolor="#0e0e0e", font_color="#f0f0f0",
-        legend=dict(bgcolor="#0e0e0e"), height=320, margin=dict(t=20),
-        xaxis=dict(title="Partido #", tickmode="linear"),
-        hovermode="x unified"
+        barmode="stack", paper_bgcolor="#0e0e0e", plot_bgcolor="#0e0e0e", font_color="#f0f0f0",
+        legend=dict(bgcolor="#0e0e0e"), height=360, margin=dict(t=20, b=120),
+        xaxis=dict(tickangle=-45), hovermode="x unified"
     )
     st.plotly_chart(fig_tl, use_container_width=True)
 

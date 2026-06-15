@@ -29,7 +29,7 @@ section[data-testid="stSidebar"] { display: none; }
 </style>
 """, unsafe_allow_html=True)
 
-@st.cache_data(ttl=180)
+@st.cache_data(ttl=60)
 def load_data():
     def get_csv(f):
         r = requests.get(f"{BASE_URL}/{f}")

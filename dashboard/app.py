@@ -267,7 +267,7 @@ BG2     = "#0d0d1a"
 ACCENT  = "#c8f24d"
 BLUE    = "#4d9df2"
 RED     = "#f2784d"
-MUTED   = "#44445a"
+MUTED   = "#9999aa"
 GRID    = "#1a1a2e"
 FONT    = "Space Grotesk, Inter, sans-serif"
 
@@ -287,12 +287,12 @@ def theme(height=360, margin=None, show_legend=True):
         ),
         xaxis=dict(
             gridcolor=GRID, zeroline=False,
-            tickfont=dict(color=MUTED, size=10),
+            tickfont=dict(color="#c8c8d8", size=11),
             linecolor=GRID
         ),
         yaxis=dict(
             gridcolor=GRID, zeroline=False,
-            tickfont=dict(color=MUTED, size=10),
+            tickfont=dict(color="#c8c8d8", size=11),
             linecolor=GRID
         ),
         hoverlabel=dict(
@@ -605,7 +605,13 @@ if not finished.empty:
     tl = finished[finished["total_goles"].notna()].sort_values("fecha").copy().reset_index(drop=True)
     tl["goles_home"] = tl["goles_home"].fillna(0).astype(int)
     tl["goles_away"] = tl["goles_away"].fillna(0).astype(int)
-    tl["label"] = tl.apply(lambda r: f"{r['home']} vs {r['away']}", axis=1)
+    def short_name(n):
+        abbrevs = {"United States":"USA","South Africa":"S.Africa","South Korea":"S.Korea",
+                   "Czechia":"Czech","Saudi Arabia":"S.Arabia","New Zealand":"N.Zealand",
+                   "Bosnia and Herzegovina":"Bosnia","Ivory Coast":"I.Coast",
+                   "Cape Verde Islands":"C.Verde","Switzerland":"Switz."}
+        return abbrevs.get(n, n)
+    tl["label"] = tl.apply(lambda r: f"{short_name(r['home'])} vs {short_name(r['away'])}", axis=1)
 
     fig3 = go.Figure()
     fig3.add_trace(go.Bar(

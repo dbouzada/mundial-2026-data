@@ -10,19 +10,32 @@ st.set_page_config(page_title="Mundial 2026 — Data Hub", page_icon="🏆", lay
 
 BASE_URL = "https://raw.githubusercontent.com/dbouzada/mundial-2026-data/main/data/processed"
 HORARIOS_ARG = {
-    'mexico vs south africa': '16:00', 'south korea vs czechia': '23:00',
-    'canada vs bosnia and herzegovina': '16:00', 'united states vs paraguay': '22:00',
-    'qatar vs switzerland': '16:00', 'brazil vs morocco': '19:00',
-    'haiti vs scotland': '22:00', 'australia vs turkey': '01:00',
-    'germany vs curacao': '12:00', 'netherlands vs japan': '15:00',
-    'ivory coast vs ecuador': '18:00', 'sweden vs tunisia': '21:00',
-    'spain vs cape verde islands': '11:00', 'belgium vs egypt': '14:00',
-    'saudi arabia vs uruguay': '17:00', 'iran vs new zealand': '20:00',
-    'france vs senegal': '14:00', 'iraq vs norway': '17:00',
-    'argentina vs algeria': '20:00', 'austria vs jordan': '23:00',
-    'portugal vs dr congo': '12:00', 'england vs croatia': '15:00',
-    'colombia vs venezuela': '18:00', 'serbia vs chile': '21:00',
-    'nigeria vs denmark': '11:00', 'ukraine vs ghana': '14:00',
+    'mexico vs south africa': '16:00',
+    'south korea vs czechia': '23:00',
+    'canada vs bosnia and herzegovina': '16:00',
+    'united states vs paraguay': '22:00',
+    'australia vs turkey': '01:00',
+    'qatar vs switzerland': '16:00',
+    'brazil vs morocco': '19:00',
+    'haiti vs scotland': '22:00',
+    'germany vs curacao': '14:00',
+    'ivory coast vs ecuador': '20:00',
+    'netherlands vs japan': '19:00',
+    'sweden vs tunisia': '23:00',
+    'belgium vs egypt': '16:00',
+    'spain vs cape verde islands': '13:00',
+    'iran vs new zealand': '22:00',
+    'saudi arabia vs uruguay': '19:00',
+    'france vs senegal': '16:00',
+    'iraq vs norway': '19:00',
+    'argentina vs algeria': '22:00',
+    'austria vs jordan': '01:00',
+    'portugal vs dr congo': '14:00',
+    'england vs croatia': '17:00',
+    'ghana vs panama': '20:00',
+    'czechia vs south africa': '13:00',
+    'switzerland vs bosnia and herzegovina': '16:00',
+    'uzbekistan vs colombia': '23:00',
 }
 
 def get_hora_arg(home, away):
@@ -222,6 +235,17 @@ section[data-testid="stSidebar"] { display: none; }
 }
 .live-text { font-size: 0.75rem; color: #f2784d; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
 
+
+@media (max-width: 768px) {
+    .block-container { padding: 1rem 1rem !important; }
+    .hero-title { font-size: 2rem !important; }
+    .kpi-value { font-size: 2rem !important; }
+    .match-score { font-size: 1.2rem !important; }
+    .match-team { font-size: 0.78rem !important; }
+    .match-card { padding: 12px 14px !important; }
+    .next-card { padding: 12px 14px !important; }
+    .match-badge { display: none !important; }
+}
 @keyframes fadeSlideIn {
     from { opacity: 0; transform: translateY(8px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -467,7 +491,11 @@ else:
             hora_utc = row["fecha"]
             if hora_utc.hour == 0 and hora_utc.minute == 0:
                 hora_real = get_hora_arg(row["home"], row["away"])
-                fecha_str = f"{hora_utc.strftime(chr(37)+'d %b')} · {hora_real} ARG" if hora_real else hora_utc.strftime("%d %b") + " · Hora a confirmar"
+                fecha_base2 = hora_utc.strftime("%d %b")
+                if hora_real:
+                    fecha_str = fecha_base2 + " · " + hora_real + " ARG"
+                else:
+                    fecha_str = fecha_base2 + " · Hora a confirmar"
             else:
                 fecha_arg = hora_utc - timedelta(hours=3)
                 fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
@@ -491,18 +519,18 @@ def match_card(row):
     ganador = row.get("ganador","")
     css = "home-win" if ganador=="HOME_TEAM" else ("away-win" if ganador=="AWAY_TEAM" else "draw")
     return f"""<div class='match-card {css}'>
-        <div style='display:flex;justify-content:space-between;align-items:center'>
-            <div style='flex:2;text-align:right'>
+        <div style='display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px'>
+            <div style='flex:2;min-width:80px;text-align:right'>
                 <div class='match-team'>{row['home']}</div>
             </div>
-            <div style='flex:1.5;text-align:center;padding:0 12px'>
+            <div style='flex:1;min-width:70px;text-align:center;padding:0 8px'>
                 <div class='match-score'>{gh} — {ga}</div>
                 <div class='match-meta'>{fecha_str}</div>
             </div>
-            <div style='flex:2'>
+            <div style='flex:2;min-width:80px'>
                 <div class='match-team'>{row['away']}</div>
             </div>
-            <div style='margin-left:12px'><span class='match-badge'>{grupo_txt}</span></div>
+            <div style='margin-left:8px'><span class='match-badge'>{grupo_txt}</span></div>
         </div>
     </div>"""
 

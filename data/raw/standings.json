@@ -624,8 +624,8 @@
           "draw": 1,
           "lost": 0,
           "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0
         },
         {
@@ -634,7 +634,7 @@
             "id": 758,
             "name": "Uruguay",
             "shortName": "Uruguay",
-            "tla": "URY",
+            "tla": "URU",
             "crest": "https://crests.football-data.org/758.svg"
           },
           "playedGames": 1,
@@ -643,8 +643,8 @@
           "draw": 1,
           "lost": 0,
           "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0
         },
         {

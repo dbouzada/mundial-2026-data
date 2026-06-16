@@ -2,21 +2,8 @@ name: Mundial 2026 — Data Pipeline
 
 on:
   schedule:
-    - cron: "0 * * * *"    # cada hora — GitHub respeta esto en free tier
-    - cron: "30 * * * *"   # y a la media hora — efectivamente cada 30 minutos
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "ingestion/**"     # también corre si actualizás el script
-
-jobs:name: Mundial 2026 — Data Pipeline
-
-on:
-  schedule:
     # Horario de partidos en ARG: 13hs a 03hs (UTC = ARG + 3)
     # Eso es 16:00 UTC a 06:00 UTC del día siguiente
-    # Corremos cada 10 minutos en esa franja
     - cron: "*/10 16-23 * * *"   # 13:00 a 19:50 ARG
     - cron: "*/10 0-6 * * *"     # 21:00 a 02:50 ARG (cruza medianoche UTC)
     # Fuera de ese horario, cada hora para no perder nada
@@ -28,34 +15,6 @@ on:
       - "ingestion/**"
 
 jobs:
-  fetch-and-commit:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: pip install requests pandas
-
-      - name: Run ingestion script
-        env:
-          FD_API_KEY: ${{ secrets.FD_API_KEY }}
-          AF_API_KEY: ${{ secrets.AF_API_KEY }}
-        run: python ingestion/fetch_data.py
-
-      - name: Commit & push data
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "🔄 Data update $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
   fetch-and-commit:
     runs-on: ubuntu-latest
 

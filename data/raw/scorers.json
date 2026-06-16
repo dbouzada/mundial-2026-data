@@ -1,5 +1,5 @@
 {
-  "count": 40,
+  "count": 43,
   "filters": {
     "season": "2026",
     "limit": 50
@@ -137,6 +137,37 @@
         "clubColors": "White / Black",
         "venue": null,
         "lastUpdated": "2026-04-17T11:43:48Z"
+      },
+      "playedMatches": 1,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 3374,
+        "name": "Kylian Mbappé",
+        "firstName": "Kylian",
+        "lastName": "Mbappé",
+        "dateOfBirth": "1998-12-20",
+        "nationality": "France",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 773,
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
+        "address": "87 Boulevard de Grenelle Paris 75738",
+        "website": "http://www.fff.fr",
+        "founded": 1919,
+        "clubColors": "Blue / White / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:18Z"
       },
       "playedMatches": 1,
       "goals": 2,
@@ -1253,6 +1284,68 @@
         "clubColors": "White / Green / Red",
         "venue": null,
         "lastUpdated": "2022-04-02T10:38:42Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 172762,
+        "name": "Bradley Barcola",
+        "firstName": "Bradley",
+        "lastName": "Barcola",
+        "dateOfBirth": "2002-09-02",
+        "nationality": "France",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 773,
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
+        "address": "87 Boulevard de Grenelle Paris 75738",
+        "website": "http://www.fff.fr",
+        "founded": 1919,
+        "clubColors": "Blue / White / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:18Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 265040,
+        "name": "Ibrahim M'Baye",
+        "firstName": "Ibrahim",
+        "lastName": "Mbaye",
+        "dateOfBirth": "2008-01-24",
+        "nationality": "Senegal",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 804,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg",
+        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
+        "website": "http://www.fsfoot.sn",
+        "founded": 1960,
+        "clubColors": "White / Green",
+        "venue": null,
+        "lastUpdated": "2022-04-02T10:41:30Z"
       },
       "playedMatches": 1,
       "goals": 1,

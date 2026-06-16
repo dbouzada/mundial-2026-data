@@ -36,6 +36,10 @@ HORARIOS_ARG = {
     'czechia vs south africa': '13:00',
     'switzerland vs bosnia and herzegovina': '16:00',
     'uzbekistan vs colombia': '23:00',
+    'portugal vs congo dr': '14:00',
+    'portugal vs dr congo': '14:00',
+    'switzerland vs bosnia-herzegovina': '16:00',
+    'switzerland vs bosnia and herzegovina': '16:00',
 }
 
 def get_hora_arg(home, away):
@@ -60,7 +64,7 @@ section[data-testid="stSidebar"] { display: none; }
 
 .hero-title {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 3rem;
+    font-size: 4.2rem;
     font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1;
@@ -894,8 +898,13 @@ if arg.empty and arg_up.empty:
 else:
     if not arg_up.empty:
         prox = arg_up.sort_values("fecha").iloc[0]
-        fecha_str = prox["fecha"].strftime("%d %b · %H:%M UTC") if pd.notna(prox["fecha"]) else "—"
         rival = prox["away"] if prox["home"]=="Argentina" else prox["home"]
+        if pd.notna(prox["fecha"]):
+            fecha_base3 = prox["fecha"].strftime("%d %b")
+            hora_real3 = get_hora_arg(prox["home"], prox["away"])
+            fecha_str = f"{fecha_base3} · {hora_real3} ARG" if hora_real3 else f"{fecha_base3} · Hora a confirmar"
+        else:
+            fecha_str = "—"
         st.markdown(f"""<div style='background:#0d0d1a;border:1px solid rgba(200,242,77,0.12);border-radius:14px;padding:20px 24px;margin-bottom:24px'>
             <div style='font-size:0.68rem;font-weight:600;color:#4d9df2;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px'>Próximo partido · {fecha_str}</div>
             <div style='font-size:1.2rem;font-weight:500'>Argentina vs {rival}</div>

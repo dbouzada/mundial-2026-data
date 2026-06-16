@@ -529,6 +529,25 @@
         {
           "position": 1,
           "team": {
+            "id": 783,
+            "name": "New Zealand",
+            "shortName": "New Zealand",
+            "tla": "NZL",
+            "crest": "https://crests.football-data.org/783.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 805,
             "name": "Belgium",
             "shortName": "Belgium",
@@ -546,7 +565,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 825,
             "name": "Egypt",
@@ -565,7 +584,7 @@
           "goalDifference": 0
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 840,
             "name": "Iran",
@@ -573,34 +592,15 @@
             "tla": "IRN",
             "crest": "https://crests.football-data.org/iran.svg"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "form": null,
           "won": 0,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "points": 0,
           "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 783,
-            "name": "New Zealand",
-            "shortName": "New Zealand",
-            "tla": "NZL",
-            "crest": "https://crests.football-data.org/783.svg"
-          },
-          "playedGames": 0,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
+          "goalsAgainst": 1,
+          "goalDifference": -1
         }
       ]
     },

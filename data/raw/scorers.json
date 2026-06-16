@@ -1,5 +1,5 @@
 {
-  "count": 37,
+  "count": 39,
   "filters": {
     "season": "2026",
     "limit": 50
@@ -1160,6 +1160,68 @@
         "clubColors": "Sky Blue / White / Black",
         "venue": null,
         "lastUpdated": "2026-06-16T00:37:18Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 118981,
+        "name": "Elijah Just",
+        "firstName": "Elijah",
+        "lastName": "Just",
+        "dateOfBirth": "2000-05-01",
+        "nationality": "New Zealand",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-06-11T09:54:11Z"
+      },
+      "team": {
+        "id": 783,
+        "name": "New Zealand",
+        "shortName": "New Zealand",
+        "tla": "NZL",
+        "crest": "https://crests.football-data.org/783.svg",
+        "address": "North Harbour Stadium, Stadium Drive Auckland null",
+        "website": "http://www.nzfootball.co.nz",
+        "founded": 1891,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:43:48Z"
+      },
+      "playedMatches": 1,
+      "goals": 1,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 3804,
+        "name": "Ramin Rezaeian",
+        "firstName": "Ramin",
+        "lastName": "Rezaeian",
+        "dateOfBirth": "1990-03-21",
+        "nationality": "Iran",
+        "section": "Defence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2023-11-17T09:49:52Z"
+      },
+      "team": {
+        "id": 840,
+        "name": "Iran",
+        "shortName": "Iran",
+        "tla": "IRN",
+        "crest": "https://crests.football-data.org/iran.svg",
+        "address": "No. 2/2 Third St. Seoul Avenue Tehrān 19958-7359",
+        "website": "http://www.ffiri.ir",
+        "founded": 1920,
+        "clubColors": "White / Green / Red",
+        "venue": null,
+        "lastUpdated": "2022-04-02T10:38:42Z"
       },
       "playedMatches": 1,
       "goals": 1,

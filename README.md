@@ -9,10 +9,12 @@ Pipeline de datos en tiempo (casi) real del Mundial 2026, con ingesta automatiza
 ## 📐 Arquitectura
 
 ```
-football-data.org (API)
+cron-job.org (trigger externo, cada 10 min)
          ↓
-GitHub Actions (cron automático)
+GitHub Actions (workflow_dispatch)
   └── ingestion/fetch_data.py
+         ↓
+football-data.org (API)
          ↓
 data/processed/*.csv  (almacenamiento público en GitHub)
          ↓
@@ -21,7 +23,7 @@ Streamlit Cloud (dashboard/app.py)
   └── Cache de 30s + boton de refresh manual
 ```
 
-El pipeline funciona sin servidor propio ni base de datos: GitHub Actions hace de orquestador y el repo de GitHub hace de almacenamiento intermedio. Streamlit Cloud lee esos CSVs públicos y los renderiza.
+El pipeline funciona sin servidor propio ni base de datos: cron-job.org dispara el trigger al minuto exacto, GitHub Actions hace de orquestador (corre el script y commitea), y el repo de GitHub hace de almacenamiento intermedio. Streamlit Cloud lee esos CSVs públicos y los renderiza.
 
 ---
 
@@ -85,17 +87,37 @@ Se obtiene gratis registrándose en football-data.org/client/register.
 
 GitHub Actions corre el script de ingesta y commitea los CSVs actualizados automáticamente, sin servidor propio.
 
-**Frecuencia del cron:**
-- 13:00 a 02:50 ARG (franja de partidos) → cada 10 minutos
-- 04:00 a 12:00 ARG (sin partidos) → cada hora
+**⚠️ Nota sobre el scheduler de GitHub:** inicialmente el plan era usar el `schedule` (cron) nativo de GitHub Actions para disparar la ingesta cada 10 minutos. En la práctica, GitHub Free **no respeta esos intervalos cortos** — los runs scheduled llegaron a espaciarse varias horas entre sí, incluso con múltiples entradas de cron configuradas. Es una limitación conocida de la plataforma en cuentas gratuitas, no un error de configuración.
 
-También se puede disparar manualmente desde la pestaña Actions → Run workflow, o automáticamente al hacer push de cambios en `ingestion/`.
+**Solución adoptada:** se sacó el `schedule` del workflow y se reemplazó por un disparador externo usando [cron-job.org](https://cron-job.org) (gratis), que llama a la API de GitHub (`workflow_dispatch`) cada 10 minutos vía `POST`:
+
+```
+POST https://api.github.com/repos/dbouzada/mundial-2026-data/actions/workflows/pipeline.yml/dispatches
+Headers:
+  Authorization: Bearer <personal access token>
+  Accept: application/vnd.github+json
+  Content-Type: application/json
+Body:
+  {"ref":"main"}
+```
+
+Esto sí es confiable al minuto, porque cron-job.org no tiene las limitaciones de scheduling de GitHub.
+
+**Triggers actuales del workflow:**
+- `workflow_dispatch` — disparado externamente por cron-job.org cada 10 minutos
+- `push` a `main` con cambios en `ingestion/` — corre automáticamente si se actualiza el script
+
+**Token de GitHub usado por cron-job.org:**
+- Fine-grained personal access token, scope limitado al repo `mundial-2026-data`
+- Permiso necesario: **Actions → Read and write** (con solo "Read" devuelve 403 al intentar disparar el workflow)
+
+**Manejo de corridas simultáneas:** el step de commit hace `git pull --rebase --autostash` antes de `git push`, para evitar que dos ejecuciones cercanas en el tiempo se pisen al subir los CSVs.
 
 **Secrets necesarios** (Settings → Secrets and variables → Actions):
 - `FD_API_KEY`
 
 **Permisos requeridos** (Settings → Actions → General → Workflow permissions):
-- Read and write permissions (para que el bot pueda commitear los CSVs)
+- *Read and write permissions* (para que el bot pueda commitear los CSVs)
 
 ---
 
@@ -113,6 +135,7 @@ Construido en Streamlit + Plotly, diseño dark theme custom, una sola página sc
 - Rendimiento por equipo — puntos, scatter ofensivo/defensivo, diferencia de goles, radar comparativo
 - Análisis avanzado — treemap de goles, combo chart GF/GC/DG
 - Argentina — sección dedicada con próximo partido, historial y comparativa vs rivales
+- Fase Eliminatoria — bracket en árbol (16avos a Final + 3er puesto), colapsado en un expander al final de la página. Se activa solo cuando arranca la fase eliminatoria; antes de eso muestra un mensaje explicando que los cruces dependen del cierre de la fase de grupos
 
 **Cache:** `st.cache_data(ttl=30)` + boton manual de actualizar que limpia cache y fuerza recarga.
 
@@ -158,9 +181,10 @@ streamlit run dashboard/app.py
 ## 📌 Decisiones de diseño
 
 - Sin base de datos: para un proyecto de este tamaño, CSVs versionados en Git son suficiente y eliminan infraestructura extra.
-- GitHub Actions como cron: evita tener un servidor corriendo 24/7 solo para la ingesta.
+- GitHub Actions como orquestador, no como scheduler: el cron nativo de GitHub Actions no es confiable en cuentas free para intervalos cortos (en pruebas reales, runs programados cada 10 minutos llegaron a espaciarse varias horas). Se resolvió moviendo el disparo a cron-job.org, que llama a la API de GitHub vía `workflow_dispatch` con precisión al minuto.
 - Horarios hardcodeados para Argentina: la API de football-data.org no siempre confirma el horario exacto de partidos futuros (devuelve 00:00 UTC como placeholder), así que se mantiene un diccionario con los horarios oficiales confirmados por FIFA como fallback.
 - Streamlit en vez de un framework JS: prioriza velocidad de desarrollo y mantenimiento simple sobre personalización visual extrema, dado que el objetivo es un dashboard de datos, no un producto consumer.
+- Bracket de eliminatorias sin inventar cruces: la API devuelve `null` en los equipos de partidos de fase eliminatoria todavía no definidos (no manda placeholders tipo "1A"). Además, los cruces exactos de 16avos solo se conocen al cerrar la fase de grupos, porque dependen de qué terceros lugares clasifican. Por eso el dashboard muestra "Por definir" en esos casos en vez de simular un cruce que todavía no es oficial — apenas la API resuelve el nombre real, se actualiza solo en la siguiente corrida del pipeline, sin intervención manual.
 
 ---
 

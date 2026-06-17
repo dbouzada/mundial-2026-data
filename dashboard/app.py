@@ -989,49 +989,106 @@ FASES_LABEL = {
     "FINAL": "Final",
 }
 
+# ── FASE ELIMINATORIA (BRACKET EN ÁRBOL) ───────────────────────────────────────
+FASES_ORDEN = ["LAST_32","LAST_16","QUARTER_FINALS","SEMI_FINALS","THIRD_PLACE","FINAL"]
+FASES_LABEL = {
+    "LAST_32": "16avos",
+    "LAST_16": "8avos",
+    "QUARTER_FINALS": "Cuartos",
+    "SEMI_FINALS": "Semis",
+    "THIRD_PLACE": "3er puesto",
+    "FINAL": "Final",
+}
+# Alturas relativas: cada ronda tiene la mitad de partidos que la anterior,
+# así que cada card ocupa el doble de espacio vertical que en la ronda previa.
+CARD_H = 76     # alto base de una card en 16avos (px)
+GAP_H  = 14     # separación entre cards en 16avos (px)
+
 elim = matches[matches["etapa"].isin(FASES_ORDEN)].copy() if "etapa" in matches.columns else pd.DataFrame()
+elim_bracket = elim[elim["etapa"] != "THIRD_PLACE"].copy()  # 3er puesto va aparte, no es parte del árbol principal
+
+def match_card_html(row, top_offset):
+    home = row["home"] if pd.notna(row["home"]) else "Por definir"
+    away = row["away"] if pd.notna(row["away"]) else "Por definir"
+    jugado = row["estado"] == "FINISHED"
+
+    if jugado:
+        gh = int(row["goles_home"]) if pd.notna(row["goles_home"]) else 0
+        ga = int(row["goles_away"]) if pd.notna(row["goles_away"]) else 0
+        home_style = f"color:{ACCENT};font-weight:700" if gh>ga else "color:#555566"
+        away_style = f"color:{ACCENT};font-weight:700" if ga>gh else "color:#555566"
+        score = f"<span style='font-family:Space Grotesk;font-size:0.8rem;color:#c8c8d8'>{gh} — {ga}</span>"
+    else:
+        home_style = "color:#c8c8d8"
+        away_style = "color:#c8c8d8"
+        score = "<span style='font-size:0.62rem;color:#3a3a55'>vs</span>"
+
+    return f"""<div style='position:absolute;top:{top_offset}px;left:0;right:8px;background:#0d0d1a;border:1px solid #1a1a2e;border-radius:8px;padding:8px 10px;height:{CARD_H}px;box-sizing:border-box'>
+        <div style='display:flex;justify-content:space-between;font-size:0.72rem;{home_style};margin-bottom:2px'><span>{home}</span></div>
+        <div style='text-align:center'>{score}</div>
+        <div style='display:flex;justify-content:space-between;font-size:0.72rem;{away_style};margin-top:2px'><span>{away}</span></div>
+    </div>"""
+
+def connector_svg(n_partidos_ronda, fase_height, card_h):
+    """Líneas que conectan cada par de cards de una ronda hacia un punto medio (la siguiente ronda)."""
+    lines = []
+    paso = fase_height / n_partidos_ronda
+    for i in range(0, n_partidos_ronda, 2):
+        y1 = i*paso + card_h/2
+        y2 = (i+1)*paso + card_h/2
+        ym = (y1+y2)/2
+        lines.append(f"<path d='M0,{y1} H10 V{ym} H20' stroke='#2a2a45' stroke-width='1.5' fill='none'/>")
+        lines.append(f"<path d='M0,{y2} H10' stroke='#2a2a45' stroke-width='1.5' fill='none'/>")
+    return f"<svg width='20' height='{fase_height}' style='display:block'>{''.join(lines)}</svg>"
 
 with st.expander("🏆 Fase Eliminatoria — Bracket (16avos en adelante)", expanded=False):
-    if elim.empty:
-        st.markdown("<p style='color:#666677;font-size:0.85rem'>La fase eliminatoria todavía no arrancó. En cuanto haya partidos de 16avos en adelante, van a aparecer acá.</p>", unsafe_allow_html=True)
+    if elim_bracket.empty:
+        st.markdown("<p style='color:#666677;font-size:0.85rem'>La fase eliminatoria todavía no arrancó. En cuanto haya partidos de 16avos en adelante, van a aparecer acá. Los cruces exactos (qué grupo enfrenta a qué tercero) recién se conocen al cerrar la fase de grupos, así que hasta entonces vas a ver \"Por definir\".</p>", unsafe_allow_html=True)
     else:
-        fases_presentes = [f for f in FASES_ORDEN if f in elim["etapa"].unique()]
-        cols_bracket = st.columns(len(fases_presentes))
+        fases_presentes = [f for f in FASES_ORDEN if f in elim_bracket["etapa"].unique()]
+        n_primera_fase = len(elim_bracket[elim_bracket["etapa"]==fases_presentes[0]])
+        fase_height = n_primera_fase * (CARD_H + GAP_H)
 
-        for col, fase in zip(cols_bracket, fases_presentes):
-            with col:
-                st.markdown(f"<div style='text-align:center;font-size:0.7rem;font-weight:700;color:#666677;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px'>{FASES_LABEL.get(fase,fase)}</div>", unsafe_allow_html=True)
-                df_fase = elim[elim["etapa"]==fase].sort_values("fecha")
+        # Construimos columnas: [fase1, conector, fase2, conector, fase3, ...]
+        widths = []
+        for i in range(len(fases_presentes)):
+            widths.append(3)
+            if i < len(fases_presentes)-1:
+                widths.append(0.4)
+        cols = st.columns(widths)
 
-                for _, row in df_fase.iterrows():
-                    home = row["home"] if pd.notna(row["home"]) else "Por definir"
-                    away = row["away"] if pd.notna(row["away"]) else "Por definir"
-                    jugado = row["estado"] == "FINISHED"
+        col_idx = 0
+        for f_idx, fase in enumerate(fases_presentes):
+            df_fase = elim_bracket[elim_bracket["etapa"]==fase].sort_values("fecha").reset_index(drop=True)
+            n_partidos = len(df_fase)
+            paso = fase_height / n_partidos
 
-                    if jugado:
-                        gh = int(row["goles_home"]) if pd.notna(row["goles_home"]) else 0
-                        ga = int(row["goles_away"]) if pd.notna(row["goles_away"]) else 0
-                        gana_home = gh > ga
-                        gana_away = ga > gh
-                        home_style = f"color:{ACCENT};font-weight:700" if gana_home else "color:#555566"
-                        away_style = f"color:{ACCENT};font-weight:700" if gana_away else "color:#555566"
-                        score_html = f"<span style='font-family:Space Grotesk;font-size:0.85rem'>{gh}</span> — <span style='font-family:Space Grotesk;font-size:0.85rem'>{ga}</span>"
-                    else:
-                        home_style = "color:#c8c8d8"
-                        away_style = "color:#c8c8d8"
-                        score_html = "<span style='font-size:0.65rem;color:#444460'>vs</span>"
+            with cols[col_idx]:
+                st.markdown(f"<div style='text-align:center;font-size:0.68rem;font-weight:700;color:#666677;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:10px'>{FASES_LABEL.get(fase,fase)}</div>", unsafe_allow_html=True)
+                html_cards = f"<div style='position:relative;height:{fase_height}px'>"
+                for i, row in df_fase.iterrows():
+                    top = i*paso + (paso - CARD_H)/2
+                    html_cards += match_card_html(row, int(top))
+                html_cards += "</div>"
+                st.markdown(html_cards, unsafe_allow_html=True)
+            col_idx += 1
 
-                    st.markdown(f"""<div style='background:#0d0d1a;border:1px solid #1a1a2e;border-radius:10px;padding:10px 12px;margin-bottom:10px'>
-                        <div style='display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;{home_style}'>
-                            <span>{home}</span>
-                        </div>
-                        <div style='text-align:center;padding:3px 0'>{score_html}</div>
-                        <div style='display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;{away_style}'>
-                            <span>{away}</span>
-                        </div>
-                    </div>""", unsafe_allow_html=True)
+            if f_idx < len(fases_presentes)-1:
+                with cols[col_idx]:
+                    st.markdown(f"<div style='height:34px'></div>{connector_svg(n_partidos, fase_height, CARD_H)}", unsafe_allow_html=True)
+                col_idx += 1
 
-        st.markdown("<p style='font-size:0.68rem;color:#444460;margin-top:8px'>Los equipos marcados como \"Por definir\" dependen del resultado de cruces anteriores que todavía no se jugaron.</p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size:0.66rem;color:#444460;margin-top:16px'>Los equipos marcados como \"Por definir\" dependen de cruces anteriores sin resolver, o de qué terceros lugares clasifiquen al cerrar la fase de grupos.</p>", unsafe_allow_html=True)
+
+    # 3er puesto aparte, como nota al margen del árbol principal
+    tercer_puesto = elim[elim["etapa"]=="THIRD_PLACE"]
+    if not tercer_puesto.empty:
+        st.markdown("<div style='margin-top:24px;padding-top:16px;border-top:1px solid #1a1a2e'></div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='font-size:0.68rem;font-weight:700;color:#666677;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:10px'>{FASES_LABEL['THIRD_PLACE']}</div>", unsafe_allow_html=True)
+        col_tp, _ = st.columns([1,3])
+        with col_tp:
+            for _, row in tercer_puesto.iterrows():
+                st.markdown(f"<div style='position:relative;height:{CARD_H}px'>{match_card_html(row,0)}</div>", unsafe_allow_html=True)
 
 # ── FOOTER ────────────────────────────────────────────────────────────────────
 st.markdown("<br><br>", unsafe_allow_html=True)

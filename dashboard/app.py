@@ -978,6 +978,61 @@ else:
             fig_a.update_layout(**theme(height=300), barmode="group")
             st.plotly_chart(fig_a, use_container_width=True)
 
+# ── FASE ELIMINATORIA (BRACKET) ────────────────────────────────────────────────
+FASES_ORDEN = ["LAST_32","LAST_16","QUARTER_FINALS","SEMI_FINALS","THIRD_PLACE","FINAL"]
+FASES_LABEL = {
+    "LAST_32": "16avos",
+    "LAST_16": "8avos",
+    "QUARTER_FINALS": "Cuartos",
+    "SEMI_FINALS": "Semis",
+    "THIRD_PLACE": "3er puesto",
+    "FINAL": "Final",
+}
+
+elim = matches[matches["etapa"].isin(FASES_ORDEN)].copy() if "etapa" in matches.columns else pd.DataFrame()
+
+with st.expander("🏆 Fase Eliminatoria — Bracket (16avos en adelante)", expanded=False):
+    if elim.empty:
+        st.markdown("<p style='color:#666677;font-size:0.85rem'>La fase eliminatoria todavía no arrancó. En cuanto haya partidos de 16avos en adelante, van a aparecer acá.</p>", unsafe_allow_html=True)
+    else:
+        fases_presentes = [f for f in FASES_ORDEN if f in elim["etapa"].unique()]
+        cols_bracket = st.columns(len(fases_presentes))
+
+        for col, fase in zip(cols_bracket, fases_presentes):
+            with col:
+                st.markdown(f"<div style='text-align:center;font-size:0.7rem;font-weight:700;color:#666677;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px'>{FASES_LABEL.get(fase,fase)}</div>", unsafe_allow_html=True)
+                df_fase = elim[elim["etapa"]==fase].sort_values("fecha")
+
+                for _, row in df_fase.iterrows():
+                    home = row["home"] if pd.notna(row["home"]) else "Por definir"
+                    away = row["away"] if pd.notna(row["away"]) else "Por definir"
+                    jugado = row["estado"] == "FINISHED"
+
+                    if jugado:
+                        gh = int(row["goles_home"]) if pd.notna(row["goles_home"]) else 0
+                        ga = int(row["goles_away"]) if pd.notna(row["goles_away"]) else 0
+                        gana_home = gh > ga
+                        gana_away = ga > gh
+                        home_style = f"color:{ACCENT};font-weight:700" if gana_home else "color:#555566"
+                        away_style = f"color:{ACCENT};font-weight:700" if gana_away else "color:#555566"
+                        score_html = f"<span style='font-family:Space Grotesk;font-size:0.85rem'>{gh}</span> — <span style='font-family:Space Grotesk;font-size:0.85rem'>{ga}</span>"
+                    else:
+                        home_style = "color:#c8c8d8"
+                        away_style = "color:#c8c8d8"
+                        score_html = "<span style='font-size:0.65rem;color:#444460'>vs</span>"
+
+                    st.markdown(f"""<div style='background:#0d0d1a;border:1px solid #1a1a2e;border-radius:10px;padding:10px 12px;margin-bottom:10px'>
+                        <div style='display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;{home_style}'>
+                            <span>{home}</span>
+                        </div>
+                        <div style='text-align:center;padding:3px 0'>{score_html}</div>
+                        <div style='display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;{away_style}'>
+                            <span>{away}</span>
+                        </div>
+                    </div>""", unsafe_allow_html=True)
+
+        st.markdown("<p style='font-size:0.68rem;color:#444460;margin-top:8px'>Los equipos marcados como \"Por definir\" dependen del resultado de cruces anteriores que todavía no se jugaron.</p>", unsafe_allow_html=True)
+
 # ── FOOTER ────────────────────────────────────────────────────────────────────
 st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown(f"""<div style='border-top:1px solid #1a1a2e;padding:32px 0;display:flex;justify-content:space-between;align-items:center'>

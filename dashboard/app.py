@@ -1101,6 +1101,6 @@ st.markdown(f"""<div style='border-top:1px solid #1a1a2e;padding:32px 0;display:
     </div>
     <div style='display:flex;gap:20px'>
         <a href='https://github.com/dbouzada/mundial-2026-data' style='font-size:0.72rem;color:#33334a;text-decoration:none;letter-spacing:0.05em'>GitHub</a>
-        <a href='https://linkedin.com/in/bouzadadiego' style='font-size:0.72rem;color:#33334a;text-decoration:none;letter-spacing:0.05em'>LinkedIn</a>
+        <a href='https://www.linkedin.com/in/bouzadadiego/' style='font-size:0.72rem;color:#33334a;text-decoration:none;letter-spacing:0.05em'>LinkedIn</a>
     </div>
 </div>""", unsafe_allow_html=True)

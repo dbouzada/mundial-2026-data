@@ -952,35 +952,16 @@
           },
           "playedGames": 1,
           "form": null,
-          "won": 0,
-          "draw": 1,
+          "won": 1,
+          "draw": 0,
           "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
+          "points": 3,
+          "goalsFor": 3,
           "goalsAgainst": 2,
-          "goalDifference": 0
+          "goalDifference": 1
         },
         {
-          "position": 1,
-          "team": {
-            "id": 799,
-            "name": "Croatia",
-            "shortName": "Croatia",
-            "tla": "CRO",
-            "crest": "https://crests.football-data.org/799.svg"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0
-        },
-        {
-          "position": 3,
+          "position": 2,
           "team": {
             "id": 763,
             "name": "Ghana",
@@ -999,7 +980,7 @@
           "goalDifference": 0
         },
         {
-          "position": 3,
+          "position": 2,
           "team": {
             "id": 1836,
             "name": "Panama",
@@ -1016,6 +997,25 @@
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 799,
+            "name": "Croatia",
+            "shortName": "Croatia",
+            "tla": "CRO",
+            "crest": "https://crests.football-data.org/799.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 0,
+          "lost": 1,
+          "points": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDifference": -1
         }
       ]
     }

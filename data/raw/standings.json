@@ -695,6 +695,25 @@
         {
           "position": 1,
           "team": {
+            "id": 8872,
+            "name": "Norway",
+            "shortName": "Norway",
+            "tla": "NOR",
+            "crest": "https://crests.football-data.org/813.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDifference": 3
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 773,
             "name": "France",
             "shortName": "France",
@@ -712,45 +731,7 @@
           "goalDifference": 2
         },
         {
-          "position": 2,
-          "team": {
-            "id": 8062,
-            "name": "Iraq",
-            "shortName": "Iraq",
-            "tla": "IRQ",
-            "crest": "https://crests.football-data.org/iraq.svg"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 8872,
-            "name": "Norway",
-            "shortName": "Norway",
-            "tla": "NOR",
-            "crest": "https://crests.football-data.org/813.svg"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 4,
+          "position": 3,
           "team": {
             "id": 804,
             "name": "Senegal",
@@ -767,6 +748,25 @@
           "goalsFor": 1,
           "goalsAgainst": 3,
           "goalDifference": -2
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 8062,
+            "name": "Iraq",
+            "shortName": "Iraq",
+            "tla": "IRQ",
+            "crest": "https://crests.football-data.org/iraq.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 0,
+          "lost": 1,
+          "points": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "goalDifference": -3
         }
       ]
     },
@@ -778,43 +778,24 @@
         {
           "position": 1,
           "team": {
-            "id": 778,
-            "name": "Algeria",
-            "shortName": "Algeria",
-            "tla": "ALG",
-            "crest": "https://crests.football-data.org/algeria.svg"
-          },
-          "playedGames": 0,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 1,
-          "team": {
             "id": 762,
             "name": "Argentina",
             "shortName": "Argentina",
             "tla": "ARG",
             "crest": "https://crests.football-data.org/762.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "form": null,
-          "won": 0,
+          "won": 1,
           "draw": 0,
           "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
+          "points": 3,
+          "goalsFor": 1,
           "goalsAgainst": 0,
-          "goalDifference": 0
+          "goalDifference": 1
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 8049,
             "name": "Jordan",
@@ -833,7 +814,7 @@
           "goalDifference": 0
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 816,
             "name": "Austria",
@@ -850,6 +831,25 @@
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 778,
+            "name": "Algeria",
+            "shortName": "Algeria",
+            "tla": "ALG",
+            "crest": "https://crests.football-data.org/algeria.svg"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 0,
+          "lost": 1,
+          "points": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1
         }
       ]
     },

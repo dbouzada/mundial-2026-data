@@ -141,35 +141,16 @@
           },
           "playedGames": 2,
           "form": null,
-          "won": 0,
-          "draw": 2,
+          "won": 1,
+          "draw": 1,
           "lost": 0,
-          "points": 2,
-          "goalsFor": 1,
+          "points": 4,
+          "goalsFor": 2,
           "goalsAgainst": 1,
-          "goalDifference": 0
+          "goalDifference": 1
         },
         {
           "position": 3,
-          "team": {
-            "id": 8030,
-            "name": "Qatar",
-            "shortName": "Qatar",
-            "tla": "QAT",
-            "crest": "https://crests.football-data.org/8030.svg"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0
-        },
-        {
-          "position": 4,
           "team": {
             "id": 1060,
             "name": "Bosnia-Herzegovina",
@@ -186,6 +167,25 @@
           "goalsFor": 2,
           "goalsAgainst": 5,
           "goalDifference": -3
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 8030,
+            "name": "Qatar",
+            "shortName": "Qatar",
+            "tla": "QAT",
+            "crest": "https://crests.football-data.org/8030.svg"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDifference": -1
         }
       ]
     },

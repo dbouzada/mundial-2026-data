@@ -331,6 +331,37 @@
     },
     {
       "player": {
+        "id": 8924,
+        "name": "Jonathan David",
+        "firstName": "Jonathan",
+        "lastName": "David",
+        "dateOfBirth": "2000-01-14",
+        "nationality": "Canada",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:00:54Z"
+      },
+      "team": {
+        "id": 828,
+        "name": "Canada",
+        "shortName": "Canada",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg",
+        "address": "null null null",
+        "website": null,
+        "founded": null,
+        "clubColors": null,
+        "venue": null,
+        "lastUpdated": "2022-10-07T08:25:45Z"
+      },
+      "playedMatches": 2,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -1532,37 +1563,6 @@
         "clubColors": "Red / White / Navy Blue",
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:53Z"
-      },
-      "playedMatches": 1,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 16346,
-        "name": "Romano Schmid",
-        "firstName": "Romano",
-        "lastName": "Schmid",
-        "dateOfBirth": "2000-01-27",
-        "nationality": "Austria",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:29Z"
-      },
-      "team": {
-        "id": 816,
-        "name": "Austria",
-        "shortName": "Austria",
-        "tla": "AUT",
-        "crest": "https://crests.football-data.org/816.svg",
-        "address": "Ernst-Happel-Stadion, Sektor A/F, Meiereistraße 7 Wien 1020",
-        "website": "http://www.oefb.at",
-        "founded": 1904,
-        "clubColors": "Red / White / Black",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:43:08Z"
       },
       "playedMatches": 1,
       "goals": 1,

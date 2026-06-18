@@ -361,7 +361,7 @@ try:
     from datetime import datetime, timedelta
     dt_utc = datetime.strptime(ultima_utc, "%Y-%m-%d %H:%M UTC")
     dt_arg = dt_utc - timedelta(hours=3)
-    ultima_arg = dt_arg.strftime("%d/%m/%Y %H:%M") + " (Buenos Aires)"
+    ultima_arg = dt_arg.strftime("%d/%m/%Y %H:%M") + " (Argentina)"
 except:
     ultima_arg = ultima_utc
 st.markdown(f"<p class='update-tag'>Actualizado: {ultima_arg}</p>", unsafe_allow_html=True)

@@ -120,18 +120,37 @@
             "tla": "SUI",
             "crest": "https://crests.football-data.org/788.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 1,
+          "points": 2,
           "goalsFor": 1,
           "goalsAgainst": 1,
           "goalDifference": 0
         },
         {
           "position": 2,
+          "team": {
+            "id": 1060,
+            "name": "Bosnia-Herzegovina",
+            "shortName": "Bosnia-H.",
+            "tla": "BIH",
+            "crest": "https://crests.football-data.org/bosnia.svg"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "points": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0
+        },
+        {
+          "position": 3,
           "team": {
             "id": 828,
             "name": "Canada",
@@ -150,32 +169,13 @@
           "goalDifference": 0
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 8030,
             "name": "Qatar",
             "shortName": "Qatar",
             "tla": "QAT",
             "crest": "https://crests.football-data.org/8030.svg"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 1060,
-            "name": "Bosnia-Herzegovina",
-            "shortName": "Bosnia-H.",
-            "tla": "BIH",
-            "crest": "https://crests.football-data.org/bosnia.svg"
           },
           "playedGames": 1,
           "form": null,

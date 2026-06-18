@@ -1495,7 +1495,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
-      "lastUpdated": "2026-06-18T01:01:10Z",
+      "lastUpdated": "2026-06-18T01:05:22Z",
       "homeTeam": {
         "id": 763,
         "name": "Ghana",
@@ -1511,10 +1511,10 @@
         "crest": "https://crests.football-data.org/panama.svg"
       },
       "score": {
-        "winner": "DRAW",
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "halfTime": {

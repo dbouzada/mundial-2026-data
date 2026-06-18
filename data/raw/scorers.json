@@ -269,6 +269,37 @@
     },
     {
       "player": {
+        "id": 212309,
+        "name": "Johan Manzambi",
+        "firstName": "Johan",
+        "lastName": "Manzambi",
+        "dateOfBirth": "2005-10-14",
+        "nationality": "Switzerland",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:32Z"
+      },
+      "team": {
+        "id": 788,
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
+        "address": "Worbstrasse 48 Bern 3000",
+        "website": "http://www.football.ch",
+        "founded": 1895,
+        "clubColors": "Red / White",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:31Z"
+      },
+      "playedMatches": 2,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -1532,37 +1563,6 @@
         "clubColors": "Red / White / Black",
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:08Z"
-      },
-      "playedMatches": 1,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 244174,
-        "name": "Ali Olwan",
-        "firstName": "Ali",
-        "lastName": "Olwan",
-        "dateOfBirth": "2000-03-26",
-        "nationality": "Jordan",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2023-11-30T09:49:41Z"
-      },
-      "team": {
-        "id": 8049,
-        "name": "Jordan",
-        "shortName": "Jordan",
-        "tla": "JOR",
-        "crest": "https://crests.football-data.org/8049.png",
-        "address": "Al-Hussein Youth City Amman 11196",
-        "website": "http://www.jfa.com.jo",
-        "founded": 1949,
-        "clubColors": "Red / White",
-        "venue": null,
-        "lastUpdated": "2026-04-17T11:47:01Z"
       },
       "playedMatches": 1,
       "goals": 1,

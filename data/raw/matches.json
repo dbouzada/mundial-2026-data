@@ -1891,7 +1891,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "lastUpdated": "2026-06-19T19:15:04Z",
+      "lastUpdated": "2026-06-19T19:19:52Z",
       "homeTeam": {
         "id": 771,
         "name": "United States",
@@ -1907,10 +1907,10 @@
         "crest": "https://crests.football-data.org/779.svg"
       },
       "score": {
-        "winner": "DRAW",
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         },
         "halfTime": {

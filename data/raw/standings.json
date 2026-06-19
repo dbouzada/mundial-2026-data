@@ -197,6 +197,25 @@
         {
           "position": 1,
           "team": {
+            "id": 815,
+            "name": "Morocco",
+            "shortName": "Morocco",
+            "tla": "MAR",
+            "crest": "https://crests.football-data.org/morocco.svg"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 8873,
             "name": "Scotland",
             "shortName": "Scotland",
@@ -206,28 +225,9 @@
           "playedGames": 2,
           "form": null,
           "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 815,
-            "name": "Morocco",
-            "shortName": "Morocco",
-            "tla": "MAR",
-            "crest": "https://crests.football-data.org/morocco.svg"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
           "goalsFor": 1,
           "goalsAgainst": 1,
           "goalDifference": 0

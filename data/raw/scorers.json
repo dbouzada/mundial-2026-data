@@ -52,6 +52,37 @@
     },
     {
       "player": {
+        "id": 8924,
+        "name": "Jonathan David",
+        "firstName": "Jonathan",
+        "lastName": "David",
+        "dateOfBirth": "2000-01-14",
+        "nationality": "Canada",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:00:54Z"
+      },
+      "team": {
+        "id": 828,
+        "name": "Canada",
+        "shortName": "Canada",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg",
+        "address": "null null null",
+        "website": null,
+        "founded": null,
+        "clubColors": null,
+        "venue": null,
+        "lastUpdated": "2022-10-07T08:25:45Z"
+      },
+      "playedMatches": 2,
+      "goals": 3,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 15958,
         "name": "Cyle Larin",
         "firstName": "Cyle",
@@ -323,37 +354,6 @@
         "clubColors": "Red / White",
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:31Z"
-      },
-      "playedMatches": 2,
-      "goals": 2,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 8924,
-        "name": "Jonathan David",
-        "firstName": "Jonathan",
-        "lastName": "David",
-        "dateOfBirth": "2000-01-14",
-        "nationality": "Canada",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:00:54Z"
-      },
-      "team": {
-        "id": 828,
-        "name": "Canada",
-        "shortName": "Canada",
-        "tla": "CAN",
-        "crest": "https://crests.football-data.org/canada.svg",
-        "address": "null null null",
-        "website": null,
-        "founded": null,
-        "clubColors": null,
-        "venue": null,
-        "lastUpdated": "2022-10-07T08:25:45Z"
       },
       "playedMatches": 2,
       "goals": 2,

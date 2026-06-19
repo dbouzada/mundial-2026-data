@@ -1,6 +1,6 @@
 grupo,posicion,equipo,equipo_id,pj,ganados,empatados,perdidos,gf,gc,dg,puntos
-Group A,1,Mexico,769,2,1,1,0,2,0,2,4
-Group A,2,South Korea,772,2,1,1,0,2,1,1,4
+Group A,1,Mexico,769,2,2,0,0,3,0,3,6
+Group A,2,South Korea,772,2,1,0,1,2,2,0,3
 Group A,3,Czechia,798,2,0,1,1,2,3,-1,1
 Group A,4,South Africa,774,2,0,1,1,1,3,-2,1
 Group B,1,Canada,828,2,1,1,0,7,1,6,4

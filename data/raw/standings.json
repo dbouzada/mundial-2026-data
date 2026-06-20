@@ -452,34 +452,15 @@
             "tla": "SWE",
             "crest": "https://crests.football-data.org/792.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 3,
+          "points": 4,
           "goalsFor": 5,
           "goalsAgainst": 1,
           "goalDifference": 4
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 766,
-            "name": "Japan",
-            "shortName": "Japan",
-            "tla": "JPN",
-            "crest": "https://crests.football-data.org/766.svg"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0
         },
         {
           "position": 2,
@@ -489,6 +470,25 @@
             "shortName": "Netherlands",
             "tla": "NED",
             "crest": "https://crests.football-data.org/8601.svg"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "points": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": 766,
+            "name": "Japan",
+            "shortName": "Japan",
+            "tla": "JPN",
+            "crest": "https://crests.football-data.org/766.svg"
           },
           "playedGames": 1,
           "form": null,

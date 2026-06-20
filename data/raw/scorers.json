@@ -486,6 +486,37 @@
     },
     {
       "player": {
+        "id": 7459,
+        "name": "Cody Gakpo",
+        "firstName": "Cody",
+        "lastName": "Gakpo",
+        "dateOfBirth": "1999-05-07",
+        "nationality": "Netherlands",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 8601,
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg",
+        "address": "Woudenbergseweg 56-58 / Postbus 515 Zeist 3700 AM",
+        "website": "http://www.knvb.nl",
+        "founded": 1889,
+        "clubColors": "Orange / White / Blue",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:48Z"
+      },
+      "playedMatches": 2,
+      "goals": 2,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -1163,7 +1194,7 @@
       },
       "playedMatches": 2,
       "goals": 1,
-      "assists": null,
+      "assists": 1,
       "penalties": null
     },
     {
@@ -1256,7 +1287,7 @@
       },
       "playedMatches": 2,
       "goals": 1,
-      "assists": 2,
+      "assists": 3,
       "penalties": null
     },
     {
@@ -1532,37 +1563,6 @@
         "clubColors": "Blue / White / Red",
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:18Z"
-      },
-      "playedMatches": 1,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 265040,
-        "name": "Ibrahim M'Baye",
-        "firstName": "Ibrahim",
-        "lastName": "Mbaye",
-        "dateOfBirth": "2008-01-24",
-        "nationality": "Senegal",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 804,
-        "name": "Senegal",
-        "shortName": "Senegal",
-        "tla": "SEN",
-        "crest": "https://crests.football-data.org/senegal.svg",
-        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
-        "website": "http://www.fsfoot.sn",
-        "founded": 1960,
-        "clubColors": "White / Green",
-        "venue": null,
-        "lastUpdated": "2022-04-02T10:41:30Z"
       },
       "playedMatches": 1,
       "goals": 1,

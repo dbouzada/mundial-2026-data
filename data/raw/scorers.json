@@ -21,6 +21,37 @@
   "scorers": [
     {
       "player": {
+        "id": 6928,
+        "name": "Deniz Undav",
+        "firstName": "Deniz",
+        "lastName": "Undav",
+        "dateOfBirth": "1996-07-19",
+        "nationality": "Germany",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": 9,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 759,
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
+        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
+        "website": "http://www.dfb.de",
+        "founded": 1900,
+        "clubColors": "White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:12Z"
+      },
+      "playedMatches": 2,
+      "goals": 3,
+      "assists": 2,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 3218,
         "name": "Lionel Messi",
         "firstName": "Lionel",
@@ -235,37 +266,6 @@
       "goals": 2,
       "assists": null,
       "penalties": 1
-    },
-    {
-      "player": {
-        "id": 6928,
-        "name": "Deniz Undav",
-        "firstName": "Deniz",
-        "lastName": "Undav",
-        "dateOfBirth": "1996-07-19",
-        "nationality": "Germany",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": 9,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 759,
-        "name": "Germany",
-        "shortName": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg",
-        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
-        "website": "http://www.dfb.de",
-        "founded": 1900,
-        "clubColors": "White / Black",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:41:12Z"
-      },
-      "playedMatches": 2,
-      "goals": 2,
-      "assists": 2,
-      "penalties": null
     },
     {
       "player": {
@@ -977,7 +977,7 @@
       },
       "playedMatches": 2,
       "goals": 1,
-      "assists": null,
+      "assists": 1,
       "penalties": null
     },
     {

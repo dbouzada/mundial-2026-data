@@ -21,8 +21,8 @@ Group E,3,Ecuador,791,2,0,1,1,0,1,-1,1
 Group E,4,Curaçao,9460,2,0,1,1,1,7,-6,1
 Group F,1,Netherlands,8601,2,1,1,0,7,3,4,4
 Group F,2,Sweden,792,2,1,0,1,6,6,0,3
-Group F,3,Japan,766,1,0,1,0,2,2,0,1
-Group F,4,Tunisia,802,1,0,0,1,1,5,-4,0
+Group F,3,Japan,766,2,0,2,0,2,2,0,2
+Group F,4,Tunisia,802,2,0,1,1,1,5,-4,1
 Group G,1,New Zealand,783,1,0,1,0,2,2,0,1
 Group G,2,Iran,840,1,0,1,0,2,2,0,1
 Group G,3,Belgium,805,1,0,1,0,1,1,0,1

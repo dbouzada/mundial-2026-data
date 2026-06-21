@@ -490,12 +490,12 @@
             "tla": "JPN",
             "crest": "https://crests.football-data.org/766.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 1,
+          "points": 2,
           "goalsFor": 2,
           "goalsAgainst": 2,
           "goalDifference": 0
@@ -509,12 +509,12 @@
             "tla": "TUN",
             "crest": "https://crests.football-data.org/tunisia.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
-          "points": 0,
+          "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 5,
           "goalDifference": -4

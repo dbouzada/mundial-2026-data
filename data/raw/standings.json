@@ -407,12 +407,12 @@
             "tla": "ECU",
             "crest": "https://crests.football-data.org/791.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 1,
           "goalDifference": -1
@@ -426,12 +426,12 @@
             "tla": "CUW",
             "crest": "https://crests.football-data.org/curacao.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
-          "points": 0,
+          "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 7,
           "goalDifference": -6

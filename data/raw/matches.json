@@ -1891,7 +1891,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "lastUpdated": "2026-06-20T08:25:00Z",
+      "lastUpdated": "2026-06-20T08:25:01Z",
       "homeTeam": {
         "id": 771,
         "name": "United States",
@@ -2419,7 +2419,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
-      "lastUpdated": "2026-06-21T18:01:10Z",
+      "lastUpdated": "2026-06-21T18:04:46Z",
       "homeTeam": {
         "id": 760,
         "name": "Spain",
@@ -2438,7 +2438,7 @@
         "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 4,
+          "home": 5,
           "away": 0
         },
         "halfTime": {

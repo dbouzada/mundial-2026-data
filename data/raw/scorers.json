@@ -610,6 +610,37 @@
     },
     {
       "player": {
+        "id": 180137,
+        "name": "Mikel Oyarzabal",
+        "firstName": "",
+        "lastName": "Mikel Oyarzabal",
+        "dateOfBirth": "1997-04-21",
+        "nationality": "Spain",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 760,
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
+        "address": "Ramón y Cajal, s/n Las Rozas 28230",
+        "website": "http://www.rfef.es",
+        "founded": 1909,
+        "clubColors": "Red / Blue / Yellow",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:19Z"
+      },
+      "playedMatches": 2,
+      "goals": 2,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -1536,37 +1567,6 @@
       "playedMatches": 1,
       "goals": 1,
       "assists": 1,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 172641,
-        "name": "Mohammad Mohebi",
-        "firstName": "Mohammad",
-        "lastName": "Mohebi",
-        "dateOfBirth": "1998-12-20",
-        "nationality": "Iran",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2023-11-16T09:48:53Z"
-      },
-      "team": {
-        "id": 840,
-        "name": "Iran",
-        "shortName": "Iran",
-        "tla": "IRN",
-        "crest": "https://crests.football-data.org/iran.svg",
-        "address": "No. 2/2 Third St. Seoul Avenue Tehrān 19958-7359",
-        "website": "http://www.ffiri.ir",
-        "founded": 1920,
-        "clubColors": "White / Green / Red",
-        "venue": null,
-        "lastUpdated": "2022-04-02T10:38:42Z"
-      },
-      "playedMatches": 1,
-      "goals": 1,
-      "assists": null,
       "penalties": null
     }
   ]

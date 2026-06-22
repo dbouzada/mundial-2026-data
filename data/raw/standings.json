@@ -529,11 +529,11 @@
         {
           "position": 1,
           "team": {
-            "id": 783,
-            "name": "New Zealand",
-            "shortName": "New Zealand",
-            "tla": "NZL",
-            "crest": "https://crests.football-data.org/783.svg"
+            "id": 825,
+            "name": "Egypt",
+            "shortName": "Egypt",
+            "tla": "EGY",
+            "crest": "https://crests.football-data.org/825.svg"
           },
           "playedGames": 2,
           "form": null,
@@ -586,11 +586,11 @@
         {
           "position": 4,
           "team": {
-            "id": 825,
-            "name": "Egypt",
-            "shortName": "Egypt",
-            "tla": "EGY",
-            "crest": "https://crests.football-data.org/825.svg"
+            "id": 783,
+            "name": "New Zealand",
+            "shortName": "New Zealand",
+            "tla": "NZL",
+            "crest": "https://crests.football-data.org/783.svg"
           },
           "playedGames": 2,
           "form": null,
@@ -598,8 +598,8 @@
           "draw": 1,
           "lost": 1,
           "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 4,
           "goalDifference": -1
         }
       ]

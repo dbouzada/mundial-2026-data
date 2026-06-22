@@ -2613,11 +2613,11 @@
       },
       "id": 537366,
       "utcDate": "2026-06-22T01:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
-      "lastUpdated": "2026-06-22T01:50:34Z",
+      "lastUpdated": "2026-06-22T01:55:22Z",
       "homeTeam": {
         "id": 783,
         "name": "New Zealand",
@@ -2640,8 +2640,8 @@
           "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "odds": {

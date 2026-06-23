@@ -6,7 +6,7 @@
     "count": 104,
     "first": "2026-06-11",
     "last": "2026-07-19",
-    "played": 41
+    "played": 42
   },
   "competition": {
     "id": 2000,
@@ -2745,11 +2745,11 @@
       },
       "id": 537393,
       "utcDate": "2026-06-22T21:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
-      "lastUpdated": "2026-06-23T00:50:19Z",
+      "lastUpdated": "2026-06-23T00:54:31Z",
       "homeTeam": {
         "id": 773,
         "name": "France",
@@ -2815,7 +2815,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
-      "lastUpdated": "2026-06-23T00:49:43Z",
+      "lastUpdated": "2026-06-23T00:55:07Z",
       "homeTeam": {
         "id": 8872,
         "name": "Norway",

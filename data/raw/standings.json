@@ -720,12 +720,12 @@
             "tla": "NOR",
             "crest": "https://crests.football-data.org/813.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 3,
+          "points": 4,
           "goalsFor": 4,
           "goalsAgainst": 1,
           "goalDifference": 3
@@ -739,12 +739,12 @@
             "tla": "SEN",
             "crest": "https://crests.football-data.org/senegal.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
-          "points": 0,
+          "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 3,
           "goalDifference": -2

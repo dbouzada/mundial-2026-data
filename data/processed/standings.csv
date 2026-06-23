@@ -45,5 +45,5 @@ Group K,3,Congo DR,1934,1,0,1,0,1,1,0,1
 Group K,4,Uzbekistan,8070,2,0,0,2,1,8,-7,0
 Group L,1,England,770,2,1,1,0,4,2,2,4
 Group L,2,Ghana,763,2,1,1,0,1,0,1,4
-Group L,3,Panama,1836,1,0,0,1,0,1,-1,0
-Group L,4,Croatia,799,1,0,0,1,2,4,-2,0
+Group L,3,Panama,1836,2,0,1,1,0,1,-1,1
+Group L,4,Croatia,799,2,0,1,1,2,4,-2,1

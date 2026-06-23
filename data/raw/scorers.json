@@ -746,7 +746,7 @@
         "lastUpdated": "2024-06-12T17:56:51Z"
       },
       "team": {
-        "id": 6675,
+        "id": 765,
         "name": "Portugal",
         "shortName": "Portugal",
         "tla": "POR",
@@ -755,8 +755,8 @@
         "website": "http://www.fpf.pt",
         "founded": 1914,
         "clubColors": "Red / Green",
-        "venue": "Estádio Dr. Machado de Matos",
-        "lastUpdated": "2023-04-05T11:06:57Z"
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:53Z"
       },
       "playedMatches": 2,
       "goals": 2,

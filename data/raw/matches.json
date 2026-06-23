@@ -2943,11 +2943,11 @@
       },
       "id": 537405,
       "utcDate": "2026-06-23T17:00:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "lastUpdated": "2026-06-23T17:59:03Z",
+      "lastUpdated": "2026-06-23T18:15:54Z",
       "homeTeam": {
         "id": 765,
         "name": "Portugal",

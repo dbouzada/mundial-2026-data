@@ -861,6 +861,25 @@
         {
           "position": 1,
           "team": {
+            "id": 765,
+            "name": "Portugal",
+            "shortName": "Portugal",
+            "tla": "POR",
+            "crest": "https://crests.football-data.org/765.svg"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "goalDifference": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 818,
             "name": "Colombia",
             "shortName": "Colombia",
@@ -876,25 +895,6 @@
           "goalsFor": 3,
           "goalsAgainst": 1,
           "goalDifference": 2
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 765,
-            "name": "Portugal",
-            "shortName": "Portugal",
-            "tla": "POR",
-            "crest": "https://crests.football-data.org/765.svg"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0
         },
         {
           "position": 3,
@@ -927,12 +927,12 @@
           "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 1,
-          "lost": 1,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2
+          "draw": 0,
+          "lost": 2,
+          "points": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3
         }
       ]
     },

@@ -672,6 +672,37 @@
     },
     {
       "player": {
+        "id": 3638,
+        "name": "Ismaïla Sarr",
+        "firstName": "Ismaïla",
+        "lastName": "Sarr",
+        "dateOfBirth": "1998-02-25",
+        "nationality": "Senegal",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-06T14:12:29Z"
+      },
+      "team": {
+        "id": 804,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg",
+        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
+        "website": "http://www.fsfoot.sn",
+        "founded": 1960,
+        "clubColors": "White / Green",
+        "venue": null,
+        "lastUpdated": "2022-04-02T10:41:30Z"
+      },
+      "playedMatches": 2,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -1536,37 +1567,6 @@
       "playedMatches": 2,
       "goals": 1,
       "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 3804,
-        "name": "Ramin Rezaeian",
-        "firstName": "Ramin",
-        "lastName": "Rezaeian",
-        "dateOfBirth": "1990-03-21",
-        "nationality": "Iran",
-        "section": "Defence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2023-11-17T09:49:52Z"
-      },
-      "team": {
-        "id": 840,
-        "name": "Iran",
-        "shortName": "Iran",
-        "tla": "IRN",
-        "crest": "https://crests.football-data.org/iran.svg",
-        "address": "No. 2/2 Third St. Seoul Avenue Tehrān 19958-7359",
-        "website": "http://www.ffiri.ir",
-        "founded": 1920,
-        "clubColors": "White / Green / Red",
-        "venue": null,
-        "lastUpdated": "2022-04-02T10:38:42Z"
-      },
-      "playedMatches": 2,
-      "goals": 1,
-      "assists": 1,
       "penalties": null
     }
   ]

@@ -695,6 +695,25 @@
         {
           "position": 1,
           "team": {
+            "id": 8872,
+            "name": "Norway",
+            "shortName": "Norway",
+            "tla": "NOR",
+            "crest": "https://crests.football-data.org/813.svg"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 7,
+          "goalsAgainst": 2,
+          "goalDifference": 5
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 773,
             "name": "France",
             "shortName": "France",
@@ -712,25 +731,6 @@
           "goalDifference": 5
         },
         {
-          "position": 2,
-          "team": {
-            "id": 8872,
-            "name": "Norway",
-            "shortName": "Norway",
-            "tla": "NOR",
-            "crest": "https://crests.football-data.org/813.svg"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 5,
-          "goalsAgainst": 1,
-          "goalDifference": 4
-        },
-        {
           "position": 3,
           "team": {
             "id": 804,
@@ -745,9 +745,9 @@
           "draw": 0,
           "lost": 2,
           "points": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 4,
-          "goalDifference": -3
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "goalDifference": -4
         },
         {
           "position": 4,

@@ -734,6 +734,37 @@
     },
     {
       "player": {
+        "id": 44,
+        "name": "Cristiano Ronaldo",
+        "firstName": "",
+        "lastName": "Cristiano Ronaldo",
+        "dateOfBirth": "1985-02-05",
+        "nationality": "Portugal",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-06-12T17:56:51Z"
+      },
+      "team": {
+        "id": 6675,
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "tla": "POR",
+        "crest": "https://crests.football-data.org/765.svg",
+        "address": "Rua Alexandre Herculano, 58 Lisboa 1250-012",
+        "website": "http://www.fpf.pt",
+        "founded": 1914,
+        "clubColors": "Red / Green",
+        "venue": "Estádio Dr. Machado de Matos",
+        "lastUpdated": "2023-04-05T11:06:57Z"
+      },
+      "playedMatches": 2,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -1532,37 +1563,6 @@
         "clubColors": "Red / White / Black",
         "venue": null,
         "lastUpdated": "2026-04-17T11:44:21Z"
-      },
-      "playedMatches": 2,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 103094,
-        "name": "Abdulelah Al Amri",
-        "firstName": "Abdulelah",
-        "lastName": "Al Amri",
-        "dateOfBirth": "1997-01-15",
-        "nationality": "Saudi Arabia",
-        "section": "Defence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2023-11-30T09:49:28Z"
-      },
-      "team": {
-        "id": 801,
-        "name": "Saudi Arabia",
-        "shortName": "Saudi Arabia",
-        "tla": "KSA",
-        "crest": "https://crests.football-data.org/saudi_arabia.svg",
-        "address": "Al Mather Quarter, Prince Faisal bin Fahad Street, P.O. Box 5844 ar-Riyāḍ 11432",
-        "website": "http://www.thesaff.com.sa",
-        "founded": 1956,
-        "clubColors": "White / Green",
-        "venue": null,
-        "lastUpdated": "2022-04-02T10:42:19Z"
       },
       "playedMatches": 2,
       "goals": 1,

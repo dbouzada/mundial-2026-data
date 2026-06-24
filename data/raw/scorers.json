@@ -517,6 +517,37 @@
     },
     {
       "player": {
+        "id": 22010,
+        "name": "Daniel Muñoz",
+        "firstName": "Daniel",
+        "lastName": "Muñoz",
+        "dateOfBirth": "1996-05-26",
+        "nationality": "Colombia",
+        "section": "Defence",
+        "position": null,
+        "shirtNumber": 2,
+        "lastUpdated": "2026-06-01T11:16:29Z"
+      },
+      "team": {
+        "id": 818,
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "tla": "COL",
+        "crest": "https://crests.football-data.org/818.svg",
+        "address": "Avenida 32 no. 16-22 Bogotá null",
+        "website": "http://www.fcf.com.co",
+        "founded": 1924,
+        "clubColors": "Yellow / Red / Blue",
+        "venue": null,
+        "lastUpdated": "2021-05-22T11:29:53Z"
+      },
+      "playedMatches": 1,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 212309,
         "name": "Johan Manzambi",
         "firstName": "Johan",
@@ -1532,37 +1563,6 @@
         "clubColors": "Yellow / Blue",
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:37Z"
-      },
-      "playedMatches": 2,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 191972,
-        "name": "Emam Ashour",
-        "firstName": "Emam",
-        "lastName": "Ashour",
-        "dateOfBirth": "1998-02-20",
-        "nationality": "Egypt",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2024-01-11T10:31:49Z"
-      },
-      "team": {
-        "id": 825,
-        "name": "Egypt",
-        "shortName": "Egypt",
-        "tla": "EGY",
-        "crest": "https://crests.football-data.org/825.svg",
-        "address": "5, Gabalaya Street, El Gezira Cairo null",
-        "website": "http://www.efa.com.eg",
-        "founded": 1921,
-        "clubColors": "Red / White / Black",
-        "venue": null,
-        "lastUpdated": "2026-04-17T11:44:21Z"
       },
       "playedMatches": 2,
       "goals": 1,

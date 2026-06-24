@@ -886,12 +886,12 @@
             "tla": "COL",
             "crest": "https://crests.football-data.org/818.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 3,
+          "points": 4,
           "goalsFor": 3,
           "goalsAgainst": 1,
           "goalDifference": 2
@@ -905,12 +905,12 @@
             "tla": "COD",
             "crest": "https://crests.football-data.org/congo_dr.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "form": null,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 1,
+          "points": 2,
           "goalsFor": 1,
           "goalsAgainst": 1,
           "goalDifference": 0

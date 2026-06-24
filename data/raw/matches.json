@@ -3197,7 +3197,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "lastUpdated": "2026-06-24T20:15:34Z",
+      "lastUpdated": "2026-06-24T20:20:45Z",
       "homeTeam": {
         "id": 788,
         "name": "Switzerland",
@@ -3216,7 +3216,7 @@
         "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         },
         "halfTime": {
@@ -3263,7 +3263,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "lastUpdated": "2026-06-24T20:15:44Z",
+      "lastUpdated": "2026-06-24T20:20:32Z",
       "homeTeam": {
         "id": 1060,
         "name": "Bosnia-Herzegovina",

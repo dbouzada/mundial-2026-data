@@ -574,7 +574,38 @@
       },
       "playedMatches": 3,
       "goals": 2,
-      "assists": null,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 31913,
+        "name": "Ruben Vargas",
+        "firstName": "Rubén",
+        "lastName": "Vargas",
+        "dateOfBirth": "1998-08-05",
+        "nationality": "Switzerland",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:32Z"
+      },
+      "team": {
+        "id": 788,
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
+        "address": "Worbstrasse 48 Bern 3000",
+        "website": "http://www.football.ch",
+        "founded": 1895,
+        "clubColors": "Red / White",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:31Z"
+      },
+      "playedMatches": 3,
+      "goals": 2,
+      "assists": 1,
       "penalties": null
     },
     {
@@ -1536,37 +1567,6 @@
       "playedMatches": 2,
       "goals": 1,
       "assists": 1,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 15354,
-        "name": "Mattias Svanberg",
-        "firstName": "Mattias",
-        "lastName": "Svanberg",
-        "dateOfBirth": "1999-01-05",
-        "nationality": "Sweden",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 792,
-        "name": "Sweden",
-        "shortName": "Sweden",
-        "tla": "SWE",
-        "crest": "https://crests.football-data.org/792.svg",
-        "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
-        "website": "http://www.svenskfotboll.se",
-        "founded": 1904,
-        "clubColors": "Yellow / Blue",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:42:37Z"
-      },
-      "playedMatches": 2,
-      "goals": 1,
-      "assists": null,
       "penalties": null
     }
   ]

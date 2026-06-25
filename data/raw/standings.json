@@ -394,9 +394,9 @@
           "draw": 0,
           "lost": 1,
           "points": 6,
-          "goalsFor": 3,
+          "goalsFor": 4,
           "goalsAgainst": 2,
-          "goalDifference": 1
+          "goalDifference": 2
         },
         {
           "position": 3,
@@ -433,8 +433,8 @@
           "lost": 2,
           "points": 1,
           "goalsFor": 1,
-          "goalsAgainst": 8,
-          "goalDifference": -7
+          "goalsAgainst": 9,
+          "goalDifference": -8
         }
       ]
     },

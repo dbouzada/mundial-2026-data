@@ -452,12 +452,12 @@
             "tla": "NED",
             "crest": "https://crests.football-data.org/8601.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "form": null,
           "won": 1,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 4,
+          "points": 5,
           "goalsFor": 7,
           "goalsAgainst": 3,
           "goalDifference": 4
@@ -471,12 +471,12 @@
             "tla": "JPN",
             "crest": "https://crests.football-data.org/766.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "form": null,
           "won": 1,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 4,
+          "points": 5,
           "goalsFor": 6,
           "goalsAgainst": 2,
           "goalDifference": 4
@@ -490,12 +490,12 @@
             "tla": "SWE",
             "crest": "https://crests.football-data.org/792.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "form": null,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
-          "points": 3,
+          "points": 4,
           "goalsFor": 6,
           "goalsAgainst": 6,
           "goalDifference": 0
@@ -509,12 +509,12 @@
             "tla": "TUN",
             "crest": "https://crests.football-data.org/tunisia.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "form": null,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
-          "points": 0,
+          "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 9,
           "goalDifference": -8

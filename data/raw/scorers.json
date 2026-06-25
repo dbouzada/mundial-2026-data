@@ -300,6 +300,37 @@
     },
     {
       "player": {
+        "id": 97535,
+        "name": "Brian Brobbey",
+        "firstName": "Brian",
+        "lastName": "Brobbey",
+        "dateOfBirth": "2002-02-01",
+        "nationality": "Netherlands",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": 17,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 8601,
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg",
+        "address": "Woudenbergseweg 56-58 / Postbus 515 Zeist 3700 AM",
+        "website": "http://www.knvb.nl",
+        "founded": 1889,
+        "clubColors": "Orange / White / Blue",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:48Z"
+      },
+      "playedMatches": 3,
+      "goals": 3,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -695,37 +726,6 @@
         "clubColors": "White / Blue",
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:27Z"
-      },
-      "playedMatches": 3,
-      "goals": 2,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 97535,
-        "name": "Brian Brobbey",
-        "firstName": "Brian",
-        "lastName": "Brobbey",
-        "dateOfBirth": "2002-02-01",
-        "nationality": "Netherlands",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": 17,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 8601,
-        "name": "Netherlands",
-        "shortName": "Netherlands",
-        "tla": "NED",
-        "crest": "https://crests.football-data.org/8601.svg",
-        "address": "Woudenbergseweg 56-58 / Postbus 515 Zeist 3700 AM",
-        "website": "http://www.knvb.nl",
-        "founded": 1889,
-        "clubColors": "Orange / White / Blue",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:43:48Z"
       },
       "playedMatches": 3,
       "goals": 2,
@@ -1473,7 +1473,7 @@
       },
       "playedMatches": 3,
       "goals": 1,
-      "assists": null,
+      "assists": 1,
       "penalties": null
     },
     {

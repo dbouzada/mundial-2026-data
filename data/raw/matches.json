@@ -3725,7 +3725,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "lastUpdated": "2026-06-26T00:10:44Z",
+      "lastUpdated": "2026-06-26T00:15:44Z",
       "homeTeam": {
         "id": 802,
         "name": "Tunisia",
@@ -3787,11 +3787,11 @@
       },
       "id": 537362,
       "utcDate": "2026-06-25T23:00:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "lastUpdated": "2026-06-25T23:57:47Z",
+      "lastUpdated": "2026-06-26T00:15:47Z",
       "homeTeam": {
         "id": 766,
         "name": "Japan",

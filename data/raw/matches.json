@@ -3593,7 +3593,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:12Z",
       "homeTeam": {
         "id": 791,
         "name": "Ecuador",
@@ -3659,7 +3659,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:12Z",
       "homeTeam": {
         "id": 9460,
         "name": "Curaçao",
@@ -3725,7 +3725,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:16Z",
       "homeTeam": {
         "id": 802,
         "name": "Tunisia",
@@ -3791,7 +3791,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:16Z",
       "homeTeam": {
         "id": 766,
         "name": "Japan",
@@ -3857,7 +3857,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:20Z",
       "homeTeam": {
         "id": 803,
         "name": "Turkey",
@@ -3923,7 +3923,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:19Z",
       "homeTeam": {
         "id": 761,
         "name": "Paraguay",
@@ -4249,11 +4249,11 @@
       },
       "id": 537367,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "LIVE",
+      "status": "PAUSED",
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
-      "lastUpdated": "2026-06-27T03:55:19Z",
+      "lastUpdated": "2026-06-27T03:58:17Z",
       "homeTeam": {
         "id": 783,
         "name": "New Zealand",
@@ -4276,8 +4276,8 @@
           "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "odds": {
@@ -4315,11 +4315,11 @@
       },
       "id": 537368,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
-      "lastUpdated": "2026-06-27T03:54:50Z",
+      "lastUpdated": "2026-06-27T03:57:47Z",
       "homeTeam": {
         "id": 825,
         "name": "Egypt",
@@ -4342,8 +4342,8 @@
           "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "odds": {

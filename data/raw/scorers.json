@@ -1044,6 +1044,37 @@
     },
     {
       "player": {
+        "id": 8984,
+        "name": "Leandro Trossard",
+        "firstName": "Leandro",
+        "lastName": "Trossard",
+        "dateOfBirth": "1994-12-04",
+        "nationality": "Belgium",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 805,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
+        "address": "145, avenue Houba de Strooper Brussels 1020",
+        "website": "https://www.rbfa.be",
+        "founded": 1895,
+        "clubColors": "Red / Black / Yellow",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:01Z"
+      },
+      "playedMatches": 3,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 3305,
         "name": "Raúl Jiménez",
         "firstName": "Raúl",
@@ -1536,37 +1567,6 @@
       "playedMatches": 3,
       "goals": 1,
       "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 184533,
-        "name": "Nathaniel Brown",
-        "firstName": "Nathaniel",
-        "lastName": "Brown",
-        "dateOfBirth": "2003-06-16",
-        "nationality": "Germany",
-        "section": "Defence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 759,
-        "name": "Germany",
-        "shortName": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg",
-        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
-        "website": "http://www.dfb.de",
-        "founded": 1900,
-        "clubColors": "White / Black",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:41:12Z"
-      },
-      "playedMatches": 2,
-      "goals": 1,
-      "assists": 1,
       "penalties": null
     }
   ]

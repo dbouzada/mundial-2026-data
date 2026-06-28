@@ -269,6 +269,37 @@
     },
     {
       "player": {
+        "id": 612,
+        "name": "Yoane Wissa",
+        "firstName": "Yoane",
+        "lastName": "Wissa",
+        "dateOfBirth": "1996-09-03",
+        "nationality": "Congo DR",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": 19,
+        "lastUpdated": "2026-06-05T10:50:55Z"
+      },
+      "team": {
+        "id": 1934,
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "tla": "COD",
+        "crest": "https://crests.football-data.org/congo_dr.svg",
+        "address": "31, Avenue de la Justice / BP 1284 Kinshasa 1",
+        "website": "http://www.fecofa.cd",
+        "founded": 1919,
+        "clubColors": "Blue / Yellow / Red",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:46:20Z"
+      },
+      "playedMatches": 2,
+      "goals": 3,
+      "assists": null,
+      "penalties": 1
+    },
+    {
+      "player": {
         "id": 8004,
         "name": "Harry Kane",
         "firstName": "Harry",
@@ -731,37 +762,6 @@
       "goals": 2,
       "assists": 1,
       "penalties": null
-    },
-    {
-      "player": {
-        "id": 612,
-        "name": "Yoane Wissa",
-        "firstName": "Yoane",
-        "lastName": "Wissa",
-        "dateOfBirth": "1996-09-03",
-        "nationality": "Congo DR",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": 19,
-        "lastUpdated": "2026-06-05T10:50:55Z"
-      },
-      "team": {
-        "id": 1934,
-        "name": "Congo DR",
-        "shortName": "Congo DR",
-        "tla": "COD",
-        "crest": "https://crests.football-data.org/congo_dr.svg",
-        "address": "31, Avenue de la Justice / BP 1284 Kinshasa 1",
-        "website": "http://www.fecofa.cd",
-        "founded": 1919,
-        "clubColors": "Blue / Yellow / Red",
-        "venue": null,
-        "lastUpdated": "2026-04-17T11:46:20Z"
-      },
-      "playedMatches": 2,
-      "goals": 2,
-      "assists": null,
-      "penalties": 1
     },
     {
       "player": {

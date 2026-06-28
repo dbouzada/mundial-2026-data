@@ -4777,11 +4777,11 @@
       },
       "id": 537417,
       "utcDate": "2026-06-28T19:00:00Z",
-      "status": "TIMED",
+      "status": "2026-06-28 19:00:00Z",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-28T05:20:07Z",
       "homeTeam": {
         "id": 774,
         "name": "South Africa",

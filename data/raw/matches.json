@@ -4649,7 +4649,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "lastUpdated": "2026-06-28T03:55:07Z",
+      "lastUpdated": "2026-06-28T04:01:07Z",
       "homeTeam": {
         "id": 8049,
         "name": "Jordan",
@@ -4715,7 +4715,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "lastUpdated": "2026-06-28T03:55:06Z",
+      "lastUpdated": "2026-06-28T04:01:07Z",
       "homeTeam": {
         "id": 778,
         "name": "Algeria",
@@ -4731,10 +4731,10 @@
         "crest": "https://crests.football-data.org/816.svg"
       },
       "score": {
-        "winner": "DRAW",
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 2
         },
         "halfTime": {

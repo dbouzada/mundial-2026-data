@@ -1168,6 +1168,37 @@
     },
     {
       "player": {
+        "id": 8069,
+        "name": "Riyad Mahrez",
+        "firstName": "Riyad",
+        "lastName": "Mahrez",
+        "dateOfBirth": "1991-02-21",
+        "nationality": "Algeria",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:09:19Z"
+      },
+      "team": {
+        "id": 778,
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "tla": "ALG",
+        "crest": "https://crests.football-data.org/algeria.svg",
+        "address": "Chemin Ahmed Ouaked, BP 39 Dely-Ibrahim Alger 16000",
+        "website": "http://www.faf.dz",
+        "founded": 1962,
+        "clubColors": "White / Green",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:43:21Z"
+      },
+      "playedMatches": 3,
+      "goals": 2,
+      "assists": 2,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 3305,
         "name": "Raúl Jiménez",
         "firstName": "Raúl",
@@ -1536,37 +1567,6 @@
       "playedMatches": 3,
       "goals": 1,
       "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 101074,
-        "name": "Felix Kalu Nmecha",
-        "firstName": "Felix",
-        "lastName": "Nmecha",
-        "dateOfBirth": "2000-10-10",
-        "nationality": "Germany",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 759,
-        "name": "Germany",
-        "shortName": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg",
-        "address": "Otto-Fleck-Schneise 6 / Postfach 710265 Frankfurt am Main 60492",
-        "website": "http://www.dfb.de",
-        "founded": 1900,
-        "clubColors": "White / Black",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:41:12Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": 1,
       "penalties": null
     }
   ]

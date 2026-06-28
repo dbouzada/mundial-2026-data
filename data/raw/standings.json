@@ -790,9 +790,9 @@
           "draw": 0,
           "lost": 0,
           "points": 9,
-          "goalsFor": 6,
+          "goalsFor": 7,
           "goalsAgainst": 0,
-          "goalDifference": 6
+          "goalDifference": 7
         },
         {
           "position": 2,
@@ -805,13 +805,13 @@
           },
           "playedGames": 3,
           "form": null,
-          "won": 2,
-          "draw": 0,
+          "won": 1,
+          "draw": 1,
           "lost": 1,
-          "points": 6,
+          "points": 4,
           "goalsFor": 4,
-          "goalsAgainst": 3,
-          "goalDifference": 1
+          "goalsAgainst": 4,
+          "goalDifference": 0
         },
         {
           "position": 3,
@@ -825,12 +825,12 @@
           "playedGames": 3,
           "form": null,
           "won": 1,
-          "draw": 0,
-          "lost": 2,
-          "points": 3,
-          "goalsFor": 2,
+          "draw": 1,
+          "lost": 1,
+          "points": 4,
+          "goalsFor": 3,
           "goalsAgainst": 5,
-          "goalDifference": -3
+          "goalDifference": -2
         },
         {
           "position": 4,
@@ -848,8 +848,8 @@
           "lost": 3,
           "points": 0,
           "goalsFor": 2,
-          "goalsAgainst": 6,
-          "goalDifference": -4
+          "goalsAgainst": 7,
+          "goalDifference": -5
         }
       ]
     },

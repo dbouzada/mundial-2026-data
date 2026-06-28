@@ -4645,11 +4645,11 @@
       },
       "id": 537401,
       "utcDate": "2026-06-28T02:00:00Z",
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "lastUpdated": "2026-06-28T02:55:18Z",
+      "lastUpdated": "2026-06-28T02:57:06Z",
       "homeTeam": {
         "id": 8049,
         "name": "Jordan",
@@ -4672,8 +4672,8 @@
           "away": 2
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "odds": {
@@ -4715,7 +4715,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "lastUpdated": "2026-06-28T02:55:05Z",
+      "lastUpdated": "2026-06-28T02:56:21Z",
       "homeTeam": {
         "id": 778,
         "name": "Algeria",

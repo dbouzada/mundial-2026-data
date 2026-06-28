@@ -765,6 +765,37 @@
     },
     {
       "player": {
+        "id": 8223,
+        "name": "Marko Arnautovic",
+        "firstName": "Marko",
+        "lastName": "Arnautović",
+        "dateOfBirth": "1989-04-19",
+        "nationality": "Austria",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": 7,
+        "lastUpdated": "2026-06-01T11:16:29Z"
+      },
+      "team": {
+        "id": 816,
+        "name": "Austria",
+        "shortName": "Austria",
+        "tla": "AUT",
+        "crest": "https://crests.football-data.org/816.svg",
+        "address": "Ernst-Happel-Stadion, Sektor A/F, Meiereistraße 7 Wien 1020",
+        "website": "http://www.oefb.at",
+        "founded": 1904,
+        "clubColors": "Red / White / Black",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:08Z"
+      },
+      "playedMatches": 3,
+      "goals": 2,
+      "assists": null,
+      "penalties": 1
+    },
+    {
+      "player": {
         "id": 125010,
         "name": "Jude Bellingham",
         "firstName": "Jude",
@@ -1536,37 +1567,6 @@
       "playedMatches": 3,
       "goals": 1,
       "assists": 1,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 166156,
-        "name": "Livano Comenencia",
-        "firstName": "Livano",
-        "lastName": "Comenencia",
-        "dateOfBirth": "2004-02-03",
-        "nationality": "Curaçao",
-        "section": "Defence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2025-11-05T09:45:41Z"
-      },
-      "team": {
-        "id": 9460,
-        "name": "Curaçao",
-        "shortName": "Curaçao",
-        "tla": "CUW",
-        "crest": "https://crests.football-data.org/curacao.svg",
-        "address": "null null null",
-        "website": null,
-        "founded": null,
-        "clubColors": null,
-        "venue": null,
-        "lastUpdated": "2026-05-19T17:48:28Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
       "penalties": null
     }
   ]

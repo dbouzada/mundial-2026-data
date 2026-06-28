@@ -4385,7 +4385,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
-      "lastUpdated": "2026-06-27T23:05:20Z",
+      "lastUpdated": "2026-06-28T03:27:15Z",
       "homeTeam": {
         "id": 1836,
         "name": "Panama",
@@ -4451,7 +4451,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
-      "lastUpdated": "2026-06-27T23:04:51Z",
+      "lastUpdated": "2026-06-28T03:27:15Z",
       "homeTeam": {
         "id": 799,
         "name": "Croatia",
@@ -4517,7 +4517,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "lastUpdated": "2026-06-28T01:38:21Z",
+      "lastUpdated": "2026-06-28T03:27:15Z",
       "homeTeam": {
         "id": 818,
         "name": "Colombia",
@@ -4583,7 +4583,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "lastUpdated": "2026-06-28T01:41:57Z",
+      "lastUpdated": "2026-06-28T03:27:15Z",
       "homeTeam": {
         "id": 1934,
         "name": "Congo DR",
@@ -4649,7 +4649,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "lastUpdated": "2026-06-28T03:25:06Z",
+      "lastUpdated": "2026-06-28T03:30:45Z",
       "homeTeam": {
         "id": 8049,
         "name": "Jordan",
@@ -4715,7 +4715,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "lastUpdated": "2026-06-28T03:25:06Z",
+      "lastUpdated": "2026-06-28T03:30:42Z",
       "homeTeam": {
         "id": 778,
         "name": "Algeria",
@@ -4731,10 +4731,10 @@
         "crest": "https://crests.football-data.org/816.svg"
       },
       "score": {
-        "winner": "AWAY_TEAM",
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 2
         },
         "halfTime": {

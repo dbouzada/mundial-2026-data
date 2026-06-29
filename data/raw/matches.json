@@ -4913,7 +4913,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-29T22:50:34Z",
+      "lastUpdated": "2026-06-29T22:54:35Z",
       "homeTeam": {
         "id": 759,
         "name": "Germany",
@@ -4944,7 +4944,7 @@
           "away": null
         },
         "extraTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       },

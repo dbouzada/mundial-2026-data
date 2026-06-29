@@ -4909,11 +4909,11 @@
       },
       "id": 537415,
       "utcDate": "2026-06-29T20:30:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-29T22:34:45Z",
+      "lastUpdated": "2026-06-29T22:40:34Z",
       "homeTeam": {
         "id": 759,
         "name": "Germany",
@@ -4930,7 +4930,7 @@
       },
       "score": {
         "winner": "DRAW",
-        "duration": "REGULAR",
+        "duration": "EXTRA_TIME",
         "fullTime": {
           "home": 1,
           "away": 1
@@ -4938,6 +4938,14 @@
         "halfTime": {
           "home": 0,
           "away": 1
+        },
+        "regularTime": {
+          "home": null,
+          "away": null
+        },
+        "extraTime": {
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {

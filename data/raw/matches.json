@@ -4847,7 +4847,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-29T18:25:27Z",
+      "lastUpdated": "2026-06-29T18:30:51Z",
       "homeTeam": {
         "id": 764,
         "name": "Brazil",
@@ -4943,7 +4943,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 289426,
+          "name": "Jalal Jayed",
+          "type": "REFEREE",
+          "nationality": "Morocco"
+        }
+      ]
     },
     {
       "area": {

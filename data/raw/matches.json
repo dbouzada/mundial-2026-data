@@ -6,7 +6,7 @@
     "count": 104,
     "first": "2026-06-11",
     "last": "2026-07-19",
-    "played": 73
+    "played": 74
   },
   "competition": {
     "id": 2000,
@@ -4843,11 +4843,11 @@
       },
       "id": 537423,
       "utcDate": "2026-06-29T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-29T19:05:27Z",
+      "lastUpdated": "2026-06-29T19:09:03Z",
       "homeTeam": {
         "id": 764,
         "name": "Brazil",

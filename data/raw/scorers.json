@@ -703,6 +703,37 @@
     },
     {
       "player": {
+        "id": 133584,
+        "name": "Amad Diallo",
+        "firstName": "Amad",
+        "lastName": "Diallo",
+        "dateOfBirth": "2002-07-11",
+        "nationality": "Ivory Coast",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": 79,
+        "lastUpdated": "2026-06-01T11:16:32Z"
+      },
+      "team": {
+        "id": 1935,
+        "name": "Ivory Coast",
+        "shortName": "Ivory Coast",
+        "tla": "CIV",
+        "crest": "https://crests.football-data.org/787.svg",
+        "address": "Treichville Avenue, 1 / BP 1202 Abidjan 01",
+        "website": "http://www.fif-ci.com",
+        "founded": 1960,
+        "clubColors": "Orange / Green / White",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:46:40Z"
+      },
+      "playedMatches": 3,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 145613,
         "name": "Yasin Ayari",
         "firstName": "Yasin",
@@ -1519,37 +1550,6 @@
         "position": null,
         "shirtNumber": null,
         "lastUpdated": "2024-05-31T09:47:56Z"
-      },
-      "team": {
-        "id": 779,
-        "name": "Australia",
-        "shortName": "Australia",
-        "tla": "AUS",
-        "crest": "https://crests.football-data.org/779.svg",
-        "address": "Locked Bag A 4071 Sydney, NSW NSW 1235",
-        "website": "http://www.footballaustralia.com.au",
-        "founded": 1961,
-        "clubColors": "Gold / Green",
-        "venue": null,
-        "lastUpdated": "2021-05-22T11:30:43Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 4635,
-        "name": "Connor Metcalfe",
-        "firstName": "Connor",
-        "lastName": "Metcalfe",
-        "dateOfBirth": "1999-11-05",
-        "nationality": "Australia",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": 34,
-        "lastUpdated": "2026-06-01T11:16:31Z"
       },
       "team": {
         "id": 779,

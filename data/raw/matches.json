@@ -4987,11 +4987,11 @@
       },
       "id": 537418,
       "utcDate": "2026-06-30T01:00:00Z",
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-30T01:05:15Z",
+      "lastUpdated": "2026-06-30T01:10:18Z",
       "homeTeam": {
         "id": 8601,
         "name": "Netherlands",

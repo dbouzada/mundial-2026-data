@@ -5065,11 +5065,11 @@
       },
       "id": 537424,
       "utcDate": "2026-06-30T17:00:00Z",
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-30T18:10:14Z",
+      "lastUpdated": "2026-06-30T18:15:42Z",
       "homeTeam": {
         "id": 1935,
         "name": "Ivory Coast",

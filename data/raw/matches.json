@@ -4991,7 +4991,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-30T03:53:57Z",
+      "lastUpdated": "2026-06-30T04:00:25Z",
       "homeTeam": {
         "id": 8601,
         "name": "Netherlands",
@@ -5010,8 +5010,8 @@
         "winner": null,
         "duration": "PENALTY_SHOOTOUT",
         "fullTime": {
-          "home": 4,
-          "away": 3
+          "home": 3,
+          "away": 4
         },
         "halfTime": {
           "home": 0,
@@ -5026,8 +5026,8 @@
           "away": 0
         },
         "penalties": {
-          "home": 2,
-          "away": 2
+          "home": 3,
+          "away": 3
         }
       },
       "odds": {

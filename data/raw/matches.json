@@ -5099,14 +5099,7 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": [
-        {
-          "id": 28805,
-          "name": "Jesús Valenzuela",
-          "type": "REFEREE",
-          "nationality": "Venezuela"
-        }
-      ]
+      "referees": []
     },
     {
       "area": {
@@ -5165,14 +5158,7 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": [
-        {
-          "id": 43899,
-          "name": "Danny Makkelie",
-          "type": "REFEREE",
-          "nationality": "Netherlands"
-        }
-      ]
+      "referees": []
     },
     {
       "area": {
@@ -5197,11 +5183,11 @@
       },
       "id": 537425,
       "utcDate": "2026-07-01T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-06-29T15:20:12Z",
+      "lastUpdated": "2026-07-01T01:05:45Z",
       "homeTeam": {
         "id": 769,
         "name": "Mexico",
@@ -5217,11 +5203,11 @@
         "crest": "https://crests.football-data.org/791.svg"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -5231,14 +5217,7 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": [
-        {
-          "id": 9351,
-          "name": "Slavko Vinčič",
-          "type": "REFEREE",
-          "nationality": "Slovenia"
-        }
-      ]
+      "referees": []
     },
     {
       "area": {

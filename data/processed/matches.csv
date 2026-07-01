@@ -77,7 +77,7 @@ match_id,fecha,estado,etapa,grupo,estadio,home,home_id,away,away_id,goles_home,g
 537418,2026-06-30,FINISHED,LAST_32,,,Netherlands,8601.0,Morocco,815.0,3.0,4.0,AWAY_TEAM
 537424,2026-06-30,FINISHED,LAST_32,,,Ivory Coast,1935.0,Norway,8872.0,1.0,2.0,AWAY_TEAM
 537416,2026-06-30,FINISHED,LAST_32,,,France,773.0,Sweden,792.0,3.0,0.0,HOME_TEAM
-537425,2026-07-01,TIMED,LAST_32,,,Mexico,769.0,Ecuador,791.0,,,
+537425,2026-07-01,FINISHED,LAST_32,,,Mexico,769.0,Ecuador,791.0,2.0,0.0,HOME_TEAM
 537426,2026-07-01,TIMED,LAST_32,,,England,770.0,Congo DR,1934.0,,,
 537422,2026-07-01,TIMED,LAST_32,,,Belgium,805.0,Senegal,804.0,,,
 537421,2026-07-02,TIMED,LAST_32,,,United States,771.0,Bosnia-Herzegovina,1060.0,,,

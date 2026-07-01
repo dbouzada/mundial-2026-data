@@ -6,7 +6,7 @@
     "count": 104,
     "first": "2026-06-11",
     "last": "2026-07-19",
-    "played": 80
+    "played": 81
   },
   "competition": {
     "id": 2000,
@@ -5329,11 +5329,11 @@
       },
       "id": 537422,
       "utcDate": "2026-07-01T20:00:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-01T22:50:33Z",
+      "lastUpdated": "2026-07-01T22:54:56Z",
       "homeTeam": {
         "id": 805,
         "name": "Belgium",

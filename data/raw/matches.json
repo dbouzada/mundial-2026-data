@@ -5333,7 +5333,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-01T21:15:28Z",
+      "lastUpdated": "2026-07-01T21:20:28Z",
       "homeTeam": {
         "id": 805,
         "name": "Belgium",
@@ -5353,7 +5353,7 @@
         "duration": "REGULAR",
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         },
         "halfTime": {
           "home": 0,

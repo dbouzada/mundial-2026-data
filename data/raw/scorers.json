@@ -665,7 +665,7 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:10Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 2,
       "assists": null,
       "penalties": null
@@ -1037,7 +1037,7 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:27Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 2,
       "assists": null,
       "penalties": null
@@ -1354,6 +1354,37 @@
     },
     {
       "player": {
+        "id": 3658,
+        "name": "Youri Tielemans",
+        "firstName": "Youri",
+        "lastName": "Tielemans",
+        "dateOfBirth": "1997-05-07",
+        "nationality": "Belgium",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 805,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
+        "address": "145, avenue Houba de Strooper Brussels 1020",
+        "website": "https://www.rbfa.be",
+        "founded": 1895,
+        "clubColors": "Red / Black / Yellow",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:01Z"
+      },
+      "playedMatches": 4,
+      "goals": 2,
+      "assists": null,
+      "penalties": 1
+    },
+    {
+      "player": {
         "id": 1878,
         "name": "Ladislav Krejčí",
         "firstName": "Ladislav",
@@ -1471,7 +1502,7 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:27Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 1,
       "assists": null,
       "penalties": null
@@ -1533,41 +1564,10 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:10Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 1,
       "assists": null,
       "penalties": null
-    },
-    {
-      "player": {
-        "id": 3483,
-        "name": "Breel Embolo",
-        "firstName": "Breel",
-        "lastName": "Embolo",
-        "dateOfBirth": "1997-02-14",
-        "nationality": "Switzerland",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:32Z"
-      },
-      "team": {
-        "id": 788,
-        "name": "Switzerland",
-        "shortName": "Switzerland",
-        "tla": "SUI",
-        "crest": "https://crests.football-data.org/788.svg",
-        "address": "Worbstrasse 48 Bern 3000",
-        "website": "http://www.football.ch",
-        "founded": 1895,
-        "clubColors": "Red / White",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:42:31Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": 2,
-      "penalties": 1
     }
   ]
 }

@@ -1199,6 +1199,37 @@
     },
     {
       "player": {
+        "id": 171876,
+        "name": "Habib Diarra",
+        "firstName": "Habib",
+        "lastName": "Diarra",
+        "dateOfBirth": "2004-01-03",
+        "nationality": "Senegal",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 804,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg",
+        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
+        "website": "http://www.fsfoot.sn",
+        "founded": 1960,
+        "clubColors": "White / Green",
+        "venue": null,
+        "lastUpdated": "2022-04-02T10:41:30Z"
+      },
+      "playedMatches": 4,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 633,
         "name": "Pape Gueye",
         "firstName": "Pape",
@@ -1532,37 +1563,6 @@
         "clubColors": "Maroon / White",
         "venue": null,
         "lastUpdated": "2021-05-22T11:27:38Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 34646,
-        "name": "John McGinn",
-        "firstName": "John",
-        "lastName": "McGinn",
-        "dateOfBirth": "1994-10-18",
-        "nationality": "Scotland",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:32Z"
-      },
-      "team": {
-        "id": 8873,
-        "name": "Scotland",
-        "shortName": "Scotland",
-        "tla": "SCO",
-        "crest": "https://crests.football-data.org/814.svg",
-        "address": "Hampden Park Glasgow G42 9AY",
-        "website": "http://www.scottishfa.co.uk",
-        "founded": 1873,
-        "clubColors": "Navy Blue / White",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:43:58Z"
       },
       "playedMatches": 3,
       "goals": 1,

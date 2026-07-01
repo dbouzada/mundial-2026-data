@@ -145,6 +145,37 @@
     },
     {
       "player": {
+        "id": 8004,
+        "name": "Harry Kane",
+        "firstName": "Harry",
+        "lastName": "Kane",
+        "dateOfBirth": "1993-07-28",
+        "nationality": "England",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:29Z"
+      },
+      "team": {
+        "id": 770,
+        "name": "England",
+        "shortName": "England",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg",
+        "address": "Wembley Stadium, PO Box 1966 London SW1P 9EQ",
+        "website": "http://www.thefa.com",
+        "founded": 1863,
+        "clubColors": "White / Red / Navy Blue",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:05Z"
+      },
+      "playedMatches": 4,
+      "goals": 4,
+      "assists": null,
+      "penalties": 1
+    },
+    {
+      "player": {
         "id": 3373,
         "name": "Ousmane Dembélé",
         "firstName": "Ousmane",
@@ -356,37 +387,6 @@
         "lastUpdated": "2026-04-17T11:46:20Z"
       },
       "playedMatches": 3,
-      "goals": 3,
-      "assists": null,
-      "penalties": 1
-    },
-    {
-      "player": {
-        "id": 8004,
-        "name": "Harry Kane",
-        "firstName": "Harry",
-        "lastName": "Kane",
-        "dateOfBirth": "1993-07-28",
-        "nationality": "England",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:29Z"
-      },
-      "team": {
-        "id": 770,
-        "name": "England",
-        "shortName": "England",
-        "tla": "ENG",
-        "crest": "https://crests.football-data.org/770.svg",
-        "address": "Wembley Stadium, PO Box 1966 London SW1P 9EQ",
-        "website": "http://www.thefa.com",
-        "founded": 1863,
-        "clubColors": "White / Red / Navy Blue",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:42:05Z"
-      },
-      "playedMatches": 4,
       "goals": 3,
       "assists": null,
       "penalties": 1

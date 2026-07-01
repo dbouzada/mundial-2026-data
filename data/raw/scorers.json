@@ -1292,6 +1292,37 @@
     },
     {
       "player": {
+        "id": 3662,
+        "name": "Romelu Lukaku",
+        "firstName": "Romelu",
+        "lastName": "Lukaku",
+        "dateOfBirth": "1993-05-13",
+        "nationality": "Belgium",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 805,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
+        "address": "145, avenue Houba de Strooper Brussels 1020",
+        "website": "https://www.rbfa.be",
+        "founded": 1895,
+        "clubColors": "Red / Black / Yellow",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:01Z"
+      },
+      "playedMatches": 4,
+      "goals": 2,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 8069,
         "name": "Riyad Mahrez",
         "firstName": "Riyad",
@@ -1537,37 +1568,6 @@
       "goals": 1,
       "assists": 2,
       "penalties": 1
-    },
-    {
-      "player": {
-        "id": 115828,
-        "name": "Boualem Khoukhi",
-        "firstName": "Boualem",
-        "lastName": "Khoukhi",
-        "dateOfBirth": "1990-07-09",
-        "nationality": "Qatar",
-        "section": "Defence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2023-11-16T09:48:54Z"
-      },
-      "team": {
-        "id": 8030,
-        "name": "Qatar",
-        "shortName": "Qatar",
-        "tla": "QAT",
-        "crest": "https://crests.football-data.org/8030.svg",
-        "address": "28th Floor, Al Bidda Tower Corniche Street, West Bay Doha P.O. Box 5",
-        "website": "http://www.qfa.com.qa",
-        "founded": 1960,
-        "clubColors": "Maroon / White",
-        "venue": null,
-        "lastUpdated": "2021-05-22T11:27:38Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
     }
   ]
 }

@@ -5329,11 +5329,11 @@
       },
       "id": 537422,
       "utcDate": "2026-07-01T20:00:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-01T20:57:09Z",
+      "lastUpdated": "2026-07-01T21:15:28Z",
       "homeTeam": {
         "id": 805,
         "name": "Belgium",

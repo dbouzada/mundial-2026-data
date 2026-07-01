@@ -207,6 +207,37 @@
     },
     {
       "player": {
+        "id": 3638,
+        "name": "Ismaïla Sarr",
+        "firstName": "Ismaïla",
+        "lastName": "Sarr",
+        "dateOfBirth": "1998-02-25",
+        "nationality": "Senegal",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-06T14:12:29Z"
+      },
+      "team": {
+        "id": 804,
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg",
+        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
+        "website": "http://www.fsfoot.sn",
+        "founded": 1960,
+        "clubColors": "White / Green",
+        "venue": null,
+        "lastUpdated": "2022-04-02T10:41:30Z"
+      },
+      "playedMatches": 4,
+      "goals": 4,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 39237,
         "name": "Julián Quiñones",
         "firstName": "Julián",
@@ -540,37 +571,6 @@
         "clubColors": "Orange / White / Blue",
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:48Z"
-      },
-      "playedMatches": 4,
-      "goals": 3,
-      "assists": 1,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 3638,
-        "name": "Ismaïla Sarr",
-        "firstName": "Ismaïla",
-        "lastName": "Sarr",
-        "dateOfBirth": "1998-02-25",
-        "nationality": "Senegal",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-06T14:12:29Z"
-      },
-      "team": {
-        "id": 804,
-        "name": "Senegal",
-        "shortName": "Senegal",
-        "tla": "SEN",
-        "crest": "https://crests.football-data.org/senegal.svg",
-        "address": "VDN-Ouest-Foire en face du CICES, Boite postale 13021 Dakar null",
-        "website": "http://www.fsfoot.sn",
-        "founded": 1960,
-        "clubColors": "White / Green",
-        "venue": null,
-        "lastUpdated": "2022-04-02T10:41:30Z"
       },
       "playedMatches": 4,
       "goals": 3,

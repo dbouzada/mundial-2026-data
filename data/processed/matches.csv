@@ -79,7 +79,7 @@ match_id,fecha,estado,etapa,grupo,estadio,home,home_id,away,away_id,goles_home,g
 537416,2026-06-30,FINISHED,LAST_32,,,France,773.0,Sweden,792.0,3.0,0.0,HOME_TEAM
 537425,2026-07-01,FINISHED,LAST_32,,,Mexico,769.0,Ecuador,791.0,2.0,0.0,HOME_TEAM
 537426,2026-07-01,FINISHED,LAST_32,,,England,770.0,Congo DR,1934.0,2.0,1.0,HOME_TEAM
-537422,2026-07-01,PAUSED,LAST_32,,,Belgium,805.0,Senegal,804.0,0.0,1.0,AWAY_TEAM
+537422,2026-07-01,IN_PLAY,LAST_32,,,Belgium,805.0,Senegal,804.0,0.0,1.0,AWAY_TEAM
 537421,2026-07-02,TIMED,LAST_32,,,United States,771.0,Bosnia-Herzegovina,1060.0,,,
 537420,2026-07-02,TIMED,LAST_32,,,Spain,760.0,Austria,816.0,,,
 537419,2026-07-02,TIMED,LAST_32,,,Portugal,765.0,Croatia,799.0,,,

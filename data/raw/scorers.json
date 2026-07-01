@@ -21,6 +21,37 @@
   "scorers": [
     {
       "player": {
+        "id": 3374,
+        "name": "Kylian Mbappé",
+        "firstName": "Kylian",
+        "lastName": "Mbappé",
+        "dateOfBirth": "1998-12-20",
+        "nationality": "France",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 773,
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
+        "address": "87 Boulevard de Grenelle Paris 75738",
+        "website": "http://www.fff.fr",
+        "founded": 1919,
+        "clubColors": "Blue / White / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:18Z"
+      },
+      "playedMatches": 4,
+      "goals": 6,
+      "assists": 2,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 3218,
         "name": "Lionel Messi",
         "firstName": "Lionel",
@@ -47,6 +78,37 @@
       },
       "playedMatches": 3,
       "goals": 6,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 38101,
+        "name": "Erling Haaland",
+        "firstName": "Erling",
+        "lastName": "Haaland",
+        "dateOfBirth": "2000-07-21",
+        "nationality": "Norway",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 8872,
+        "name": "Norway",
+        "shortName": "Norway",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg",
+        "address": "Serviceboks 1, Ullevaal stadion Oslo 0840",
+        "website": "http://www.fotball.no",
+        "founded": 1902,
+        "clubColors": "Red / White / Navy Blue",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:43:53Z"
+      },
+      "playedMatches": 4,
+      "goals": 5,
       "assists": null,
       "penalties": null
     },
@@ -83,68 +145,6 @@
     },
     {
       "player": {
-        "id": 3374,
-        "name": "Kylian Mbappé",
-        "firstName": "Kylian",
-        "lastName": "Mbappé",
-        "dateOfBirth": "1998-12-20",
-        "nationality": "France",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:30Z"
-      },
-      "team": {
-        "id": 773,
-        "name": "France",
-        "shortName": "France",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg",
-        "address": "87 Boulevard de Grenelle Paris 75738",
-        "website": "http://www.fff.fr",
-        "founded": 1919,
-        "clubColors": "Blue / White / Red",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:42:18Z"
-      },
-      "playedMatches": 3,
-      "goals": 4,
-      "assists": 2,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 38101,
-        "name": "Erling Haaland",
-        "firstName": "Erling",
-        "lastName": "Haaland",
-        "dateOfBirth": "2000-07-21",
-        "nationality": "Norway",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:30Z"
-      },
-      "team": {
-        "id": 8872,
-        "name": "Norway",
-        "shortName": "Norway",
-        "tla": "NOR",
-        "crest": "https://crests.football-data.org/813.svg",
-        "address": "Serviceboks 1, Ullevaal stadion Oslo 0840",
-        "website": "http://www.fotball.no",
-        "founded": 1902,
-        "clubColors": "Red / White / Navy Blue",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:43:53Z"
-      },
-      "playedMatches": 3,
-      "goals": 4,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
         "id": 3373,
         "name": "Ousmane Dembélé",
         "firstName": "Ousmane",
@@ -169,8 +169,39 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:18Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 4,
+      "assists": 2,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 39237,
+        "name": "Julián Quiñones",
+        "firstName": "Julián",
+        "lastName": "Quiñones",
+        "dateOfBirth": "1997-03-24",
+        "nationality": "Colombia",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": 33,
+        "lastUpdated": "2024-06-06T15:58:17Z"
+      },
+      "team": {
+        "id": 769,
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg",
+        "address": "Colima #373, Colonia Roma Norte, Del. Cuauhtémoc Ciudad de México 6700",
+        "website": "http://www.femexfut.org.mx",
+        "founded": 1927,
+        "clubColors": "Green / White / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:59Z"
+      },
+      "playedMatches": 4,
+      "goals": 3,
       "assists": 1,
       "penalties": null
     },
@@ -548,16 +579,16 @@
     },
     {
       "player": {
-        "id": 39237,
-        "name": "Julián Quiñones",
-        "firstName": "Julián",
-        "lastName": "Quiñones",
-        "dateOfBirth": "1997-03-24",
-        "nationality": "Colombia",
+        "id": 3305,
+        "name": "Raúl Jiménez",
+        "firstName": "Raúl",
+        "lastName": "Jiménez",
+        "dateOfBirth": "1991-05-05",
+        "nationality": "Mexico",
         "section": "Offence",
         "position": null,
-        "shirtNumber": 33,
-        "lastUpdated": "2024-06-06T15:58:17Z"
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-03T08:43:09Z"
       },
       "team": {
         "id": 769,
@@ -572,7 +603,7 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:41:59Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 2,
       "assists": null,
       "penalties": null
@@ -703,6 +734,37 @@
     },
     {
       "player": {
+        "id": 133584,
+        "name": "Amad Diallo",
+        "firstName": "Amad",
+        "lastName": "Diallo",
+        "dateOfBirth": "2002-07-11",
+        "nationality": "Ivory Coast",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": 79,
+        "lastUpdated": "2026-06-01T11:16:32Z"
+      },
+      "team": {
+        "id": 1935,
+        "name": "Ivory Coast",
+        "shortName": "Ivory Coast",
+        "tla": "CIV",
+        "crest": "https://crests.football-data.org/787.svg",
+        "address": "Treichville Avenue, 1 / BP 1202 Abidjan 01",
+        "website": "http://www.fif-ci.com",
+        "founded": 1960,
+        "clubColors": "Orange / Green / White",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:46:40Z"
+      },
+      "playedMatches": 3,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 145613,
         "name": "Yasin Ayari",
         "firstName": "Yasin",
@@ -727,7 +789,7 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:37Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 2,
       "assists": null,
       "penalties": null
@@ -790,6 +852,37 @@
         "lastUpdated": "2022-04-02T10:38:42Z"
       },
       "playedMatches": 3,
+      "goals": 2,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 172762,
+        "name": "Bradley Barcola",
+        "firstName": "Bradley",
+        "lastName": "Barcola",
+        "dateOfBirth": "2002-09-02",
+        "nationality": "France",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 773,
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
+        "address": "87 Boulevard de Grenelle Paris 75738",
+        "website": "http://www.fff.fr",
+        "founded": 1919,
+        "clubColors": "Blue / White / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:18Z"
+      },
+      "playedMatches": 4,
       "goals": 2,
       "assists": 1,
       "penalties": null
@@ -975,7 +1068,7 @@
         "venue": null,
         "lastUpdated": "2026-06-01T09:42:37Z"
       },
-      "playedMatches": 3,
+      "playedMatches": 4,
       "goals": 2,
       "assists": null,
       "penalties": null
@@ -1099,9 +1192,9 @@
         "venue": null,
         "lastUpdated": "2026-04-17T11:46:40Z"
       },
-      "playedMatches": 2,
+      "playedMatches": 3,
       "goals": 2,
-      "assists": null,
+      "assists": 1,
       "penalties": null
     },
     {
@@ -1195,37 +1288,6 @@
       "playedMatches": 3,
       "goals": 2,
       "assists": 2,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 3305,
-        "name": "Raúl Jiménez",
-        "firstName": "Raúl",
-        "lastName": "Jiménez",
-        "dateOfBirth": "1991-05-05",
-        "nationality": "Mexico",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-03T08:43:09Z"
-      },
-      "team": {
-        "id": 769,
-        "name": "Mexico",
-        "shortName": "Mexico",
-        "tla": "MEX",
-        "crest": "https://crests.football-data.org/769.svg",
-        "address": "Colima #373, Colonia Roma Norte, Del. Cuauhtémoc Ciudad de México 6700",
-        "website": "http://www.femexfut.org.mx",
-        "founded": 1927,
-        "clubColors": "Green / White / Red",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:41:59Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
       "penalties": null
     },
     {
@@ -1501,68 +1563,6 @@
         "clubColors": "Navy Blue / White",
         "venue": null,
         "lastUpdated": "2026-06-01T09:43:58Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 176991,
-        "name": "Nestor Irankunda",
-        "firstName": "Nestory",
-        "lastName": "Irankunda",
-        "dateOfBirth": "2006-02-09",
-        "nationality": "Australia",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2024-05-31T09:47:56Z"
-      },
-      "team": {
-        "id": 779,
-        "name": "Australia",
-        "shortName": "Australia",
-        "tla": "AUS",
-        "crest": "https://crests.football-data.org/779.svg",
-        "address": "Locked Bag A 4071 Sydney, NSW NSW 1235",
-        "website": "http://www.footballaustralia.com.au",
-        "founded": 1961,
-        "clubColors": "Gold / Green",
-        "venue": null,
-        "lastUpdated": "2021-05-22T11:30:43Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 4635,
-        "name": "Connor Metcalfe",
-        "firstName": "Connor",
-        "lastName": "Metcalfe",
-        "dateOfBirth": "1999-11-05",
-        "nationality": "Australia",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": 34,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 779,
-        "name": "Australia",
-        "shortName": "Australia",
-        "tla": "AUS",
-        "crest": "https://crests.football-data.org/779.svg",
-        "address": "Locked Bag A 4071 Sydney, NSW NSW 1235",
-        "website": "http://www.footballaustralia.com.au",
-        "founded": 1961,
-        "clubColors": "Gold / Green",
-        "venue": null,
-        "lastUpdated": "2021-05-22T11:30:43Z"
       },
       "playedMatches": 3,
       "goals": 1,

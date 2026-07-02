@@ -610,6 +610,37 @@
     },
     {
       "player": {
+        "id": 180137,
+        "name": "Mikel Oyarzabal",
+        "firstName": "",
+        "lastName": "Mikel Oyarzabal",
+        "dateOfBirth": "1997-04-21",
+        "nationality": "Spain",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 760,
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
+        "address": "Ramón y Cajal, s/n Las Rozas 28230",
+        "website": "http://www.rfef.es",
+        "founded": 1909,
+        "clubColors": "Red / Blue / Yellow",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:19Z"
+      },
+      "playedMatches": 4,
+      "goals": 3,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 3305,
         "name": "Raúl Jiménez",
         "firstName": "Raúl",
@@ -1098,37 +1129,6 @@
         "clubColors": "Blue / White",
         "venue": null,
         "lastUpdated": "2026-06-01T09:40:05Z"
-      },
-      "playedMatches": 4,
-      "goals": 2,
-      "assists": 1,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 180137,
-        "name": "Mikel Oyarzabal",
-        "firstName": "",
-        "lastName": "Mikel Oyarzabal",
-        "dateOfBirth": "1997-04-21",
-        "nationality": "Spain",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:30Z"
-      },
-      "team": {
-        "id": 760,
-        "name": "Spain",
-        "shortName": "Spain",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/760.svg",
-        "address": "Ramón y Cajal, s/n Las Rozas 28230",
-        "website": "http://www.rfef.es",
-        "founded": 1909,
-        "clubColors": "Red / Blue / Yellow",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:41:19Z"
       },
       "playedMatches": 4,
       "goals": 2,

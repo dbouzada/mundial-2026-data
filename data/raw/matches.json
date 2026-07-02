@@ -5069,7 +5069,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-01T08:25:00Z",
+      "lastUpdated": "2026-07-01T08:25:01Z",
       "homeTeam": {
         "id": 1935,
         "name": "Ivory Coast",
@@ -5350,7 +5350,7 @@
       },
       "score": {
         "winner": "HOME_TEAM",
-        "duration": "REGULAR",
+        "duration": "EXTRA_TIME",
         "fullTime": {
           "home": 3,
           "away": 2

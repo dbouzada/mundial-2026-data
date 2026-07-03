@@ -5539,7 +5539,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-03T01:22:34Z",
+      "lastUpdated": "2026-07-03T01:26:11Z",
       "homeTeam": {
         "id": 765,
         "name": "Portugal",
@@ -5601,11 +5601,11 @@
       },
       "id": 537429,
       "utcDate": "2026-07-03T03:00:00Z",
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-03T04:10:07Z",
+      "lastUpdated": "2026-07-03T04:15:01Z",
       "homeTeam": {
         "id": 788,
         "name": "Switzerland",
@@ -5624,7 +5624,7 @@
         "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         },
         "halfTime": {

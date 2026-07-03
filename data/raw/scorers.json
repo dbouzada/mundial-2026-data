@@ -512,7 +512,7 @@
       },
       "playedMatches": 4,
       "goals": 3,
-      "assists": 1,
+      "assists": 2,
       "penalties": null
     },
     {
@@ -731,6 +731,37 @@
       "goals": 2,
       "assists": null,
       "penalties": null
+    },
+    {
+      "player": {
+        "id": 3483,
+        "name": "Breel Embolo",
+        "firstName": "Breel",
+        "lastName": "Embolo",
+        "dateOfBirth": "1997-02-14",
+        "nationality": "Switzerland",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:32Z"
+      },
+      "team": {
+        "id": 788,
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
+        "address": "Worbstrasse 48 Bern 3000",
+        "website": "http://www.football.ch",
+        "founded": 1895,
+        "clubColors": "Red / White",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:31Z"
+      },
+      "playedMatches": 4,
+      "goals": 2,
+      "assists": 2,
+      "penalties": 1
     },
     {
       "player": {
@@ -1532,37 +1563,6 @@
         "clubColors": "Red / White / Blue",
         "venue": null,
         "lastUpdated": "2021-05-22T11:35:25Z"
-      },
-      "playedMatches": 4,
-      "goals": 1,
-      "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 136733,
-        "name": "Gio Reyna",
-        "firstName": "Gio",
-        "lastName": "Reyna",
-        "dateOfBirth": "2002-11-13",
-        "nationality": "USA",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:31Z"
-      },
-      "team": {
-        "id": 771,
-        "name": "United States",
-        "shortName": "USA",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg",
-        "address": "1801 South Prairie Ave Chicago, IL 90266",
-        "website": "http://www.ussoccer.com",
-        "founded": 1913,
-        "clubColors": "White / Navy Blue / Red",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:42:10Z"
       },
       "playedMatches": 4,
       "goals": 1,

@@ -5745,11 +5745,11 @@
       },
       "id": 537427,
       "utcDate": "2026-07-03T22:00:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-03T22:55:30Z",
+      "lastUpdated": "2026-07-03T23:15:18Z",
       "homeTeam": {
         "id": 762,
         "name": "Argentina",

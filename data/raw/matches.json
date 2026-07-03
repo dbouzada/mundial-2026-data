@@ -5671,7 +5671,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "lastUpdated": "2026-07-03T19:55:24Z",
+      "lastUpdated": "2026-07-03T20:00:59Z",
       "homeTeam": {
         "id": 779,
         "name": "Australia",
@@ -5767,7 +5767,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 77052,
+          "name": "Drew Fischer",
+          "type": "REFEREE",
+          "nationality": "Canada"
+        }
+      ]
     },
     {
       "area": {

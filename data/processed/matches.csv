@@ -83,7 +83,7 @@ match_id,fecha,estado,etapa,grupo,estadio,home,home_id,away,away_id,goles_home,g
 537421,2026-07-02,FINISHED,LAST_32,,,United States,771.0,Bosnia-Herzegovina,1060.0,2.0,0.0,HOME_TEAM
 537420,2026-07-02,FINISHED,LAST_32,,,Spain,760.0,Austria,816.0,3.0,0.0,HOME_TEAM
 537419,2026-07-02,FINISHED,LAST_32,,,Portugal,765.0,Croatia,799.0,2.0,1.0,HOME_TEAM
-537429,2026-07-03,PAUSED,LAST_32,,,Switzerland,788.0,Algeria,778.0,1.0,0.0,HOME_TEAM
+537429,2026-07-03,LIVE,LAST_32,,,Switzerland,788.0,Algeria,778.0,1.0,0.0,HOME_TEAM
 537428,2026-07-03,TIMED,LAST_32,,,Australia,779.0,Egypt,825.0,,,
 537427,2026-07-03,TIMED,LAST_32,,,Argentina,762.0,Cape Verde Islands,1930.0,,,
 537430,2026-07-04,TIMED,LAST_32,,,Colombia,818.0,Ghana,763.0,,,

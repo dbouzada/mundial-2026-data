@@ -641,6 +641,37 @@
     },
     {
       "player": {
+        "id": 44,
+        "name": "Cristiano Ronaldo",
+        "firstName": "",
+        "lastName": "Cristiano Ronaldo",
+        "dateOfBirth": "1985-02-05",
+        "nationality": "Portugal",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-06-12T17:56:51Z"
+      },
+      "team": {
+        "id": 765,
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "tla": "POR",
+        "crest": "https://crests.football-data.org/765.svg",
+        "address": "Rua Alexandre Herculano, 58 Lisboa 1250-012",
+        "website": "http://www.fpf.pt",
+        "founded": 1914,
+        "clubColors": "Red / Green",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:41:53Z"
+      },
+      "playedMatches": 4,
+      "goals": 3,
+      "assists": null,
+      "penalties": 1
+    },
+    {
+      "player": {
         "id": 3305,
         "name": "Raúl Jiménez",
         "firstName": "Raúl",
@@ -1133,37 +1164,6 @@
       "playedMatches": 4,
       "goals": 2,
       "assists": 1,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 44,
-        "name": "Cristiano Ronaldo",
-        "firstName": "",
-        "lastName": "Cristiano Ronaldo",
-        "dateOfBirth": "1985-02-05",
-        "nationality": "Portugal",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2024-06-12T17:56:51Z"
-      },
-      "team": {
-        "id": 765,
-        "name": "Portugal",
-        "shortName": "Portugal",
-        "tla": "POR",
-        "crest": "https://crests.football-data.org/765.svg",
-        "address": "Rua Alexandre Herculano, 58 Lisboa 1250-012",
-        "website": "http://www.fpf.pt",
-        "founded": 1914,
-        "clubColors": "Red / Green",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:41:53Z"
-      },
-      "playedMatches": 4,
-      "goals": 2,
-      "assists": null,
       "penalties": null
     },
     {

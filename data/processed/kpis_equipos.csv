@@ -1,14 +1,14 @@
 equipo,pj,gf,gc,dg,puntos,promedio_gf,promedio_gc
 Mexico,4,8,0,8,12,2.0,0.0
 France,4,13,2,11,12,3.25,0.5
-Spain,4,8,0,8,10,2.0,0.0
+Argentina,4,11,3,8,12,2.75,0.75
 Brazil,4,9,2,7,10,2.25,0.5
-Morocco,4,10,6,4,10,2.5,1.5
 Switzerland,4,9,3,6,10,2.25,0.75
 England,4,8,3,5,10,2.0,0.75
-United States,4,10,4,6,9,2.5,1.0
-Argentina,3,8,1,7,9,2.67,0.33
+Spain,4,8,0,8,10,2.0,0.0
+Morocco,4,10,6,4,10,2.5,1.5
 Norway,4,10,8,2,9,2.5,2.0
+United States,4,10,4,6,9,2.5,1.0
 Egypt,4,10,6,4,8,2.5,1.5
 Portugal,4,8,2,6,8,2.0,0.5
 Belgium,4,9,4,5,8,2.25,1.0
@@ -34,7 +34,7 @@ Iran,3,3,3,0,3,1.0,1.0
 Senegal,4,10,9,1,3,2.5,2.25
 Turkey,3,3,5,-2,3,1.0,1.67
 Scotland,3,1,4,-3,3,0.33,1.33
-Cape Verde Islands,3,2,2,0,3,0.67,0.67
+Cape Verde Islands,4,4,5,-1,3,1.0,1.25
 Saudi Arabia,3,1,5,-4,2,0.33,1.67
 Uruguay,3,3,4,-1,2,1.0,1.33
 Czechia,3,2,6,-4,1,0.67,2.0

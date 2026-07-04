@@ -5889,7 +5889,7 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-04T18:15:24Z",
+      "lastUpdated": "2026-07-04T18:20:48Z",
       "homeTeam": {
         "id": 828,
         "name": "Canada",
@@ -5905,11 +5905,11 @@
         "crest": "https://crests.football-data.org/morocco.svg"
       },
       "score": {
-        "winner": "DRAW",
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         },
         "halfTime": {
           "home": 0,

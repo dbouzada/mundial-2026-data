@@ -85,7 +85,7 @@ match_id,fecha,estado,etapa,grupo,estadio,home,home_id,away,away_id,goles_home,g
 537419,2026-07-02,FINISHED,LAST_32,,,Portugal,765.0,Croatia,799.0,2.0,1.0,HOME_TEAM
 537429,2026-07-03,FINISHED,LAST_32,,,Switzerland,788.0,Algeria,778.0,2.0,0.0,HOME_TEAM
 537428,2026-07-03,FINISHED,LAST_32,,,Australia,779.0,Egypt,825.0,3.0,5.0,
-537427,2026-07-03,IN_PLAY,LAST_32,,,Argentina,762.0,Cape Verde Islands,1930.0,2.0,2.0,DRAW
+537427,2026-07-03,PAUSED,LAST_32,,,Argentina,762.0,Cape Verde Islands,1930.0,2.0,2.0,DRAW
 537430,2026-07-04,TIMED,LAST_32,,,Colombia,818.0,Ghana,763.0,,,
 537376,2026-07-04,TIMED,LAST_16,,,Canada,828.0,Morocco,815.0,,,
 537375,2026-07-04,TIMED,LAST_16,,,Paraguay,761.0,France,773.0,,,

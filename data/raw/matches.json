@@ -6083,11 +6083,11 @@
       },
       "id": 537378,
       "utcDate": "2026-07-06T01:00:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-06T01:58:48Z",
+      "lastUpdated": "2026-07-06T02:15:26Z",
       "homeTeam": {
         "id": 769,
         "name": "Mexico",

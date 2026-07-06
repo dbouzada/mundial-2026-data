@@ -6087,7 +6087,7 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-06T01:45:36Z",
+      "lastUpdated": "2026-07-06T01:50:24Z",
       "homeTeam": {
         "id": 769,
         "name": "Mexico",
@@ -6106,7 +6106,7 @@
         "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 2
         },
         "halfTime": {

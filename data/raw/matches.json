@@ -6083,11 +6083,11 @@
       },
       "id": 537378,
       "utcDate": "2026-07-06T01:00:00Z",
-      "status": "TIMED",
+      "status": "LIVE",
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-06T01:00:33Z",
+      "lastUpdated": "2026-07-06T01:05:22Z",
       "homeTeam": {
         "id": 769,
         "name": "Mexico",
@@ -6103,11 +6103,11 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,

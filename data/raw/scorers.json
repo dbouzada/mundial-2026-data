@@ -1380,7 +1380,7 @@
       },
       "playedMatches": 5,
       "goals": 2,
-      "assists": 1,
+      "assists": 2,
       "penalties": null
     },
     {
@@ -1478,6 +1478,37 @@
     },
     {
       "player": {
+        "id": 144470,
+        "name": "Malik Tillman",
+        "firstName": "Malik",
+        "lastName": "Tillman",
+        "dateOfBirth": "2002-05-28",
+        "nationality": "USA",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:31Z"
+      },
+      "team": {
+        "id": 771,
+        "name": "United States",
+        "shortName": "USA",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg",
+        "address": "1801 South Prairie Ave Chicago, IL 90266",
+        "website": "http://www.ussoccer.com",
+        "founded": 1913,
+        "clubColors": "White / Navy Blue / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:10Z"
+      },
+      "playedMatches": 5,
+      "goals": 2,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 122511,
         "name": "Azzedine Ounahi",
         "firstName": "Azzedine",
@@ -1509,64 +1540,33 @@
     },
     {
       "player": {
-        "id": 1878,
-        "name": "Ladislav Krejčí",
-        "firstName": "Ladislav",
-        "lastName": "Krejčí",
-        "dateOfBirth": "1999-04-20",
-        "nationality": "Czech Republic",
-        "section": "Midfield",
+        "id": 129947,
+        "name": "Charles De Ketelaere",
+        "firstName": "Charles",
+        "lastName": "De Ketelaere",
+        "dateOfBirth": "2001-03-10",
+        "nationality": "Belgium",
+        "section": "Offence",
         "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-12T03:20:57Z"
+        "shirtNumber": 90,
+        "lastUpdated": "2026-06-01T11:16:30Z"
       },
       "team": {
-        "id": 798,
-        "name": "Czechia",
-        "shortName": "Czechia",
-        "tla": "CZE",
-        "crest": "https://crests.football-data.org/798.svg",
-        "address": "Diskařská 2431/4 Praha 16017",
-        "website": "http://www.fotbal.cz",
-        "founded": 1901,
-        "clubColors": "Red / White / Blue",
+        "id": 805,
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
+        "address": "145, avenue Houba de Strooper Brussels 1020",
+        "website": "https://www.rbfa.be",
+        "founded": 1895,
+        "clubColors": "Red / Black / Yellow",
         "venue": null,
-        "lastUpdated": "2026-06-01T09:42:43Z"
+        "lastUpdated": "2026-06-01T09:43:01Z"
       },
-      "playedMatches": 3,
-      "goals": 1,
+      "playedMatches": 5,
+      "goals": 2,
       "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 170561,
-        "name": "In-beom Hwang",
-        "firstName": "In-beom",
-        "lastName": "Hwang",
-        "dateOfBirth": "1996-09-20",
-        "nationality": "South Korea",
-        "section": "Midfield",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2023-06-26T14:29:32Z"
-      },
-      "team": {
-        "id": 772,
-        "name": "South Korea",
-        "shortName": "Korea Republic",
-        "tla": "KOR",
-        "crest": "https://crests.football-data.org/772.png",
-        "address": "1-131 Sinmunno, 2-ga Jongno-Gu Seoul 110-062",
-        "website": "http://www.kfa.or.kr",
-        "founded": 1928,
-        "clubColors": "Red / White / Blue",
-        "venue": null,
-        "lastUpdated": "2022-04-02T10:45:25Z"
-      },
-      "playedMatches": 3,
-      "goals": 1,
-      "assists": 1,
       "penalties": null
     }
   ]

@@ -6215,11 +6215,11 @@
       },
       "id": 537380,
       "utcDate": "2026-07-07T00:00:00Z",
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-07T00:55:18Z",
+      "lastUpdated": "2026-07-07T00:58:54Z",
       "homeTeam": {
         "id": 771,
         "name": "United States",
@@ -6242,8 +6242,8 @@
           "away": 2
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "odds": {

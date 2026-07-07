@@ -6,7 +6,7 @@
     "count": 104,
     "first": "2026-06-11",
     "last": "2026-07-19",
-    "played": 94
+    "played": 95
   },
   "competition": {
     "id": 2000,
@@ -6281,11 +6281,11 @@
       },
       "id": 537381,
       "utcDate": "2026-07-07T16:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-07T18:04:33Z",
+      "lastUpdated": "2026-07-07T18:10:33Z",
       "homeTeam": {
         "id": 762,
         "name": "Argentina",

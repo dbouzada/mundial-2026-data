@@ -6285,7 +6285,7 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2026-07-07T17:55:33Z",
+      "lastUpdated": "2026-07-07T18:01:33Z",
       "homeTeam": {
         "id": 762,
         "name": "Argentina",
@@ -6301,10 +6301,10 @@
         "crest": "https://crests.football-data.org/825.svg"
       },
       "score": {
-        "winner": "DRAW",
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 2
         },
         "halfTime": {
@@ -6381,7 +6381,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 190010,
+          "name": "Ivan Barton",
+          "type": "REFEREE",
+          "nationality": null
+        }
+      ]
     },
     {
       "area": {

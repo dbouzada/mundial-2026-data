@@ -1261,6 +1261,37 @@
     },
     {
       "player": {
+        "id": 295848,
+        "name": "Mostafa Ziko",
+        "firstName": "Mostafa",
+        "lastName": "Ziko",
+        "dateOfBirth": "1997-04-27",
+        "nationality": "Egypt",
+        "section": "Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-06T13:38:49Z"
+      },
+      "team": {
+        "id": 825,
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "tla": "EGY",
+        "crest": "https://crests.football-data.org/825.svg",
+        "address": "5, Gabalaya Street, El Gezira Cairo null",
+        "website": "http://www.efa.com.eg",
+        "founded": 1921,
+        "clubColors": "Red / White / Black",
+        "venue": null,
+        "lastUpdated": "2026-04-17T11:44:21Z"
+      },
+      "playedMatches": 5,
+      "goals": 2,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 130502,
         "name": "Soufiane Rahimi",
         "firstName": "Soufiane",
@@ -1536,37 +1567,6 @@
       "playedMatches": 5,
       "goals": 2,
       "assists": null,
-      "penalties": null
-    },
-    {
-      "player": {
-        "id": 129947,
-        "name": "Charles De Ketelaere",
-        "firstName": "Charles",
-        "lastName": "De Ketelaere",
-        "dateOfBirth": "2001-03-10",
-        "nationality": "Belgium",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": 90,
-        "lastUpdated": "2026-06-01T11:16:30Z"
-      },
-      "team": {
-        "id": 805,
-        "name": "Belgium",
-        "shortName": "Belgium",
-        "tla": "BEL",
-        "crest": "https://crests.football-data.org/805.svg",
-        "address": "145, avenue Houba de Strooper Brussels 1020",
-        "website": "https://www.rbfa.be",
-        "founded": 1895,
-        "clubColors": "Red / Black / Yellow",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:43:01Z"
-      },
-      "playedMatches": 5,
-      "goals": 2,
-      "assists": 1,
       "penalties": null
     }
   ]

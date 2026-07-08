@@ -406,17 +406,10 @@ matches["grupo_clean"] = matches["grupo"].apply(clean_grupo)
 finished = matches[matches["estado"] == "FINISHED"].copy()
 upcoming = matches[matches["estado"].isin(["TIMED","SCHEDULED"])].copy()
 
-# Fix fechas incorrectas de la API (diferencia de timezone)
-fecha_fixes = {
-    ("Argentina", "Switzerland"): "2026-07-11",
-    ("Switzerland", "Argentina"): "2026-07-11",
-    ("Norway",    "England"):      "2026-07-11",
-    ("England",   "Norway"):       "2026-07-11",
-}
-for (h, a), fecha_correcta in fecha_fixes.items():
-    mask = ((upcoming["home"]==h) & (upcoming["away"]==a)) | ((upcoming["home"]==a) & (upcoming["away"]==h))
-    if mask.any():
-        upcoming.loc[mask, "fecha"] = pd.to_datetime(fecha_correcta + " 19:00:00")
+# Fix fecha Argentina vs Switzerland (API devuelve 12/07 por timezone, es 11/07)
+mask_arg = ((upcoming["home"]=="Argentina") & (upcoming["away"]=="Switzerland")) |            ((upcoming["home"]=="Switzerland") & (upcoming["away"]=="Argentina"))
+if mask_arg.any():
+    upcoming.loc[mask_arg, "fecha"] = pd.to_datetime("2026-07-11 22:00:00")
 in_play  = matches[matches["estado"] == "IN_PLAY"].copy()
 
 standings["grupo_clean"] = standings["grupo"].apply(clean_grupo)

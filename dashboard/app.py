@@ -112,7 +112,7 @@ HORARIOS_ARG = {
     'third place': '18:00',            # 18/7 Miami
     'tercer puesto': '18:00',
     # Final
-    'final': '19:00',                  # 19/7 Nueva York
+    'final': '16:00',                  # 19/7 Nueva York
 }
 
 def get_hora_arg(home, away):

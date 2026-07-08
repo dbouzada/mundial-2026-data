@@ -112,7 +112,7 @@ HORARIOS_ARG = {
     'third place': '18:00',            # 18/7 Miami
     'tercer puesto': '18:00',
     # Final
-    'final': '16:00',                  # 19/7 Nueva York
+    'final': '19:00',                  # 19/7 Nueva York
 }
 
 def get_hora_arg(home, away):
@@ -405,6 +405,18 @@ matches["grupo_clean"] = matches["grupo"].apply(clean_grupo)
 
 finished = matches[matches["estado"] == "FINISHED"].copy()
 upcoming = matches[matches["estado"].isin(["TIMED","SCHEDULED"])].copy()
+
+# Fix fechas incorrectas de la API (diferencia de timezone)
+fecha_fixes = {
+    ("Argentina", "Switzerland"): "2026-07-11",
+    ("Switzerland", "Argentina"): "2026-07-11",
+    ("Norway",    "England"):      "2026-07-11",
+    ("England",   "Norway"):       "2026-07-11",
+}
+for (h, a), fecha_correcta in fecha_fixes.items():
+    mask = ((upcoming["home"]==h) & (upcoming["away"]==a)) | ((upcoming["home"]==a) & (upcoming["away"]==h))
+    if mask.any():
+        upcoming.loc[mask, "fecha"] = pd.to_datetime(fecha_correcta + " 19:00:00")
 in_play  = matches[matches["estado"] == "IN_PLAY"].copy()
 
 standings["grupo_clean"] = standings["grupo"].apply(clean_grupo)

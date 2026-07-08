@@ -13,6 +13,7 @@ HORARIOS_ARG = {
     # Jornada 1
     'mexico vs south africa': '16:00',
     'south korea vs czechia': '23:00',
+    'south korea vs czech republic': '23:00',
     'canada vs bosnia and herzegovina': '16:00',
     'united states vs paraguay': '22:00',
     'australia vs turkey': '01:00',
@@ -25,6 +26,7 @@ HORARIOS_ARG = {
     'sweden vs tunisia': '23:00',
     'belgium vs egypt': '16:00',
     'spain vs cape verde islands': '13:00',
+    'spain vs cape verde': '13:00',
     'iran vs new zealand': '22:00',
     'saudi arabia vs uruguay': '19:00',
     'france vs senegal': '16:00',
@@ -36,13 +38,14 @@ HORARIOS_ARG = {
     'england vs croatia': '17:00',
     'ghana vs panama': '20:00',
     'czechia vs south africa': '13:00',
+    'czech republic vs south africa': '13:00',
     'switzerland vs bosnia and herzegovina': '16:00',
     'switzerland vs bosnia-herzegovina': '16:00',
     'uzbekistan vs colombia': '23:00',
     # Jornada 2
     'south korea vs mexico': '20:00',
-    'czech republic vs qatar': '20:00',
     'czechia vs qatar': '20:00',
+    'czech republic vs qatar': '20:00',
     'bosnia and herzegovina vs switzerland': '16:00',
     'paraguay vs australia': '16:00',
     'turkey vs united states': '22:00',
@@ -66,72 +69,50 @@ HORARIOS_ARG = {
     'panama vs uzbekistan': '19:00',
     'colombia vs norway': '22:00',
     # Jornada 3
-    'mexico vs czech republic': '20:00',
-    'mexico vs czechia': '20:00',
-    'south africa vs south korea': '20:00',
-    'qatar vs bosnia and herzegovina': '21:00',
-    'switzerland vs canada': '21:00',
-    'united states vs australia': '21:00',
-    'turkey vs paraguay': '21:00',
-    'brazil vs scotland': '21:00',
-    'morocco vs haiti': '21:00',
-    'ivory coast vs germany': '21:00',
-    'ecuador vs curacao': '21:00',
-    'sweden vs netherlands': '21:00',
-    'japan vs tunisia': '21:00',
-    'spain vs belgium': '21:00',
-    'egypt vs cape verde islands': '21:00',
-    'egypt vs cape verde': '21:00',
-    'saudi arabia vs uruguay': '21:00',
-    'iran vs iraq': '21:00',
-    'senegal vs norway': '21:00',
-    'argentina vs jordan': '21:00',
-    'algeria vs austria': '21:00',
-    'portugal vs england': '21:00',
-    'dr congo vs croatia': '21:00',
-    'congo dr vs croatia': '21:00',
-    'ghana vs uzbekistan': '21:00',
-    'panama vs colombia': '21:00',
-    # 16avos de final
-    'south africa vs canada': '19:00',
-    'brazil vs japan': '17:00',
-    'germany vs paraguay': '20:30',
-    'netherlands vs morocco': '01:00',
-    'ivory coast vs norway': '17:00',
-    'france vs sweden': '21:00',
-    'mexico vs ecuador': '01:00',
-    'england vs dr congo': '16:00',
-    'england vs congo dr': '16:00',
-    'belgium vs senegal': '20:00',
-    'united states vs bosnia and herzegovina': '00:00',
-    'australia vs egypt': '18:00',
-    'argentina vs cape verde islands': '22:00',
-    'argentina vs cape verde': '22:00',
-    'colombia vs ghana': '01:30',
-    'canada vs morocco': '17:00',
-    'paraguay vs france': '21:00',
-    'brazil vs norway': '20:00',
-    'mexico vs england': '00:00',
-    'spain vs portugal': '19:00',
-    'belgium vs united states': '00:00',
-    'argentina vs egypt': '16:00',
-    'switzerland vs colombia': '19:00',
-    # Cuartos de final
-    'france vs morocco': '17:00',
-    'marruecos vs francia': '17:00',
-    'spain vs belgium': '16:00',
-    'espana vs belgica': '16:00',
-    'norway vs england': '18:00',
-    'noruega vs inglaterra': '18:00',
-    'argentina vs switzerland': '22:00',
-    'argentina vs suiza': '22:00',
-    # Semifinales
-    'semifinal 1': '17:00',
-    'semifinal 2': '16:00',
+    'mexico vs czechia': '21:00',
+    'mexico vs czech republic': '21:00',
+    'south africa vs south korea': '21:00',
+    # Octavos de final
+    'south africa vs canada': '16:00',
+    'brazil vs japan': '14:00',
+    'germany vs paraguay': '17:30',
+    'netherlands vs morocco': '22:00',
+    'ivory coast vs norway': '14:00',
+    'france vs sweden': '18:00',
+    'mexico vs ecuador': '22:00',
+    'england vs dr congo': '13:00',
+    'england vs congo dr': '13:00',
+    'belgium vs senegal': '17:00',
+    'united states vs bosnia and herzegovina': '21:00',
+    'australia vs egypt': '15:00',
+    'argentina vs cape verde islands': '19:00',
+    'argentina vs cape verde': '19:00',
+    'colombia vs ghana': '22:30',
+    'canada vs morocco': '14:00',
+    'paraguay vs france': '18:00',
+    'brazil vs norway': '17:00',
+    'mexico vs england': '21:00',
+    'spain vs portugal': '16:00',
+    'belgium vs united states': '21:00',
+    'argentina vs egypt': '13:00',
+    'switzerland vs colombia': '17:00',
+    # Cuartos de final (horarios ARG confirmados por Olé)
+    'france vs morocco': '17:00',      # 9/7 Boston
+    'morocco vs france': '17:00',
+    'spain vs belgium': '16:00',       # 10/7 Los Angeles
+    'belgium vs spain': '16:00',
+    'norway vs england': '18:00',      # 11/7 Miami
+    'england vs norway': '18:00',
+    'argentina vs switzerland': '22:00', # 11/7 Kansas City
+    'switzerland vs argentina': '22:00',
+    # Semifinales (horarios ARG)
+    'semifinal 1': '16:00',            # 14/7 Dallas
+    'semifinal 2': '16:00',            # 15/7 Atlanta
     # Tercer puesto
-    '3rd place': '17:00',
+    'third place': '18:00',            # 18/7 Miami
+    'tercer puesto': '18:00',
     # Final
-    'final': '17:00',
+    'final': '19:00',                  # 19/7 Nueva York
 }
 
 def get_hora_arg(home, away):
@@ -473,6 +454,37 @@ with col_r2:
         st.cache_data.clear()
         st.rerun()
 
+# ── PRÓXIMOS ──────────────────────────────────────────────────────────────────
+st.markdown("<div class='section-divider'><div class='section-divider-line'></div><div class='section-divider-title'>Próximos partidos</div><div class='section-divider-line' style='background:linear-gradient(90deg,transparent,#1e1e35)'></div></div>", unsafe_allow_html=True)
+
+if upcoming.empty:
+    st.markdown("<p style='color:#33334a;font-size:0.85rem'>No hay próximos partidos programados.</p>", unsafe_allow_html=True)
+else:
+    proximos = upcoming.sort_values("fecha").head(6)
+    cols = st.columns(3)
+    for i, (_, row) in enumerate(proximos.iterrows()):
+        if pd.notna(row["fecha"]):
+            from datetime import timedelta
+            hora_utc = row["fecha"]
+            if hora_utc.hour == 0 and hora_utc.minute == 0:
+                hora_real = get_hora_arg(row["home"], row["away"])
+                fecha_base2 = hora_utc.strftime("%d %b")
+                if hora_real:
+                    fecha_str = fecha_base2 + " · " + hora_real + " ARG"
+                else:
+                    fecha_str = fecha_base2 + " · Hora a confirmar"
+            else:
+                fecha_arg = hora_utc - timedelta(hours=3)
+                fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
+        else:
+            fecha_str = "—"
+        grupo_txt = clean_grupo(str(row.get("grupo",""))) if pd.notna(row.get("grupo")) else str(row.get("etapa",""))
+        with cols[i % 3]:
+            st.markdown(f"""<div class='next-card'>
+                <div class='next-card-time'>{fecha_str} · {grupo_txt}</div>
+                <div class='next-card-match'>{row['home']} vs {row['away']}</div>
+            </div>""", unsafe_allow_html=True)
+
 # ── FASE ELIMINATORIA (BRACKET EN ÁRBOL) ───────────────────────────────────────
 FASES_ORDEN = ["LAST_32","LAST_16","QUARTER_FINALS","SEMI_FINALS","THIRD_PLACE","FINAL"]
 FASES_LABEL = {
@@ -525,7 +537,7 @@ def connector_svg(n_partidos_ronda, fase_height, card_h):
         lines.append(f"<path d='M0,{y2} H10' stroke='#2a2a45' stroke-width='1.5' fill='none'/>")
     return f"<svg width='20' height='{fase_height}' style='display:block'>{''.join(lines)}</svg>"
 
-with st.expander("🏆 Bracket — Fase Eliminatoria (en curso)", expanded=True):
+with st.expander("🏆 Fase Eliminatoria — Bracket (16avos en adelante)", expanded=False):
     if elim_bracket.empty:
         st.markdown("<p style='color:#666677;font-size:0.85rem'>La fase eliminatoria todavía no arrancó. En cuanto haya partidos de 16avos en adelante, van a aparecer acá. Los cruces exactos (qué grupo enfrenta a qué tercero) recién se conocen al cerrar la fase de grupos, así que hasta entonces vas a ver \"Por definir\".</p>", unsafe_allow_html=True)
     else:
@@ -573,7 +585,6 @@ with st.expander("🏆 Bracket — Fase Eliminatoria (en curso)", expanded=True)
         with col_tp:
             for _, row in tercer_puesto.iterrows():
                 st.markdown(f"<div style='position:relative;height:{CARD_H}px'>{match_card_html(row,0)}</div>", unsafe_allow_html=True)
-
 
 # ── KPIs ──────────────────────────────────────────────────────────────────────
 st.markdown("<div class='section-divider'><div class='section-divider-line'></div><div class='section-divider-title'>Resumen del torneo</div><div class='section-divider-line' style='background:linear-gradient(90deg,transparent,#1e1e35)'></div></div>", unsafe_allow_html=True)
@@ -676,37 +687,6 @@ if not finished.empty:
         gauge.update_layout(margin=dict(t=40, b=20, l=20, r=20))
         st.markdown("**Promedio**")
         st.plotly_chart(gauge, use_container_width=True)
-
-# ── PRÓXIMOS ──────────────────────────────────────────────────────────────────
-st.markdown("<div class='section-divider'><div class='section-divider-line'></div><div class='section-divider-title'>Próximos partidos</div><div class='section-divider-line' style='background:linear-gradient(90deg,transparent,#1e1e35)'></div></div>", unsafe_allow_html=True)
-
-if upcoming.empty:
-    st.markdown("<p style='color:#33334a;font-size:0.85rem'>No hay próximos partidos programados.</p>", unsafe_allow_html=True)
-else:
-    proximos = upcoming.sort_values("fecha").head(6)
-    cols = st.columns(3)
-    for i, (_, row) in enumerate(proximos.iterrows()):
-        if pd.notna(row["fecha"]):
-            from datetime import timedelta
-            hora_utc = row["fecha"]
-            if hora_utc.hour == 0 and hora_utc.minute == 0:
-                hora_real = get_hora_arg(row["home"], row["away"])
-                fecha_base2 = hora_utc.strftime("%d %b")
-                if hora_real:
-                    fecha_str = fecha_base2 + " · " + hora_real + " ARG"
-                else:
-                    fecha_str = fecha_base2 + " · Hora a confirmar"
-            else:
-                fecha_arg = hora_utc - timedelta(hours=3)
-                fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
-        else:
-            fecha_str = "—"
-        grupo_txt = clean_grupo(str(row.get("grupo",""))) if pd.notna(row.get("grupo")) else str(row.get("etapa",""))
-        with cols[i % 3]:
-            st.markdown(f"""<div class='next-card'>
-                <div class='next-card-time'>{fecha_str} · {grupo_txt}</div>
-                <div class='next-card-match'>{row['home']} vs {row['away']}</div>
-            </div>""", unsafe_allow_html=True)
 
 # ── RESULTADOS ────────────────────────────────────────────────────────────────
 st.markdown("<div class='section-divider'><div class='section-divider-line'></div><div class='section-divider-title'>Resultados</div><div class='section-divider-line' style='background:linear-gradient(90deg,transparent,#1e1e35)'></div></div>", unsafe_allow_html=True)
@@ -1173,17 +1153,6 @@ else:
                 hovertemplate="Rival: %{y}<extra></extra>"))
             fig_a.update_layout(**theme(height=300), barmode="group")
             st.plotly_chart(fig_a, use_container_width=True)
-
-# ── FASE ELIMINATORIA (BRACKET) ────────────────────────────────────────────────
-FASES_ORDEN = ["LAST_32","LAST_16","QUARTER_FINALS","SEMI_FINALS","THIRD_PLACE","FINAL"]
-FASES_LABEL = {
-    "LAST_32": "16avos",
-    "LAST_16": "8avos",
-    "QUARTER_FINALS": "Cuartos",
-    "SEMI_FINALS": "Semis",
-    "THIRD_PLACE": "3er puesto",
-    "FINAL": "Final",
-}
 
 # ── FOOTER ────────────────────────────────────────────────────────────────────
 st.markdown("<br><br>", unsafe_allow_html=True)

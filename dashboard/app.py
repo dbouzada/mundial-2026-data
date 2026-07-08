@@ -467,27 +467,47 @@ if upcoming.empty:
 else:
     proximos = upcoming.sort_values("fecha").head(6)
     cols = st.columns(3)
+    # Placeholders para partidos sin equipos definidos
+    PLACEHOLDERS = {
+        "SEMI_FINALS":  [("Fra/Mar", "Esp/Bél"), ("Nor/Ing", "Arg/Sui")],
+        "THIRD_PLACE":  [("Perdedor SF1", "Perdedor SF2")],
+        "FINAL":        [("Ganador SF1",  "Ganador SF2")],
+    }
+    etapa_counters = {}
+
     for i, (_, row) in enumerate(proximos.iterrows()):
         if pd.notna(row["fecha"]):
             from datetime import timedelta
             hora_utc = row["fecha"]
-            if hora_utc.hour == 0 and hora_utc.minute == 0:
-                hora_real = get_hora_arg(row["home"], row["away"])
-                fecha_base2 = hora_utc.strftime("%d %b")
-                if hora_real:
-                    fecha_str = fecha_base2 + " · " + hora_real + " ARG"
-                else:
-                    fecha_str = fecha_base2 + " · Hora a confirmar"
+            fecha_base2 = hora_utc.strftime("%d %b")
+            hora_real = get_hora_arg(row["home"], row["away"])
+            if hora_real:
+                fecha_str = fecha_base2 + " · " + hora_real + " ARG"
+            elif hora_utc.hour == 0 and hora_utc.minute == 0:
+                fecha_str = fecha_base2 + " · Hora a confirmar"
             else:
                 fecha_arg = hora_utc - timedelta(hours=3)
                 fecha_str = fecha_arg.strftime("%d %b · %H:%M ARG")
         else:
             fecha_str = "—"
-        grupo_txt = clean_grupo(str(row.get("grupo",""))) if pd.notna(row.get("grupo")) else str(row.get("etapa",""))
+
+        etapa = str(row.get("etapa",""))
+        grupo_txt = etapa.replace("_"," ").title() if etapa else ""
+
+        home_val = row["home"] if pd.notna(row["home"]) and str(row["home"]) not in ["nan","None",""] else None
+        away_val = row["away"] if pd.notna(row["away"]) and str(row["away"]) not in ["nan","None",""] else None
+
+        if not home_val or not away_val:
+            idx_ph = etapa_counters.get(etapa, 0)
+            phs = PLACEHOLDERS.get(etapa, [("Por definir","Por definir")])
+            ph = phs[idx_ph] if idx_ph < len(phs) else ("Por definir","Por definir")
+            home_val = ph[0]; away_val = ph[1]
+            etapa_counters[etapa] = idx_ph + 1
+
         with cols[i % 3]:
             st.markdown(f"""<div class='next-card'>
                 <div class='next-card-time'>{fecha_str} · {grupo_txt}</div>
-                <div class='next-card-match'>{row['home']} vs {row['away']}</div>
+                <div class='next-card-match'>{home_val} vs {away_val}</div>
             </div>""", unsafe_allow_html=True)
 
 # ── FASE ELIMINATORIA (BRACKET EN ÁRBOL) ───────────────────────────────────────

@@ -43,6 +43,8 @@ HORARIOS_ARG = {
 }
 
 def get_hora_arg(home, away):
+    if not home or not away or not isinstance(home, str) or not isinstance(away, str):
+        return None
     key = f"{home.lower()} vs {away.lower()}"
     key2 = f"{away.lower()} vs {home.lower()}"
     return HORARIOS_ARG.get(key) or HORARIOS_ARG.get(key2)

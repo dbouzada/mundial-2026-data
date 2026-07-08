@@ -1008,52 +1008,61 @@ if not kpis.empty:
 
     col1, col2 = st.columns(2)
     with col1:
-        kd = kpis.sort_values("dg", ascending=True)
-        colors_dg = [ACCENT if v>=0 else RED for v in kd["dg"]]
-        fig3 = go.Figure(go.Bar(
-            x=kd["dg"], y=kd["equipo"],
-            orientation="h",
-            marker=dict(color=colors_dg, opacity=0.85, line=dict(width=0)),
-            text=[f"+{v}" if v>0 else str(v) for v in kd["dg"].astype(int)],
-            textposition="outside",
-            textfont=dict(size=10, family=FONT),
-            hovertemplate="<b>%{y}</b><br>DG: %{x}<extra></extra>"
-        ))
-        fig3.add_vline(x=0, line_color=MUTED, line_width=1)
-        fig3.update_layout(**theme(height=max(320,len(kpis)*42), show_legend=False))
-        fig3.update_layout(margin=dict(t=24,b=24,l=8,r=50))
-        st.markdown("**Diferencia de goles**")
-        st.plotly_chart(fig3, use_container_width=True)
+        # Diferencia de goles — top 10 por defecto
+        def make_dg_chart(df, height=380):
+            kd = df.sort_values("dg", ascending=True)
+            colors_dg = [ACCENT if v>=0 else RED for v in kd["dg"]]
+            fig = go.Figure(go.Bar(
+                x=kd["dg"], y=kd["equipo"], orientation="h",
+                marker=dict(color=colors_dg, opacity=0.85, line=dict(width=0)),
+                text=[f"+{v}" if v>0 else str(v) for v in kd["dg"].astype(int)],
+                textposition="outside", textfont=dict(size=10, family=FONT),
+                hovertemplate="<b>%{y}</b><br>DG: %{x}<extra></extra>"
+            ))
+            fig.add_vline(x=0, line_color=MUTED, line_width=1)
+            fig.update_layout(**theme(height=height, show_legend=False))
+            fig.update_layout(margin=dict(t=24,b=24,l=8,r=50))
+            return fig
+
+        top10_dg = kpis.reindex(kpis["dg"].abs().nlargest(10).index)
+        st.markdown("**Diferencia de goles — top 10**")
+        st.plotly_chart(make_dg_chart(top10_dg, height=380), use_container_width=True)
+        with st.expander(f"Ver todos ({len(kpis)} equipos)"):
+            st.plotly_chart(make_dg_chart(kpis, height=max(420, len(kpis)*32)), use_container_width=True)
 
     with col2:
         if len(kpis) >= 3:
+            def make_radar(df_r):
+                cats = ["Puntos","GF","Prom×3","DG+"]
+                pal = [ACCENT, BLUE, RED, "#a855f7", "#f59e0b"]
+                fills = ["rgba(200,242,77,0.08)","rgba(77,157,242,0.08)",
+                         "rgba(242,120,77,0.08)","rgba(168,85,247,0.08)","rgba(245,158,11,0.08)"]
+                fig = go.Figure()
+                for i, (_, row) in enumerate(df_r.iterrows()):
+                    fig.add_trace(go.Scatterpolar(
+                        r=[row["puntos"], row["gf"], row["promedio_gf"]*3, max(row["dg"],0)],
+                        theta=cats, fill="toself", name=row["equipo"],
+                        line=dict(color=pal[i % len(pal)], width=2),
+                        fillcolor=fills[i % len(fills)], opacity=0.9,
+                        hovertemplate=f"<b>{row['equipo']}</b><br>%{{theta}}: %{{r:.1f}}<extra></extra>"
+                    ))
+                fig.update_layout(
+                    polar=dict(bgcolor="rgba(0,0,0,0)",
+                        radialaxis=dict(visible=True, color=GRID, gridcolor=GRID,
+                            tickfont=dict(color=MUTED, size=8)),
+                        angularaxis=dict(color=MUTED, gridcolor=GRID,
+                            tickfont=dict(color=MUTED, size=10))),
+                    **theme(height=380)
+                )
+                fig.update_layout(legend=dict(x=1.05, y=0.5, font=dict(size=10, color="#666677")))
+                return fig
+
             top5 = kpis.nlargest(5,"puntos")
-            cats = ["Puntos","GF","Prom×3","DG+"]
-            pal = [ACCENT, BLUE, RED, "#a855f7", "#f59e0b"]
-            fills = ["rgba(200,242,77,0.08)","rgba(77,157,242,0.08)",
-                     "rgba(242,120,77,0.08)","rgba(168,85,247,0.08)","rgba(245,158,11,0.08)"]
-            fig4 = go.Figure()
-            for i, (_, row) in enumerate(top5.iterrows()):
-                fig4.add_trace(go.Scatterpolar(
-                    r=[row["puntos"], row["gf"], row["promedio_gf"]*3, max(row["dg"],0)],
-                    theta=cats, fill="toself", name=row["equipo"],
-                    line=dict(color=pal[i], width=2),
-                    fillcolor=fills[i], opacity=0.9,
-                    hovertemplate=f"<b>{row['equipo']}</b><br>%{{theta}}: %{{r:.1f}}<extra></extra>"
-                ))
-            fig4.update_layout(
-                polar=dict(
-                    bgcolor="rgba(0,0,0,0)",
-                    radialaxis=dict(visible=True, color=GRID, gridcolor=GRID,
-                        tickfont=dict(color=MUTED, size=8)),
-                    angularaxis=dict(color=MUTED, gridcolor=GRID,
-                        tickfont=dict(color=MUTED, size=10))
-                ),
-                **theme(height=max(320,len(kpis)*42))
-            )
-            fig4.update_layout(legend=dict(x=1.1, y=0.5, font=dict(size=10, color="#666677")))
-            st.markdown("**Radar — top 5**")
-            st.plotly_chart(fig4, use_container_width=True)
+            st.markdown("**Radar — top 5 por puntos**")
+            st.plotly_chart(make_radar(top5), use_container_width=True)
+            with st.expander("Ver top 8"):
+                top8 = kpis.nlargest(8,"puntos")
+                st.plotly_chart(make_radar(top8), use_container_width=True)
 
 # ── AVANZADO ──────────────────────────────────────────────────────────────────
 if not finished.empty and not kpis.empty and kpis["gf"].sum()>0:

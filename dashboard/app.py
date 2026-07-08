@@ -802,34 +802,46 @@ if not finished.empty:
         st.markdown("**Partidos más goleadores**")
         st.plotly_chart(fig2, use_container_width=True)
 
-    # Goles por partido stacked
-    tl = finished[finished["total_goles"].notna()].sort_values("fecha").copy().reset_index(drop=True)
-    tl["goles_home"] = tl["goles_home"].fillna(0).astype(int)
-    tl["goles_away"] = tl["goles_away"].fillna(0).astype(int)
+    # Goles por partido — resumen + expander
     def short_name(n):
         abbrevs = {"United States":"USA","South Africa":"S.Africa","South Korea":"S.Korea",
                    "Czechia":"Czech","Saudi Arabia":"S.Arabia","New Zealand":"N.Zealand",
                    "Bosnia and Herzegovina":"Bosnia","Ivory Coast":"I.Coast",
                    "Cape Verde Islands":"C.Verde","Switzerland":"Switz."}
         return abbrevs.get(n, n)
-    tl["label"] = tl.apply(lambda r: f"{short_name(r['home'])} vs {short_name(r['away'])}", axis=1)
 
-    fig3 = go.Figure()
-    fig3.add_trace(go.Bar(
-        name="Local", x=tl["label"], y=tl["goles_home"],
-        marker=dict(color=ACCENT, opacity=0.9, line=dict(width=0)),
-        hovertemplate="<b>%{x}</b><br>Local: %{y}<extra></extra>"
-    ))
-    fig3.add_trace(go.Bar(
-        name="Visitante", x=tl["label"], y=tl["goles_away"],
-        marker=dict(color=BLUE, opacity=0.9, line=dict(width=0)),
-        hovertemplate="<b>%{x}</b><br>Visitante: %{y}<extra></extra>"
-    ))
-    fig3.update_layout(**theme(height=320), barmode="stack")
-    fig3.update_layout(margin=dict(t=24, b=120, l=8, r=8))
-    fig3.update_xaxes(tickangle=-45, tickfont=dict(size=9, color=MUTED))
-    st.markdown("**Goles por partido**")
-    st.plotly_chart(fig3, use_container_width=True)
+    tl_all = finished[finished["total_goles"].notna()].sort_values("fecha").copy().reset_index(drop=True)
+    tl_all["goles_home"] = tl_all["goles_home"].fillna(0).astype(int)
+    tl_all["goles_away"] = tl_all["goles_away"].fillna(0).astype(int)
+    tl_all["label"] = tl_all.apply(lambda r: f"{short_name(r['home'])} vs {short_name(r['away'])}", axis=1)
+
+    def make_bar_chart(df, height=320):
+        fig = go.Figure()
+        fig.add_trace(go.Bar(
+            name="Local", x=df["label"], y=df["goles_home"],
+            marker=dict(color=ACCENT, opacity=0.9, line=dict(width=0)),
+            hovertemplate="<b>%{x}</b><br>Local: %{y}<extra></extra>"
+        ))
+        fig.add_trace(go.Bar(
+            name="Visitante", x=df["label"], y=df["goles_away"],
+            marker=dict(color=BLUE, opacity=0.9, line=dict(width=0)),
+            hovertemplate="<b>%{x}</b><br>Visitante: %{y}<extra></extra>"
+        ))
+        fig.update_layout(**theme(height=height), barmode="stack")
+        fig.update_layout(margin=dict(t=24, b=100, l=8, r=8))
+        fig.update_xaxes(tickangle=-45, tickfont=dict(size=9, color=MUTED))
+        return fig
+
+    # Por defecto: últimos 10 partidos
+    tl_recent = tl_all.tail(10)
+    st.markdown("**Goles por partido — últimos 10**")
+    st.plotly_chart(make_bar_chart(tl_recent), use_container_width=True)
+
+    with st.expander(f"Ver todos los partidos ({len(tl_all)} jugados)"):
+        fases_disp = ["Todos"] + sorted(tl_all["etapa"].dropna().unique().tolist()) if "etapa" in tl_all.columns else ["Todos"]
+        fase_sel = st.selectbox("Filtrar por fase", fases_disp, key="fase_goles")
+        tl_show = tl_all if fase_sel == "Todos" else tl_all[tl_all["etapa"] == fase_sel]
+        st.plotly_chart(make_bar_chart(tl_show, height=380), use_container_width=True)
 
     # Heatmap
     if "grupo_clean" in finished.columns:

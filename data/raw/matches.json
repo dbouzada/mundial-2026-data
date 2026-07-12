@@ -6631,11 +6631,11 @@
       },
       "id": 537386,
       "utcDate": "2026-07-12T01:00:00Z",
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "matchday": null,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-07-12T03:29:10Z",
+      "lastUpdated": "2026-07-12T03:34:33Z",
       "homeTeam": {
         "id": 762,
         "name": "Argentina",

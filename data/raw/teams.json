@@ -6322,13 +6322,6 @@
           "nationality": "Belgium"
         },
         {
-          "id": 8128,
-          "name": "Dodi Lukebakio",
-          "position": "Midfield",
-          "dateOfBirth": "1997-09-24",
-          "nationality": "Belgium"
-        },
-        {
           "id": 8858,
           "name": "Alexis Saelemaekers",
           "position": "Midfield",
@@ -6375,6 +6368,13 @@
           "name": "Romelu Lukaku",
           "position": "Offence",
           "dateOfBirth": "1993-05-13",
+          "nationality": "Belgium"
+        },
+        {
+          "id": 8128,
+          "name": "Dodi Lukebakio",
+          "position": "Offence",
+          "dateOfBirth": "1997-09-24",
           "nationality": "Belgium"
         },
         {

@@ -306,10 +306,10 @@
         "lastName": "Sarr",
         "dateOfBirth": "1998-02-25",
         "nationality": "Senegal",
-        "section": "Midfield",
+        "section": "Offence",
         "position": null,
         "shirtNumber": null,
-        "lastUpdated": "2026-06-06T14:12:29Z"
+        "lastUpdated": "2026-07-15T09:25:44Z"
       },
       "team": {
         "id": 804,
@@ -926,10 +926,10 @@
         "lastName": "Diallo",
         "dateOfBirth": "2002-07-11",
         "nationality": "Ivory Coast",
-        "section": "Midfield",
+        "section": "Offence",
         "position": null,
         "shirtNumber": 79,
-        "lastUpdated": "2026-06-01T11:16:32Z"
+        "lastUpdated": "2026-07-15T09:25:43Z"
       },
       "team": {
         "id": 1935,

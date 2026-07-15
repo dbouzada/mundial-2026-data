@@ -170,13 +170,6 @@
           "nationality": "Uruguay"
         },
         {
-          "id": 28618,
-          "name": "Brian Rodríguez",
-          "position": "Midfield",
-          "dateOfBirth": "2000-05-20",
-          "nationality": "Uruguay"
-        },
-        {
           "id": 121007,
           "name": "Rodrigo Zalazar",
           "position": "Midfield",
@@ -230,6 +223,13 @@
           "name": "Agustín Canobbio",
           "position": "Offence",
           "dateOfBirth": "1998-10-01",
+          "nationality": "Uruguay"
+        },
+        {
+          "id": 28618,
+          "name": "Brian Rodríguez",
+          "position": "Offence",
+          "dateOfBirth": "2000-05-20",
           "nationality": "Uruguay"
         },
         {
@@ -2153,6 +2153,13 @@
           "nationality": "Mexico"
         },
         {
+          "id": 39927,
+          "name": "Luis Romo",
+          "position": "Defence",
+          "dateOfBirth": "1995-06-05",
+          "nationality": "Mexico"
+        },
+        {
           "id": 84096,
           "name": "Israel Reyes",
           "position": "Defence",
@@ -2185,13 +2192,6 @@
           "name": "Luis Chávez",
           "position": "Midfield",
           "dateOfBirth": "1996-01-15",
-          "nationality": "Mexico"
-        },
-        {
-          "id": 39927,
-          "name": "Luis Romo",
-          "position": "Midfield",
-          "dateOfBirth": "1995-06-05",
           "nationality": "Mexico"
         },
         {
@@ -2652,13 +2652,6 @@
           "nationality": "USA"
         },
         {
-          "id": 39023,
-          "name": "Alejandro Zendejas",
-          "position": "Midfield",
-          "dateOfBirth": "1998-02-07",
-          "nationality": "USA"
-        },
-        {
           "id": 77029,
           "name": "Cristian Roldan",
           "position": "Midfield",
@@ -2719,6 +2712,13 @@
           "name": "Haji Wright",
           "position": "Offence",
           "dateOfBirth": "1998-03-27",
+          "nationality": "USA"
+        },
+        {
+          "id": 39023,
+          "name": "Alejandro Zendejas",
+          "position": "Offence",
+          "dateOfBirth": "1998-02-07",
           "nationality": "USA"
         },
         {
@@ -7454,13 +7454,6 @@
           "nationality": "Canada"
         },
         {
-          "id": 140546,
-          "name": "Marcelo Flores",
-          "position": "Midfield",
-          "dateOfBirth": "2003-10-01",
-          "nationality": "Canada"
-        },
-        {
           "id": 171216,
           "name": "Nathan-Dylan Saliba",
           "position": "Midfield",
@@ -7514,6 +7507,13 @@
           "name": "Jacob Shaffelburg",
           "position": "Offence",
           "dateOfBirth": "1999-11-26",
+          "nationality": "Canada"
+        },
+        {
+          "id": 140546,
+          "name": "Marcelo Flores",
+          "position": "Offence",
+          "dateOfBirth": "2003-10-01",
           "nationality": "Canada"
         },
         {
@@ -8354,13 +8354,6 @@
           "nationality": "Panama"
         },
         {
-          "id": 8919,
-          "name": "José Luis Rodríguez",
-          "position": "Midfield",
-          "dateOfBirth": "1998-06-19",
-          "nationality": "Panama"
-        },
-        {
           "id": 28668,
           "name": "Cecilio Waterman",
           "position": "Midfield",
@@ -8414,6 +8407,13 @@
           "name": "José Fajardo",
           "position": "Offence",
           "dateOfBirth": "1993-08-18",
+          "nationality": "Panama"
+        },
+        {
+          "id": 8919,
+          "name": "José Luis Rodríguez",
+          "position": "Offence",
+          "dateOfBirth": "1998-06-19",
           "nationality": "Panama"
         },
         {

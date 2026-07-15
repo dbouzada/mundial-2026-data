@@ -10223,13 +10223,6 @@
           "nationality": "Netherlands"
         },
         {
-          "id": 102193,
-          "name": "Crysencio Summerville",
-          "position": "Midfield",
-          "dateOfBirth": "2001-10-30",
-          "nationality": "Netherlands"
-        },
-        {
           "id": 7459,
           "name": "Cody Gakpo",
           "position": "Offence",
@@ -10255,6 +10248,13 @@
           "name": "Brian Brobbey",
           "position": "Offence",
           "dateOfBirth": "2002-02-01",
+          "nationality": "Netherlands"
+        },
+        {
+          "id": 102193,
+          "name": "Crysencio Summerville",
+          "position": "Offence",
+          "dateOfBirth": "2001-10-30",
           "nationality": "Netherlands"
         }
       ],
@@ -10891,6 +10891,13 @@
           "nationality": "Curaçao"
         },
         {
+          "id": 98483,
+          "name": "Tahith Chong",
+          "position": "Midfield",
+          "dateOfBirth": "1999-12-04",
+          "nationality": "Curaçao"
+        },
+        {
           "id": 6597,
           "name": "Gervane Kastaneer",
           "position": "Offence",
@@ -10909,13 +10916,6 @@
           "name": "Jürgen Locadia",
           "position": "Offence",
           "dateOfBirth": "1993-11-07",
-          "nationality": "Curaçao"
-        },
-        {
-          "id": 98483,
-          "name": "Tahith Chong",
-          "position": "Offence",
-          "dateOfBirth": "1999-12-04",
           "nationality": "Curaçao"
         },
         {

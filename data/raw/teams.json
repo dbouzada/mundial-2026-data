@@ -10856,13 +10856,6 @@
           "nationality": "Curaçao"
         },
         {
-          "id": 191954,
-          "name": "Tyrese Noslin",
-          "position": "Defence",
-          "dateOfBirth": "2002-09-11",
-          "nationality": "Curaçao"
-        },
-        {
           "id": 4280,
           "name": "Leandro Bacuna",
           "position": "Midfield",
@@ -10895,6 +10888,13 @@
           "name": "Tahith Chong",
           "position": "Midfield",
           "dateOfBirth": "1999-12-04",
+          "nationality": "Curaçao"
+        },
+        {
+          "id": 191954,
+          "name": "Tyrese Noslin",
+          "position": "Midfield",
+          "dateOfBirth": "2002-09-11",
           "nationality": "Curaçao"
         },
         {

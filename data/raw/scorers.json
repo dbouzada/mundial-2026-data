@@ -176,6 +176,37 @@
     },
     {
       "player": {
+        "id": 3373,
+        "name": "Ousmane Dembélé",
+        "firstName": "Ousmane",
+        "lastName": "Dembélé",
+        "dateOfBirth": "1997-05-15",
+        "nationality": "France",
+        "section": "Offence",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2026-06-01T11:16:30Z"
+      },
+      "team": {
+        "id": 773,
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
+        "address": "87 Boulevard de Grenelle Paris 75738",
+        "website": "http://www.fff.fr",
+        "founded": 1919,
+        "clubColors": "Blue / White / Red",
+        "venue": null,
+        "lastUpdated": "2026-06-01T09:42:18Z"
+      },
+      "playedMatches": 8,
+      "goals": 6,
+      "assists": 2,
+      "penalties": null
+    },
+    {
+      "player": {
         "id": 180137,
         "name": "Mikel Oyarzabal",
         "firstName": "",
@@ -204,37 +235,6 @@
       "goals": 5,
       "assists": 1,
       "penalties": 1
-    },
-    {
-      "player": {
-        "id": 3373,
-        "name": "Ousmane Dembélé",
-        "firstName": "Ousmane",
-        "lastName": "Dembélé",
-        "dateOfBirth": "1997-05-15",
-        "nationality": "France",
-        "section": "Offence",
-        "position": null,
-        "shirtNumber": null,
-        "lastUpdated": "2026-06-01T11:16:30Z"
-      },
-      "team": {
-        "id": 773,
-        "name": "France",
-        "shortName": "France",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg",
-        "address": "87 Boulevard de Grenelle Paris 75738",
-        "website": "http://www.fff.fr",
-        "founded": 1919,
-        "clubColors": "Blue / White / Red",
-        "venue": null,
-        "lastUpdated": "2026-06-01T09:42:18Z"
-      },
-      "playedMatches": 8,
-      "goals": 5,
-      "assists": 2,
-      "penalties": null
     },
     {
       "player": {

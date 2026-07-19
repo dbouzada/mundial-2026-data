@@ -102,4 +102,4 @@ match_id,fecha,estado,etapa,grupo,estadio,home,home_id,away,away_id,goles_home,g
 537387,2026-07-14,FINISHED,SEMI_FINALS,,,France,773,Spain,760,0,2,AWAY_TEAM
 537388,2026-07-15,FINISHED,SEMI_FINALS,,,England,770,Argentina,762,1,2,AWAY_TEAM
 537389,2026-07-18,FINISHED,THIRD_PLACE,,,France,773,England,770,4,6,AWAY_TEAM
-537390,2026-07-19,IN_PLAY,FINAL,,,Spain,760,Argentina,762,0,0,DRAW
+537390,2026-07-19,PAUSED,FINAL,,,Spain,760,Argentina,762,0,0,DRAW
